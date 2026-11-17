@@ -1,0 +1,730 @@
+{
+  "url": "https://rbn0x00.vercel.app/experience",
+  "title": "Riadh Portfolio",
+  "viewport": [
+    1366,
+    768
+  ],
+  "document": [
+    1366,
+    1366,
+    1741
+  ],
+  "text": "[\nrbn0x00\n@\nportfolio\n]\n$_\nABOUT\nEXPERIENCE\nSKILLS\nPROJECTS\nBLOG\nRESEARCH\nCONTACT\nAVAILABLE\nHIRE ME\n◈ MY JOURNEY\nExperience & Certifications\n\nMy professional journey in IT and cybersecurity, from learning the fundamentals to hunting vulnerabilities.\n\nCERTIFICATION\nCertified Phishing Prevention Specialist (CPPS)\n\nHack and Fix\n\nRemote\n2025/12/28\n▸\nObtained knowledge and skills to identify, prevent, and respond to phishing threats\nSecurity Awareness\nSocial Engineering\nWORK EXPERIENCE\nJunior Penetration Tester\n\nIngrata:Sec\n\nRemote\n2020 (1 month Contract)\n▸\nPerformed vulnerability assessments for corporate clients\n▸\nAssisted in basic Active Directory enumeration and privilege escalation testing\n▸\nDocumented findings and provided remediation recommendations\n▸\nConducted OSINT investigations to gather publicly available information on targets\nVulnerability Assessment\nOSINT\nPython\nActive Directory testing\nWORK EXPERIENCE\nIT Support\n\nSelf employed\n\nBlida, Algeria\n2019 - 2020\n▸\nProvided technical support for 20+ Windows-based computers\n▸\nInstalled, configured, and maintained Windows 10 systems and software\n▸\nPerformed system reinstallation, driver configuration, and malware removal\n▸\nDiagnosed and resolved hardware, software, and network connectivity issues\n▸\nTroubleshooting Android/IOS smartphones\nIT support\nIT system management\n2\nWORK EXPERIENCES\n0\nEDUCATION\n1\nCERTIFICATIONS\n1.5+\nYEARS ACTIVE\n[RBN0x00]\n© 2026 RIADH BENLAMINE · SECURITY RESEARCHER\nGITHUB\nBLOG\nCONTACT",
+  "links": [
+    {
+      "i": 0,
+      "text": "[\nrbn0x00\n@\nportfolio\n]\n$_",
+      "label": null,
+      "href": "/",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 1,
+      "text": "ABOUT",
+      "label": null,
+      "href": "/about",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 2,
+      "text": "EXPERIENCE",
+      "label": null,
+      "href": "/experience",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 3,
+      "text": "SKILLS",
+      "label": null,
+      "href": "/skills",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 4,
+      "text": "PROJECTS",
+      "label": null,
+      "href": "/projects",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 5,
+      "text": "BLOG",
+      "label": null,
+      "href": "/blog",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 6,
+      "text": "RESEARCH",
+      "label": null,
+      "href": "/research",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 7,
+      "text": "CONTACT",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 8,
+      "text": "HIRE ME",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 9,
+      "text": "About",
+      "label": null,
+      "href": "/about",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 10,
+      "text": "ExperienceACTIVE",
+      "label": null,
+      "href": "/experience",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 11,
+      "text": "Skills",
+      "label": null,
+      "href": "/skills",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 12,
+      "text": "Projects",
+      "label": null,
+      "href": "/projects",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 13,
+      "text": "Blog",
+      "label": null,
+      "href": "/blog",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 14,
+      "text": "Research",
+      "label": null,
+      "href": "/research",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 15,
+      "text": "Contact",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 16,
+      "text": "Get In Touch",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 17,
+      "text": "GITHUB",
+      "label": null,
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 18,
+      "text": "BLOG",
+      "label": null,
+      "href": "https://medium.com/@rbn0x00",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 19,
+      "text": "CONTACT",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    }
+  ],
+  "controls": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "text": "Open menu",
+      "type": "submit",
+      "name": "",
+      "placeholder": null,
+      "disabled": false,
+      "visible": false,
+      "html": "<button class=\"sm:hidden flex items-center justify-center w-9 h-9 border border-[rgba(0,245,255,0.2)] bg-[#070d1a]/80 text-cyan-400 transition-all duration-200 hover:border-cyan-400/50 hover:shadow-[0_0_12px_rgba(0,245,255,0.15)]\" aria-label=\"Open menu\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-menu w-4 h-4\" aria-hidden=\"true\"><path d=\"M4 5h16\"></path><path d=\"M4 12h16\"></path><path d=\"M4 19h16\"></path></svg></button>"
+    }
+  ],
+  "layout": [
+    {
+      "tag": "NAV",
+      "id": "",
+      "cls": "fixed top-0 left-0 right-0 z-[1000] transition-all duration-300\n          bg-[rgba(4,8,16,0.8)] backdrop-blur-md border-b border-[rgba(0,245,255,0.08)] py-0",
+      "text": "[\nrbn0x00\n@\nportfolio\n]\n$_\nABOUT\nEXPERIENCE\nSKILLS\nPROJECTS\nBLOG\nRESEARCH\nCONTACT\nAVAILABLE\nHIRE ME",
+      "top": 0,
+      "left": 0,
+      "width": 1366,
+      "height": 65,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(4, 8, 16, 0.8)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "fixed",
+      "overflow": "visible"
+    },
+    {
+      "tag": "MAIN",
+      "id": "",
+      "cls": "flex-grow pt-16",
+      "text": "◈ MY JOURNEY\nExperience & Certifications\n\nMy professional journey in IT and cybersecurity, from lear",
+      "top": 0,
+      "left": 0,
+      "width": 1366,
+      "height": 1671.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "64px 0px 0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "SECTION",
+      "id": "",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden",
+      "text": "◈ MY JOURNEY\nExperience & Certifications\n\nMy professional journey in IT and cybersecurity, from lear",
+      "top": 64,
+      "left": 0,
+      "width": 1366,
+      "height": 1607.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgb(4, 8, 16)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "hidden"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "container mx-auto px-6 py-8 relative z-10",
+      "text": "◈ MY JOURNEY\nExperience & Certifications\n\nMy professional journey in IT and cybersecurity, from lear",
+      "top": 64,
+      "left": 43,
+      "width": 1280,
+      "height": 1607.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "32px 24px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-4xl md:text-6xl font-extrabold text-white mb-4",
+      "text": "Experience & Certifications",
+      "top": 153.609375,
+      "left": 67,
+      "width": 1232,
+      "height": 60,
+      "font": "Oxanium, monospace",
+      "fontSize": "60px",
+      "weight": "800",
+      "line": "60px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H3",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300",
+      "text": "Certified Phishing Prevention Specialist (CPPS)",
+      "top": 433.5,
+      "left": 301,
+      "width": 805,
+      "height": 28,
+      "font": "Oxanium, monospace",
+      "fontSize": "20px",
+      "weight": "700",
+      "line": "28px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H3",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300",
+      "text": "Junior Penetration Tester",
+      "top": 721.515625,
+      "left": 301,
+      "width": 805,
+      "height": 28,
+      "font": "Oxanium, monospace",
+      "fontSize": "20px",
+      "weight": "700",
+      "line": "28px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H3",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300",
+      "text": "IT Support",
+      "top": 1107.78125,
+      "left": 301,
+      "width": 805,
+      "height": 28,
+      "font": "Oxanium, monospace",
+      "fontSize": "20px",
+      "weight": "700",
+      "line": "28px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16",
+      "text": "2\nWORK EXPERIENCES\n0\nEDUCATION\n1\nCERTIFICATIONS\n1.5+\nYEARS ACTIVE",
+      "top": 1525.40625,
+      "left": 235,
+      "width": 896,
+      "height": 114,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "16px",
+      "columns": "212px 212px 212px 212px",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "FOOTER",
+      "id": "",
+      "cls": "relative z-10 border-t border-[rgba(0,245,255,0.08)] mt-auto",
+      "text": "[RBN0x00]\n© 2026 RIADH BENLAMINE · SECURITY RESEARCHER\nGITHUB\nBLOG\nCONTACT",
+      "top": 1671.40625,
+      "left": 0,
+      "width": 1366,
+      "height": 70,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "visible"
+    }
+  ],
+  "images": [],
+  "animations": [
+    {
+      "name": "pulse",
+      "playState": "running",
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 2000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      }
+    },
+    {
+      "name": "pulse",
+      "playState": "running",
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 2000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "200"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "200"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "600"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "700"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "800"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "800"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "loaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    }
+  ],
+  "errors": [],
+  "capturedAt": "2026-11-17T09:28:39.810077+00:00",
+  "screenshots": [
+    "screenshots/laptop/experience-1366x768-top.png",
+    "screenshots/laptop/experience-1366x768-full.png"
+  ],
+  "emulation": {
+    "mobile": false,
+    "deviceScaleFactor": 1,
+    "note": "CSS viewport emulation; not physical-device certification"
+  }
+}

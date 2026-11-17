@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-11-17T10:17:50.484250+00:00",
+  "reference": {
+    "originalFiles": 75456,
+    "metadataCompared": 75456,
+    "sha256Compared": 42,
+    "differences": [],
+    "unchanged": true,
+    "limits": "Vendor/core content not hashed; metadata only. First-party source/config/assets/logs hashed."
+  },
+  "development": {
+    "originalFiles": 18,
+    "metadataCompared": 18,
+    "sha256Compared": 18,
+    "differences": [],
+    "unchanged": true,
+    "limits": "All 18 original non-git files hashed. Only docs additions allowed."
+  },
+  "git": {
+    "branch": {
+      "exitCode": 0,
+      "output": "redesign/portfolio-v2",
+      "error": ""
+    },
+    "head": {
+      "exitCode": 0,
+      "output": "f62fc0fa5c33bb65f0ac411fbfcc935294684745",
+      "error": ""
+    },
+    "main": {
+      "exitCode": 0,
+      "output": "f62fc0fa5c33bb65f0ac411fbfcc935294684745",
+      "error": ""
+    },
+    "status": {
+      "exitCode": 0,
+      "output": "?? docs/",
+      "error": ""
+    },
+    "diff": {
+      "exitCode": 0,
+      "output": "",
+      "error": ""
+    },
+    "diffCheck": {
+      "exitCode": 0,
+      "output": "",
+      "error": ""
+    }
+  },
+  "mainUnchanged": true,
+  "headUnchanged": true,
+  "documents": [
+    {
+      "path": "docs/project-setup.md",
+      "exists": true,
+      "bytes": 5920
+    },
+    {
+      "path": "docs/reference-audit.md",
+      "exists": true,
+      "bytes": 30502
+    },
+    {
+      "path": "docs/reference-component-map.md",
+      "exists": true,
+      "bytes": 11661
+    },
+    {
+      "path": "docs/reference-feature-inventory.md",
+      "exists": true,
+      "bytes": 16948
+    },
+    {
+      "path": "docs/reference-design-tokens.md",
+      "exists": true,
+      "bytes": 14950
+    },
+    {
+      "path": "docs/existing-cv-audit.md",
+      "exists": true,
+      "bytes": 17018
+    }
+  ],
+  "jsonParseErrors": [],
+  "screenshots": {
+    "count": 109,
+    "invalid": [],
+    "bytes": 21311546,
+    "byFolder": {
+      "desktop": 28,
+      "laptop": 20,
+      "mobile": 41,
+      "tablet": 20
+    }
+  },
+  "routeViewportCoverage": {
+    "expected": 40,
+    "verified": 40,
+    "invalid": []
+  },
+  "featureIDs": {
+    "count": 47,
+    "unique": 47,
+    "sequenceValid": true
+  },
+  "brokenLocalMarkdownLinks": [],
+  "markdownTableProblems": [],
+  "sourceCitationRangeProblems": [],
+  "peerReviewReconciled": true,
+  "limits": [
+    "Image pixel review unavailable: vision API403",
+    "Rendered hover unverified: hover media false",
+    "No real email sent; success delivery unverified",
+    "No build/install/static export performed",
+    "Remote Pages/Cloudflare configuration unverified",
+    "Phase2 approval pending"
+  ],
+  "readyForReview": true
+}

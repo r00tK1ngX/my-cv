@@ -1,0 +1,765 @@
+[
+  {
+    "path": "screenshots/desktop/about-1440x900-full.png",
+    "width": 1440,
+    "height": 1423,
+    "bytes": 287946,
+    "sha256": "b3b1e37e6c7d649e705ce86d28a273a63d73a04680b3e1a49b1feabf74209ea4"
+  },
+  {
+    "path": "screenshots/desktop/about-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 243215,
+    "sha256": "75d00d430a29c56c7a7af226868a4cd3c8f28d3fdd8a2fb98d1d31bcade18d3f"
+  },
+  {
+    "path": "screenshots/desktop/blog-1440x900-full.png",
+    "width": 1440,
+    "height": 1047,
+    "bytes": 223589,
+    "sha256": "2ff0a0cead00a842a405c1dffd62784336a74748a7779027cd0f71d4e12f5d16"
+  },
+  {
+    "path": "screenshots/desktop/blog-1440x900-network-error.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 162273,
+    "sha256": "b11ee0c8025e42071062daa6c50fab22ca3f6f8d2f63b1bb604153b06a300c44"
+  },
+  {
+    "path": "screenshots/desktop/blog-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 200937,
+    "sha256": "c96deb9225818dcd734af46d9541286a658d4a753a85c8346dd4c806ee19e607"
+  },
+  {
+    "path": "screenshots/desktop/contact-1440x900-blocked-error.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 155378,
+    "sha256": "37209127fcdf3afc1228f3d42501b4277855cd35e22d84f6a43b77129fce9d2c"
+  },
+  {
+    "path": "screenshots/desktop/contact-1440x900-full.png",
+    "width": 1440,
+    "height": 1034,
+    "bytes": 173861,
+    "sha256": "f44fd1adccf55fb4109de98d6ed017c5f63a2347e08fd2565db829ec37b6fc80"
+  },
+  {
+    "path": "screenshots/desktop/contact-1440x900-sending-blocked.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 155333,
+    "sha256": "b961ae9c3408214c2ca0910b9261cc15b1c96702a9372b8e0799d8ef88a1bddc"
+  },
+  {
+    "path": "screenshots/desktop/contact-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 153343,
+    "sha256": "eb0f9b0021b0b474881afbcc926251db5d7e68c28e1a72f55d92029f542466c1"
+  },
+  {
+    "path": "screenshots/desktop/experience-1440x900-full.png",
+    "width": 1440,
+    "height": 1741,
+    "bytes": 246908,
+    "sha256": "5d79e937a8a0eb10486efde30c490c999dce6a03ed46c901d3ba1fa52f3b6a33"
+  },
+  {
+    "path": "screenshots/desktop/experience-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 176276,
+    "sha256": "1da40bb37d2e4776aa0766b2c40c9a9b2f97d935262ec46add09d3125fca3a78"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-cta-hover-attempt.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 403815,
+    "sha256": "ab85d6f0c7d0af57cca4a7300d5a0700cd7f20febed130a5789f6561339f1b8a"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-experience.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 179335,
+    "sha256": "f8f8159484f620cb5339a6a5632190b795b364550bdc1778716a085e901e5a4f"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-footer.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 194899,
+    "sha256": "cb87c323e320f97110e8256c74ba63e29bc50e052eea9b0c7e34717edf5f97f6"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-full.png",
+    "width": 1440,
+    "height": 5309,
+    "bytes": 911326,
+    "sha256": "46dcd58e4fb9cbfa8a37882b36c1d0dc8bf746c6d6aa9ce213380df06e1dd623"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-projects.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 243167,
+    "sha256": "c830de34a2fbedc3d3462449310b6d8232f040f9e735181ad1befb681b8794db"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-skills.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 174080,
+    "sha256": "dddbd354bc8a73323b558d10cf4412a2b9d95fb8caea409390c6a279300b996e"
+  },
+  {
+    "path": "screenshots/desktop/home-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 436443,
+    "sha256": "0f29a025d8fd1a0f0b8801106bbf8dac3e003447c1ac3b0f7ff38fade7851b0d"
+  },
+  {
+    "path": "screenshots/desktop/projects-1440x900-card-hover-attempt.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 276251,
+    "sha256": "827270a7821efd9243e15fb6a48df6956f935f818cfb935441a0721844f8b2af"
+  },
+  {
+    "path": "screenshots/desktop/projects-1440x900-full.png",
+    "width": 1440,
+    "height": 1553,
+    "bytes": 331582,
+    "sha256": "461a79944388cd4f00adb28eb6544465679a7575a35a381cc8f45c41cf78faf6"
+  },
+  {
+    "path": "screenshots/desktop/projects-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 237805,
+    "sha256": "dd0d36043f237a069d0735c44112d9bf72bd100a9f328b3882f4e3fbcd17655e"
+  },
+  {
+    "path": "screenshots/desktop/research-1440x900-full.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 227271,
+    "sha256": "1a5128ff4a3215c1eaed495f4aadb03820e993c0061e4d35149f5d36bd5f055b"
+  },
+  {
+    "path": "screenshots/desktop/research-1440x900-tab-1.png",
+    "width": 1440,
+    "height": 1348,
+    "bytes": 250417,
+    "sha256": "6d7148b36bf0087d6626c5242e466f9bbb3f8baa7dac9634c8b42464d0029849"
+  },
+  {
+    "path": "screenshots/desktop/research-1440x900-tab-2.png",
+    "width": 1440,
+    "height": 1034,
+    "bytes": 229201,
+    "sha256": "7de1d4037e5ec8880da1d7859f0736af5a159daa0c69c65aa6fbc4da6930f4df"
+  },
+  {
+    "path": "screenshots/desktop/research-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 202951,
+    "sha256": "29c2f34296a51847dd06c0e86fbc670d0ea90be579a17e8901b6b08cf154133b"
+  },
+  {
+    "path": "screenshots/desktop/skills-1440x900-full.png",
+    "width": 1440,
+    "height": 1353,
+    "bytes": 221473,
+    "sha256": "b777644733cdcd9b925fd2b1d09a0057ccaf5c052c0e5a9e0c26af6ee7db64db"
+  },
+  {
+    "path": "screenshots/desktop/skills-1440x900-settled-full.png",
+    "width": 1440,
+    "height": 1353,
+    "bytes": 219565,
+    "sha256": "d8f803ed16c1cf34d7b2ef1c9949e0031d6086b509202e11662994f2c892872f"
+  },
+  {
+    "path": "screenshots/desktop/skills-1440x900-top.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 169332,
+    "sha256": "b2162fadfce3037c244307a72c037aa9a9cd45b33b33a8a58753625d8f267b5f"
+  },
+  {
+    "path": "screenshots/laptop/about-1366x768-full.png",
+    "width": 1366,
+    "height": 1423,
+    "bytes": 266702,
+    "sha256": "acc0d17f7abb9e3d123e02fa49d91f5733cf1065c9c512c947f58e96f7300c71"
+  },
+  {
+    "path": "screenshots/laptop/about-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 218847,
+    "sha256": "6c417279db70079b7c96029b8e786a004e4f877de1e4fd35f33e19ed10a5ed61"
+  },
+  {
+    "path": "screenshots/laptop/blog-1366x768-full.png",
+    "width": 1366,
+    "height": 1047,
+    "bytes": 204570,
+    "sha256": "5fc204e690a84772ed351c5aee60b28f119c7de7d1612e3e25b91960c15781e0"
+  },
+  {
+    "path": "screenshots/laptop/blog-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 175614,
+    "sha256": "6b7a46ffe51cb42b61853f451ec31b871f152f1140663d6aa865b5eb17cab811"
+  },
+  {
+    "path": "screenshots/laptop/contact-1366x768-full.png",
+    "width": 1366,
+    "height": 962,
+    "bytes": 142208,
+    "sha256": "18b687650c2a67d5cf538a96153d1120b69926a97aa7f7322bf7cb76561117b2"
+  },
+  {
+    "path": "screenshots/laptop/contact-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 125730,
+    "sha256": "ba8ba6fb72feb3effe85e042dcbd9363513a72d0ab9b3015dea2f4340816d503"
+  },
+  {
+    "path": "screenshots/laptop/experience-1366x768-full.png",
+    "width": 1366,
+    "height": 1741,
+    "bytes": 228927,
+    "sha256": "7338b77037f1995e697636bcd03fba20221321a0ccd64af991509aafb291730b"
+  },
+  {
+    "path": "screenshots/laptop/experience-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 149227,
+    "sha256": "d07a15689ba02c8303305bab1b868fdcca6a29b37bd128848f138bbaeb85c633"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-experience.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 151346,
+    "sha256": "413e70f5b96288189d8f496b8f588b78d8bf914e08d5cf34a009080f3cf4f168"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-footer.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 175838,
+    "sha256": "e2ebf557df1b58b19bba90d8bae32e4291b61d72ce9c48ad53e4775956706648"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-full.png",
+    "width": 1366,
+    "height": 5177,
+    "bytes": 856033,
+    "sha256": "122cc654d7b7b0ad676054953abe9dd1db2468f52ebeb20647a42a025695aec8"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-projects.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 205310,
+    "sha256": "cd7b04911045d7359d3f0cbbf1e4a8aedf48bc7159de61b7c9563499d6bfd264"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-skills.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 146802,
+    "sha256": "d5d346c2b638861dbc09beb20786f222f914b616654c27fe3d1aaa838ac69dd8"
+  },
+  {
+    "path": "screenshots/laptop/home-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 391782,
+    "sha256": "80d02ef38c04667f50f97068781cbce4b27e79decc7fd0a60b6347ee935945b3"
+  },
+  {
+    "path": "screenshots/laptop/projects-1366x768-full.png",
+    "width": 1366,
+    "height": 1553,
+    "bytes": 295872,
+    "sha256": "2a130aca45984906112ed8eef75cce07e339dbe6d26dc7ba4a92caecf587afcd"
+  },
+  {
+    "path": "screenshots/laptop/projects-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 207017,
+    "sha256": "3d3148d41820c2941d9597ce21af8b7490c9bdcf8e75259121f828acd897e273"
+  },
+  {
+    "path": "screenshots/laptop/research-1366x768-full.png",
+    "width": 1366,
+    "height": 1124,
+    "bytes": 202895,
+    "sha256": "47ea063299a2a177d40e061e3a390b390a5d830d58275f121fe7c4073bc27828"
+  },
+  {
+    "path": "screenshots/laptop/research-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 172484,
+    "sha256": "556427bdb390d40d37f6f359bdaef3c257d50cd4a0f9afd48d0a4c8509b88431"
+  },
+  {
+    "path": "screenshots/laptop/skills-1366x768-full.png",
+    "width": 1366,
+    "height": 1353,
+    "bytes": 194266,
+    "sha256": "49af8bf087715a45e2ea3f4b0a6fd169e8ab32c8f3e4af79b5484b9d636a3791"
+  },
+  {
+    "path": "screenshots/laptop/skills-1366x768-top.png",
+    "width": 1366,
+    "height": 768,
+    "bytes": 145903,
+    "sha256": "d24e22ce8d0b02b619c494c6d56ff296c53548e489bbc0c0f65c1caccee1e5cf"
+  },
+  {
+    "path": "screenshots/mobile/about-360x800-full.png",
+    "width": 360,
+    "height": 2631,
+    "bytes": 165216,
+    "sha256": "874e41585b60ec04e62bc514f89073bea7e5296ebdce3b1475538e45aeacfc63"
+  },
+  {
+    "path": "screenshots/mobile/about-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 90173,
+    "sha256": "4768d42e1cae576dd202f229cc61043fe5f846e48f6b90801e1d4fcc73c9fe55"
+  },
+  {
+    "path": "screenshots/mobile/about-390x844-full.png",
+    "width": 390,
+    "height": 2525,
+    "bytes": 174261,
+    "sha256": "46367b5dfb6261ac46b775f1f8992bd156e0a845b2172fa2053e70ae7e855248"
+  },
+  {
+    "path": "screenshots/mobile/about-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 103618,
+    "sha256": "5864d8e6ba1c6370106bf75b168adc7922e20e633204787d4ca56d50e6ff9b4d"
+  },
+  {
+    "path": "screenshots/mobile/blog-360x800-full.png",
+    "width": 360,
+    "height": 1254,
+    "bytes": 98075,
+    "sha256": "7ce1f05a9051f1068972d3e1591c1bc2098780e7271a6b9b20d540015a06b4af"
+  },
+  {
+    "path": "screenshots/mobile/blog-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 78635,
+    "sha256": "1549aa88fe58c28788e055147e4c7529aa37e9ae7b8165f7c6724cca7b882b68"
+  },
+  {
+    "path": "screenshots/mobile/blog-390x844-full.png",
+    "width": 390,
+    "height": 1239,
+    "bytes": 102872,
+    "sha256": "69ec3fe97c39d66e850a1c2e909cff306cb1636c7457a25673e1b5b832547130"
+  },
+  {
+    "path": "screenshots/mobile/blog-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 85995,
+    "sha256": "64d4a0f03df9de77f06542a317fa7fd147341df2d60fbe644a8e50b9e2fd357f"
+  },
+  {
+    "path": "screenshots/mobile/contact-360x800-full.png",
+    "width": 360,
+    "height": 1622,
+    "bytes": 84975,
+    "sha256": "2a78819314e3ec2d64ab06510b7ef1566e4765b54be716c569ceac9c1cc78bf8"
+  },
+  {
+    "path": "screenshots/mobile/contact-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 60494,
+    "sha256": "3c2287a7ff444ba071f70014abec5acdf728480e783846d2f7945bf8f6518eb5"
+  },
+  {
+    "path": "screenshots/mobile/contact-390x844-full.png",
+    "width": 390,
+    "height": 1555,
+    "bytes": 89271,
+    "sha256": "a34461711bd5e09a76eebfdcf56fcfc25cbbd83f37d9243cadaa420c5f7b9757"
+  },
+  {
+    "path": "screenshots/mobile/contact-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 67192,
+    "sha256": "cf9bb884b48364804748245417d6abc7dca83ff48633e37cb3b79710500fbc28"
+  },
+  {
+    "path": "screenshots/mobile/experience-360x800-full.png",
+    "width": 360,
+    "height": 2562,
+    "bytes": 145669,
+    "sha256": "ffbae7cc1fcaf7993013a19f7b1210df823ee4465db468072dec57fe0fa7cdc6"
+  },
+  {
+    "path": "screenshots/mobile/experience-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 65815,
+    "sha256": "c7b745f7fa9e1b5dc811af8467e63d3d007b4282a891b3319f2dcff915de0483"
+  },
+  {
+    "path": "screenshots/mobile/experience-390x844-full.png",
+    "width": 390,
+    "height": 2434,
+    "bytes": 149807,
+    "sha256": "4e183b61f131227fe93535c19ea2bc60831e132a557df092b8b98f64518775fd"
+  },
+  {
+    "path": "screenshots/mobile/experience-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 75626,
+    "sha256": "503309136df0300b66d480769de9e5dc1db811cd2127e40ebe88bd829bb0055a"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-experience.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 70008,
+    "sha256": "1913f878001dce241b24c873b1c74903e275db9ae1568a423ffe9d41218c5b69"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-footer.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 77848,
+    "sha256": "4d7a199ef0d056573f3ec6d359a0b3eebb731530e6d798951f024a1467f784d6"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-full.png",
+    "width": 360,
+    "height": 8834,
+    "bytes": 685445,
+    "sha256": "634605b580a3af80d3949835fccfd4046153a7d669364f69a50fd316b3406f8f"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-projects.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 86642,
+    "sha256": "2c9d530dd0854f93cfafbdd7e70af87de2c5707c64e5372041fc68c148baadfd"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-skills.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 62214,
+    "sha256": "67c937afe2873a3b8d6859170e2768c12f0c6a244369ad581d676b52d60dc15c"
+  },
+  {
+    "path": "screenshots/mobile/home-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 125445,
+    "sha256": "69b9341c9366828ee3b323c14d90b39221682c65ecfedf74d89136193f0fc0e9"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-experience.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 78004,
+    "sha256": "43878bedf60a03bb797260779cdc17d9bb33805430b28a3dab9a70c6b737117a"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-footer.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 94531,
+    "sha256": "6a89e35b3bc7c25ac0c322ffc7b4057b9ab53b1863a317942bf9b3664e84e3d9"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-full.png",
+    "width": 390,
+    "height": 8549,
+    "bytes": 702137,
+    "sha256": "4d10bbbdf2e0b7540136d2be8ef6e17606f08e4e84559dc454e745975b3f4b33"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-menu-open.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 28864,
+    "sha256": "26c49796a15348d91920ba82dadcecd42233bbccf108bb9130489fdb5b6d2093"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-projects.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 95265,
+    "sha256": "deeb6a31df3b97fb3b3013989536dbe05ed85385981b1d30aae2715fa1e7f061"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-skills.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 70210,
+    "sha256": "b68f32e2e2990e0d61e0dc8787584a361be6586478d7d0fe3e37379c4e07ebcf"
+  },
+  {
+    "path": "screenshots/mobile/home-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 146044,
+    "sha256": "1c42276e45379e2ec8219cd30310f46e924c10abe5f1c6923f70f953f1c01acd"
+  },
+  {
+    "path": "screenshots/mobile/projects-360x800-full.png",
+    "width": 360,
+    "height": 2771,
+    "bytes": 248208,
+    "sha256": "b42173568e58955eaf02101fc31265c1ed683f21e11b1e8c14dc1e72521de1e7"
+  },
+  {
+    "path": "screenshots/mobile/projects-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 86905,
+    "sha256": "b2b07d6b241c11a70260639c8e574ef359e90eaddfe60b7924ff8ed8799af5b0"
+  },
+  {
+    "path": "screenshots/mobile/projects-390x844-full.png",
+    "width": 390,
+    "height": 2693,
+    "bytes": 259917,
+    "sha256": "11c9a1983da75a27edd4024f94ad8347f32db705d32198ebb69cca1b14eb13eb"
+  },
+  {
+    "path": "screenshots/mobile/projects-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 95782,
+    "sha256": "3e9b28f4d7daaa65f7c3eb1e0d3b7b7cf545ad7d0d636c1013150dbbc9dba964"
+  },
+  {
+    "path": "screenshots/mobile/research-360x800-full.png",
+    "width": 360,
+    "height": 1449,
+    "bytes": 103041,
+    "sha256": "87ed104d9627a4ebfeb83c9efb3db007713b570ada37031163b263d9b00d14bf"
+  },
+  {
+    "path": "screenshots/mobile/research-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 73122,
+    "sha256": "40df070a1591a54a05af626c9a79de2a3610ff66dbfa46d228752155d3e3c313"
+  },
+  {
+    "path": "screenshots/mobile/research-390x844-full.png",
+    "width": 390,
+    "height": 1400,
+    "bytes": 106284,
+    "sha256": "0014b9b41024e3269506d5ae5ba27496ad3342f9775b9712b445a2636743d4db"
+  },
+  {
+    "path": "screenshots/mobile/research-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 79464,
+    "sha256": "872c14dad0c86a9bafc6ab600a1cb5aeba7642347f39faa6c404db2c26b38725"
+  },
+  {
+    "path": "screenshots/mobile/skills-360x800-full.png",
+    "width": 360,
+    "height": 2814,
+    "bytes": 135076,
+    "sha256": "433bf4c429bdfd6075d80753da0de82372fe787bdff1f04bf5faed656719fa22"
+  },
+  {
+    "path": "screenshots/mobile/skills-360x800-top.png",
+    "width": 360,
+    "height": 800,
+    "bytes": 61049,
+    "sha256": "358566c387bedaeabd0977a884882a10cf0949457b90bb37b2bbac2f57028e2f"
+  },
+  {
+    "path": "screenshots/mobile/skills-390x844-full.png",
+    "width": 390,
+    "height": 2732,
+    "bytes": 137454,
+    "sha256": "957c9dc3705f9daaa5281e8a023e4c101331a23a34b0f145ab4d9f67c97ba534"
+  },
+  {
+    "path": "screenshots/mobile/skills-390x844-top.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 68985,
+    "sha256": "56bc5b2208f8c6da2238ed73e4c39cd5612c95a6010e9de690dff7712567293e"
+  },
+  {
+    "path": "screenshots/tablet/about-768x1024-full.png",
+    "width": 768,
+    "height": 1833,
+    "bytes": 239454,
+    "sha256": "16d429361e0f39543d02fbca2eb58f5a4745f4eab34d92661d3ba9cdd4330bc0"
+  },
+  {
+    "path": "screenshots/tablet/about-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 194340,
+    "sha256": "75af98db2d4569251047856bf10e9c6ff17be17d19071885e010a7468952bf13"
+  },
+  {
+    "path": "screenshots/tablet/blog-768x1024-full.png",
+    "width": 768,
+    "height": 1158,
+    "bytes": 167999,
+    "sha256": "9d0e9494dc970d3d2dd9b25734e8dd75c447cf52e11210e10acf3ea2aa2a8002"
+  },
+  {
+    "path": "screenshots/tablet/blog-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 154882,
+    "sha256": "4067b54d1e0a1cb4a72f60f24963ca3b00e1c2e09aeff4f785d3f3214588953d"
+  },
+  {
+    "path": "screenshots/tablet/contact-768x1024-full.png",
+    "width": 768,
+    "height": 1461,
+    "bytes": 123486,
+    "sha256": "c99a5322bd48bb84510064d28496eee242bbda9a00acdf7a0b8bd45e2f70e7ba"
+  },
+  {
+    "path": "screenshots/tablet/contact-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 109212,
+    "sha256": "14a63840ecea8b2e4efe1ecfd917bdbd4e0bc0c472781bc22d7eeb88f1f283bc"
+  },
+  {
+    "path": "screenshots/tablet/experience-768x1024-full.png",
+    "width": 768,
+    "height": 1817,
+    "bytes": 187106,
+    "sha256": "0d5d7139422726006f7a4aad568f17e1b5ff4c6ce820568ef9e431b505d8c971"
+  },
+  {
+    "path": "screenshots/tablet/experience-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 132709,
+    "sha256": "77c6bb9583012d2bf10366c165888569f07785218a0ded6cc441521becd5fb0b"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-experience.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 138930,
+    "sha256": "1f4abce3d288d2990402c3b6b5e4885d516e6f500741a7fd12349d25f9571fd7"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-footer.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 176015,
+    "sha256": "dae1abbb148b0bf85bc6935f07efe48cfb8c3e4a998916b0c669a677680be291"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-full.png",
+    "width": 768,
+    "height": 5747,
+    "bytes": 752327,
+    "sha256": "adc2f3f7df2d34c96c9695035acb32ed8ec8b07ce8c7a3f9eae2bef926bc3fab"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-projects.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 224672,
+    "sha256": "d31faec3f7dd7bcddd57a7ee43b9626a76ba9de8c799c5287f050bd230eed08a"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-skills.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 128293,
+    "sha256": "3af96b79a1a5cb3c12790bc9dd2c2b1f477e89f80cab865077655c0303d672dc"
+  },
+  {
+    "path": "screenshots/tablet/home-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 336734,
+    "sha256": "e09b3c870b50b9ec56407ac3b6b5dedfdc446677e448fc3b7a4f2fa86e097432"
+  },
+  {
+    "path": "screenshots/tablet/projects-768x1024-full.png",
+    "width": 768,
+    "height": 1599,
+    "bytes": 231531,
+    "sha256": "93ab1c50caa36d1006f9d04c5f4b806e121780ea978704e82aa6d8eba70966b4"
+  },
+  {
+    "path": "screenshots/tablet/projects-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 228867,
+    "sha256": "26e04bf16f8a2aad7a15d3359db6b47c40b4fb79ab184ca7048d44e959beb4d9"
+  },
+  {
+    "path": "screenshots/tablet/research-768x1024-full.png",
+    "width": 768,
+    "height": 1158,
+    "bytes": 176774,
+    "sha256": "45d3cd10f54ed7032e13f4c895fab78f6efcd204639303805b6d598202787d7a"
+  },
+  {
+    "path": "screenshots/tablet/research-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 162775,
+    "sha256": "8224f7cf0c9a90cc5f7065653d8f63f6bef168233ca7fb6ccd02a0e134ffa1cf"
+  },
+  {
+    "path": "screenshots/tablet/skills-768x1024-full.png",
+    "width": 768,
+    "height": 1546,
+    "bytes": 160385,
+    "sha256": "6a0ccfa6bd505c4ddbc058544dfba778f705d4b0f6a015db8c56f159e5a6b84d"
+  },
+  {
+    "path": "screenshots/tablet/skills-768x1024-top.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 124072,
+    "sha256": "3ecb8d73774899fdf6bf974ed54d1896b1502aa77d52969010319aabdcd7e927"
+  }
+]

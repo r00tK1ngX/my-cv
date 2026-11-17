@@ -1,0 +1,940 @@
+{
+  "hex": {
+    "#040810": [
+      "app/about/page.tsx:40",
+      "app/about/page.tsx:119",
+      "app/blog/page.tsx:88",
+      "app/blog/page.tsx:205",
+      "app/contact/page.tsx:68",
+      "app/contact/page.tsx:169",
+      "app/contact/page.tsx:185",
+      "app/contact/page.tsx:203",
+      "app/contact/page.tsx:220",
+      "app/contact/page.tsx:232",
+      "app/contact/page.tsx:236",
+      "app/contact/page.tsx:237",
+      "app/contact/page.tsx:242",
+      "app/experience/page.tsx:251",
+      "app/layout.tsx:20",
+      "app/layout.tsx:38",
+      "app/page.tsx:229",
+      "app/page.tsx:265",
+      "app/page.tsx:328",
+      "app/page.tsx:333",
+      "app/page.tsx:385",
+      "app/page.tsx:396",
+      "app/page.tsx:401",
+      "app/page.tsx:406",
+      "app/projects/page.tsx:64",
+      "app/projects/page.tsx:75",
+      "app/projects/page.tsx:86",
+      "app/projects/page.tsx:133",
+      "app/projects/page.tsx:198",
+      "app/projects/page.tsx:259",
+      "app/research/page.tsx:276",
+      "app/research/page.tsx:341",
+      "app/research/page.tsx:447",
+      "app/research/page.tsx:519",
+      "app/skills/page.tsx:182",
+      "components/navbar.tsx:118",
+      "components/navbar.tsx:141",
+      "components/navbar.tsx:197"
+    ],
+    "#070d1a": [
+      "app/about/page.tsx:148",
+      "app/blog/page.tsx:57",
+      "app/blog/page.tsx:65",
+      "app/blog/page.tsx:86",
+      "app/blog/page.tsx:289",
+      "app/contact/page.tsx:114",
+      "app/contact/page.tsx:128",
+      "app/contact/page.tsx:151",
+      "app/experience/page.tsx:141",
+      "app/experience/page.tsx:303",
+      "app/page.tsx:341",
+      "app/page.tsx:345",
+      "app/projects/page.tsx:117",
+      "app/projects/page.tsx:124",
+      "app/research/page.tsx:203",
+      "app/research/page.tsx:486",
+      "app/research/page.tsx:502",
+      "app/skills/page.tsx:70",
+      "app/skills/page.tsx:151",
+      "components/navbar.tsx:130"
+    ],
+    "#0a1128": [
+      "app/blog/page.tsx:65",
+      "app/projects/page.tsx:124"
+    ],
+    "#39ff14": [
+      "app/skills/page.tsx:30"
+    ],
+    "#b249f8": [
+      "components/primitives.ts:7"
+    ],
+    "#FF1CF7": [
+      "components/primitives.ts:7"
+    ],
+    "#FFB457": [
+      "components/primitives.ts:8"
+    ],
+    "#FF705B": [
+      "components/primitives.ts:8"
+    ],
+    "#5EA2EF": [
+      "components/primitives.ts:9"
+    ],
+    "#0072F5": [
+      "components/primitives.ts:9"
+    ],
+    "#01cfea": [
+      "components/primitives.ts:10"
+    ],
+    "#00b7fa": [
+      "components/primitives.ts:10"
+    ],
+    "#17c964": [
+      "components/primitives.ts:11"
+    ],
+    "#6FEE8D": [
+      "components/primitives.ts:11"
+    ],
+    "#FF72E1": [
+      "components/primitives.ts:12"
+    ],
+    "#F54C7A": [
+      "components/primitives.ts:12"
+    ],
+    "#4B4B4B": [
+      "components/primitives.ts:13"
+    ],
+    "#FFFFFF": [
+      "components/primitives.ts:13"
+    ]
+  },
+  "rgba": {
+    "rgba(0,245,255,0.03)": [
+      "app/about/page.tsx:46",
+      "app/blog/page.tsx:217",
+      "app/contact/page.tsx:71",
+      "app/experience/page.tsx:257",
+      "app/page.tsx:269",
+      "app/projects/page.tsx:214",
+      "app/research/page.tsx:450",
+      "app/skills/page.tsx:185"
+    ],
+    "rgba(0,245,255,0.06)": [
+      "app/about/page.tsx:53",
+      "app/blog/page.tsx:221",
+      "app/contact/page.tsx:75",
+      "app/experience/page.tsx:142",
+      "app/experience/page.tsx:263",
+      "app/projects/page.tsx:218",
+      "app/skills/page.tsx:189"
+    ],
+    "rgba(255,0,110,0.05)": [
+      "app/about/page.tsx:54",
+      "app/blog/page.tsx:222",
+      "app/contact/page.tsx:76",
+      "app/experience/page.tsx:264",
+      "app/page.tsx:276",
+      "app/projects/page.tsx:219",
+      "app/skills/page.tsx:190"
+    ],
+    "rgba(0,245,255,0.5)": [
+      "app/about/page.tsx:68",
+      "app/blog/page.tsx:237",
+      "app/contact/page.tsx:91",
+      "app/experience/page.tsx:282",
+      "app/page.tsx:167",
+      "app/page.tsx:302",
+      "app/page.tsx:328",
+      "app/projects/page.tsx:234",
+      "app/research/page.tsx:473",
+      "app/skills/page.tsx:205"
+    ],
+    "rgba(0,245,255,0.15)": [
+      "app/about/page.tsx:82",
+      "app/about/page.tsx:128",
+      "app/blog/page.tsx:88",
+      "app/contact/page.tsx:169",
+      "app/contact/page.tsx:185",
+      "app/contact/page.tsx:203",
+      "app/contact/page.tsx:220",
+      "app/experience/page.tsx:194",
+      "app/page.tsx:186",
+      "app/page.tsx:341",
+      "app/page.tsx:345",
+      "app/research/page.tsx:502",
+      "components/navbar.tsx:68",
+      "components/navbar.tsx:130",
+      "components/navbar.tsx:151",
+      "components/navbar.tsx:186"
+    ],
+    "rgba(0,245,255,0.1)": [
+      "app/about/page.tsx:83",
+      "app/page.tsx:166",
+      "app/page.tsx:176",
+      "app/research/page.tsx:512"
+    ],
+    "rgba(0,245,255,0.2)": [
+      "app/about/page.tsx:85",
+      "app/page.tsx:167",
+      "app/page.tsx:387",
+      "app/page.tsx:391",
+      "components/navbar.tsx:130"
+    ],
+    "rgba(0,245,255,0.6)": [
+      "app/about/page.tsx:86",
+      "app/experience/page.tsx:65",
+      "app/research/page.tsx:161",
+      "app/research/page.tsx:164"
+    ],
+    "rgba(0,245,255,0.12)": [
+      "app/about/page.tsx:148",
+      "app/blog/page.tsx:57",
+      "app/blog/page.tsx:289",
+      "app/contact/page.tsx:114",
+      "app/contact/page.tsx:128",
+      "app/contact/page.tsx:151",
+      "app/experience/page.tsx:141",
+      "app/experience/page.tsx:303",
+      "app/projects/page.tsx:117",
+      "app/research/page.tsx:203",
+      "app/research/page.tsx:486",
+      "app/skills/page.tsx:70",
+      "app/skills/page.tsx:151"
+    ],
+    "rgba(0,245,255,0.08)": [
+      "app/blog/page.tsx:58",
+      "app/blog/page.tsx:65",
+      "app/contact/page.tsx:171",
+      "app/contact/page.tsx:187",
+      "app/contact/page.tsx:205",
+      "app/contact/page.tsx:222",
+      "app/layout.tsx:64",
+      "app/page.tsx:352",
+      "app/projects/page.tsx:68",
+      "app/projects/page.tsx:124",
+      "app/research/page.tsx:182",
+      "app/research/page.tsx:519",
+      "app/skills/page.tsx:71",
+      "components/navbar.tsx:69"
+    ],
+    "rgba(0,245,255,0.35)": [
+      "app/blog/page.tsx:58",
+      "app/contact/page.tsx:129",
+      "app/projects/page.tsx:68",
+      "app/research/page.tsx:182",
+      "app/research/page.tsx:420",
+      "app/skills/page.tsx:71"
+    ],
+    "rgba(0,245,255,0.015)": [
+      "app/blog/page.tsx:76",
+      "app/projects/page.tsx:127"
+    ],
+    "rgba(0,245,255,0.07)": [
+      "app/blog/page.tsx:132",
+      "app/page.tsx:275",
+      "app/projects/page.tsx:157",
+      "app/research/page.tsx:272",
+      "app/research/page.tsx:337"
+    ],
+    "rgba(0,245,255,0.3)": [
+      "app/blog/page.tsx:290",
+      "app/experience/page.tsx:142",
+      "app/experience/page.tsx:211",
+      "app/experience/page.tsx:232",
+      "app/experience/page.tsx:304",
+      "app/page.tsx:166",
+      "app/page.tsx:198",
+      "app/page.tsx:333",
+      "app/projects/page.tsx:259",
+      "app/research/page.tsx:487",
+      "app/skills/page.tsx:152"
+    ],
+    "rgba(0,245,255,0.4)": [
+      "app/blog/page.tsx:293",
+      "app/contact/page.tsx:237",
+      "app/page.tsx:207",
+      "app/page.tsx:341",
+      "app/page.tsx:361",
+      "app/projects/page.tsx:64",
+      "app/skills/page.tsx:158",
+      "components/navbar.tsx:118",
+      "components/navbar.tsx:197"
+    ],
+    "rgba(57,255,20,0.8)": [
+      "app/contact/page.tsx:115",
+      "components/navbar.tsx:109",
+      "components/navbar.tsx:188"
+    ],
+    "rgba(57,255,20,0.4)": [
+      "app/contact/page.tsx:232",
+      "app/projects/page.tsx:86",
+      "app/research/page.tsx:341",
+      "app/research/page.tsx:381"
+    ],
+    "rgba(57,255,20,0.6)": [
+      "app/experience/page.tsx:75",
+      "app/research/page.tsx:159",
+      "app/research/page.tsx:162"
+    ],
+    "rgba(255,214,10,0.6)": [
+      "app/experience/page.tsx:85",
+      "app/research/page.tsx:160",
+      "app/research/page.tsx:163"
+    ],
+    "rgba(57,255,20,0.3)": [
+      "app/experience/page.tsx:218"
+    ],
+    "rgba(255,214,10,0.3)": [
+      "app/experience/page.tsx:225"
+    ],
+    "rgba(0,245,255,0.025)": [
+      "app/layout.tsx:45"
+    ],
+    "rgba(0,245,255,0.05)": [
+      "app/layout.tsx:52",
+      "app/research/page.tsx:455"
+    ],
+    "rgba(255,0,110,0.04)": [
+      "app/layout.tsx:53"
+    ],
+    "rgba(0,245,255,${p.opacity})": [
+      "app/page.tsx:76"
+    ],
+    "rgba(0,245,255,${0.06 * (1 - dist / 120)": [
+      "app/page.tsx:88"
+    ],
+    "rgba(255,0,110,0.7)": [
+      "app/page.tsx:136"
+    ],
+    "rgba(0,245,255,0.7)": [
+      "app/page.tsx:140"
+    ],
+    "rgba(0,245,255,0.8)": [
+      "app/page.tsx:178",
+      "app/page.tsx:287",
+      "app/page.tsx:314",
+      "app/skills/page.tsx:32",
+      "components/navbar.tsx:96"
+    ],
+    "rgba(255,0,110,0.08)": [
+      "app/page.tsx:180"
+    ],
+    "rgba(255,0,110,0.8)": [
+      "app/page.tsx:182"
+    ],
+    "rgba(255,0,110,0.4)": [
+      "app/projects/page.tsx:75"
+    ],
+    "rgba(255,0,110,0.06)": [
+      "app/projects/page.tsx:79"
+    ],
+    "rgba(57,255,20,0.06)": [
+      "app/projects/page.tsx:90"
+    ],
+    "rgba(255,50,50,0.4)": [
+      "app/research/page.tsx:152",
+      "app/research/page.tsx:276"
+    ],
+    "rgba(255,50,50,0.08)": [
+      "app/research/page.tsx:183"
+    ],
+    "rgba(57,255,20,0.08)": [
+      "app/research/page.tsx:184"
+    ],
+    "rgba(255,214,10,0.08)": [
+      "app/research/page.tsx:185"
+    ],
+    "rgba(255,50,50,0.35)": [
+      "app/research/page.tsx:417"
+    ],
+    "rgba(57,255,20,0.35)": [
+      "app/research/page.tsx:418"
+    ],
+    "rgba(255,214,10,0.35)": [
+      "app/research/page.tsx:419"
+    ],
+    "rgba(255,50,50,0.04)": [
+      "app/research/page.tsx:454"
+    ],
+    "rgba(255,214,10,0.8)": [
+      "app/skills/page.tsx:31"
+    ],
+    "rgba(4,8,16,0.97)": [
+      "components/navbar.tsx:68"
+    ],
+    "rgba(4,8,16,0.8)": [
+      "components/navbar.tsx:69"
+    ],
+    "rgba(4,8,16,0.98)": [
+      "components/navbar.tsx:151"
+    ]
+  },
+  "oklch": {
+    "oklch(1 0 0)": [
+      "styles/globals.css:66",
+      "styles/globals.css:68",
+      "styles/globals.css:70"
+    ],
+    "oklch(0.145 0 0)": [
+      "styles/globals.css:67",
+      "styles/globals.css:69",
+      "styles/globals.css:71",
+      "styles/globals.css:90",
+      "styles/globals.css:100"
+    ],
+    "oklch(0.205 0 0)": [
+      "styles/globals.css:72",
+      "styles/globals.css:75",
+      "styles/globals.css:79",
+      "styles/globals.css:91",
+      "styles/globals.css:94",
+      "styles/globals.css:102",
+      "styles/globals.css:104",
+      "styles/globals.css:107",
+      "styles/globals.css:123"
+    ],
+    "oklch(0.985 0 0)": [
+      "styles/globals.css:73",
+      "styles/globals.css:89",
+      "styles/globals.css:92",
+      "styles/globals.css:101",
+      "styles/globals.css:103",
+      "styles/globals.css:105",
+      "styles/globals.css:109",
+      "styles/globals.css:113",
+      "styles/globals.css:124",
+      "styles/globals.css:126",
+      "styles/globals.css:128"
+    ],
+    "oklch(0.97 0 0)": [
+      "styles/globals.css:74",
+      "styles/globals.css:76",
+      "styles/globals.css:78",
+      "styles/globals.css:93"
+    ],
+    "oklch(0.556 0 0)": [
+      "styles/globals.css:77",
+      "styles/globals.css:117",
+      "styles/globals.css:130"
+    ],
+    "oklch(0.577 0.245 27.325)": [
+      "styles/globals.css:80"
+    ],
+    "oklch(0.922 0 0)": [
+      "styles/globals.css:81",
+      "styles/globals.css:82",
+      "styles/globals.css:95",
+      "styles/globals.css:106"
+    ],
+    "oklch(0.708 0 0)": [
+      "styles/globals.css:83",
+      "styles/globals.css:96",
+      "styles/globals.css:111"
+    ],
+    "oklch(0.646 0.222 41.116)": [
+      "styles/globals.css:84"
+    ],
+    "oklch(0.6 0.118 184.704)": [
+      "styles/globals.css:85"
+    ],
+    "oklch(0.398 0.07 227.392)": [
+      "styles/globals.css:86"
+    ],
+    "oklch(0.828 0.189 84.429)": [
+      "styles/globals.css:87"
+    ],
+    "oklch(0.769 0.188 70.08)": [
+      "styles/globals.css:88",
+      "styles/globals.css:120"
+    ],
+    "oklch(0.269 0 0)": [
+      "styles/globals.css:108",
+      "styles/globals.css:110",
+      "styles/globals.css:112",
+      "styles/globals.css:127"
+    ],
+    "oklch(0.704 0.191 22.216)": [
+      "styles/globals.css:114"
+    ],
+    "oklch(1 0 0 / 10%)": [
+      "styles/globals.css:115",
+      "styles/globals.css:129"
+    ],
+    "oklch(1 0 0 / 15%)": [
+      "styles/globals.css:116"
+    ],
+    "oklch(0.488 0.243 264.376)": [
+      "styles/globals.css:118",
+      "styles/globals.css:125"
+    ],
+    "oklch(0.696 0.17 162.48)": [
+      "styles/globals.css:119"
+    ],
+    "oklch(0.627 0.265 303.9)": [
+      "styles/globals.css:121"
+    ],
+    "oklch(0.645 0.246 16.439)": [
+      "styles/globals.css:122"
+    ]
+  },
+  "fontClasses": {
+    "font-['Oxanium',monospace]": [
+      "app/about/page.tsx:61",
+      "app/about/page.tsx:67",
+      "app/about/page.tsx:86",
+      "app/about/page.tsx:119",
+      "app/about/page.tsx:128",
+      "app/about/page.tsx:139",
+      "app/about/page.tsx:152",
+      "app/blog/page.tsx:88",
+      "app/blog/page.tsx:96",
+      "app/blog/page.tsx:109",
+      "app/blog/page.tsx:123",
+      "app/blog/page.tsx:137",
+      "app/blog/page.tsx:231",
+      "app/blog/page.tsx:235",
+      "app/blog/page.tsx:250",
+      "app/blog/page.tsx:259",
+      "app/blog/page.tsx:276",
+      "app/blog/page.tsx:292",
+      "app/blog/page.tsx:296",
+      "app/contact/page.tsx:85",
+      "app/contact/page.tsx:89",
+      "app/contact/page.tsx:104",
+      "app/contact/page.tsx:117",
+      "app/contact/page.tsx:118",
+      "app/contact/page.tsx:136",
+      "app/contact/page.tsx:137",
+      "app/contact/page.tsx:160",
+      "app/contact/page.tsx:176",
+      "app/contact/page.tsx:194",
+      "app/contact/page.tsx:211",
+      "app/contact/page.tsx:230",
+      "app/experience/page.tsx:152",
+      "app/experience/page.tsx:159",
+      "app/experience/page.tsx:162",
+      "app/experience/page.tsx:168",
+      "app/experience/page.tsx:194",
+      "app/experience/page.tsx:275",
+      "app/experience/page.tsx:280",
+      "app/experience/page.tsx:307",
+      "app/experience/page.tsx:310",
+      "app/layout.tsx:67",
+      "app/layout.tsx:70",
+      "app/layout.tsx:84",
+      "app/page.tsx:206",
+      "app/page.tsx:229",
+      "app/page.tsx:288",
+      "app/page.tsx:295",
+      "app/page.tsx:298",
+      "app/page.tsx:310",
+      "app/page.tsx:311",
+      "app/page.tsx:328",
+      "app/page.tsx:333",
+      "app/page.tsx:360",
+      "app/page.tsx:364",
+      "app/page.tsx:379",
+      "app/page.tsx:388",
+      "app/projects/page.tsx:133",
+      "app/projects/page.tsx:140",
+      "app/projects/page.tsx:143",
+      "app/projects/page.tsx:149",
+      "app/projects/page.tsx:163",
+      "app/projects/page.tsx:173",
+      "app/projects/page.tsx:228",
+      "app/projects/page.tsx:232",
+      "app/projects/page.tsx:252",
+      "app/projects/page.tsx:259",
+      "app/research/page.tsx:230",
+      "app/research/page.tsx:231",
+      "app/research/page.tsx:235",
+      "app/research/page.tsx:236",
+      "app/research/page.tsx:244",
+      "app/research/page.tsx:245",
+      "app/research/page.tsx:249",
+      "app/research/page.tsx:265",
+      "app/research/page.tsx:274",
+      "app/research/page.tsx:299",
+      "app/research/page.tsx:300",
+      "app/research/page.tsx:304",
+      "app/research/page.tsx:311",
+      "app/research/page.tsx:321",
+      "app/research/page.tsx:328",
+      "app/research/page.tsx:339",
+      "app/research/page.tsx:366",
+      "app/research/page.tsx:371",
+      "app/research/page.tsx:372",
+      "app/research/page.tsx:380",
+      "app/research/page.tsx:381",
+      "app/research/page.tsx:387",
+      "app/research/page.tsx:393",
+      "app/research/page.tsx:466",
+      "app/research/page.tsx:471",
+      "app/research/page.tsx:490",
+      "app/research/page.tsx:493",
+      "app/research/page.tsx:510",
+      "app/skills/page.tsx:86",
+      "app/skills/page.tsx:89",
+      "app/skills/page.tsx:96",
+      "app/skills/page.tsx:103",
+      "app/skills/page.tsx:104",
+      "app/skills/page.tsx:157",
+      "app/skills/page.tsx:161",
+      "app/skills/page.tsx:199",
+      "app/skills/page.tsx:203",
+      "components/navbar.tsx:11",
+      "components/navbar.tsx:89",
+      "components/navbar.tsx:110",
+      "components/navbar.tsx:117",
+      "components/navbar.tsx:164",
+      "components/navbar.tsx:174",
+      "components/navbar.tsx:189",
+      "components/navbar.tsx:196"
+    ],
+    "font-['Rajdhani',sans-serif]": [
+      "app/contact/page.tsx:170",
+      "app/contact/page.tsx:186",
+      "app/contact/page.tsx:204",
+      "app/contact/page.tsx:221",
+      "app/layout.tsx:38"
+    ]
+  },
+  "textScales": {
+    "text-4xl": [
+      "app/about/page.tsx:67",
+      "app/about/page.tsx:86",
+      "app/blog/page.tsx:235",
+      "app/blog/page.tsx:292",
+      "app/contact/page.tsx:89",
+      "app/experience/page.tsx:280",
+      "app/experience/page.tsx:307",
+      "app/projects/page.tsx:232",
+      "app/research/page.tsx:471",
+      "app/research/page.tsx:490",
+      "app/skills/page.tsx:157",
+      "app/skills/page.tsx:203",
+      "components/primitives.ts:16",
+      "components/primitives.ts:18"
+    ],
+    "text-6xl": [
+      "app/about/page.tsx:67",
+      "app/blog/page.tsx:235",
+      "app/contact/page.tsx:89",
+      "app/experience/page.tsx:280",
+      "app/projects/page.tsx:232",
+      "app/research/page.tsx:471",
+      "app/skills/page.tsx:203",
+      "components/primitives.ts:18"
+    ],
+    "text-lg": [
+      "app/about/page.tsx:71",
+      "app/blog/page.tsx:241",
+      "app/contact/page.tsx:95",
+      "app/experience/page.tsx:286",
+      "app/page.tsx:311",
+      "app/projects/page.tsx:238",
+      "app/research/page.tsx:477",
+      "app/skills/page.tsx:209",
+      "components/navbar.tsx:11",
+      "components/primitives.ts:44"
+    ],
+    "text-sm": [
+      "app/about/page.tsx:95",
+      "app/about/page.tsx:152",
+      "app/blog/page.tsx:114",
+      "app/blog/page.tsx:259",
+      "app/blog/page.tsx:276",
+      "app/contact/page.tsx:107",
+      "app/contact/page.tsx:117",
+      "app/contact/page.tsx:136",
+      "app/contact/page.tsx:170",
+      "app/contact/page.tsx:186",
+      "app/contact/page.tsx:204",
+      "app/contact/page.tsx:221",
+      "app/experience/page.tsx:162",
+      "app/experience/page.tsx:182",
+      "app/layout.tsx:67",
+      "app/page.tsx:295",
+      "app/page.tsx:310",
+      "app/projects/page.tsx:146",
+      "app/research/page.tsx:230",
+      "app/research/page.tsx:249",
+      "app/research/page.tsx:299",
+      "app/research/page.tsx:311",
+      "app/research/page.tsx:366",
+      "app/research/page.tsx:387",
+      "app/skills/page.tsx:86"
+    ],
+    "text-2xl": [
+      "app/about/page.tsx:139",
+      "app/research/page.tsx:245",
+      "app/research/page.tsx:381"
+    ],
+    "text-xs": [
+      "app/about/page.tsx:155",
+      "app/experience/page.tsx:168",
+      "app/experience/page.tsx:310",
+      "app/research/page.tsx:252",
+      "app/research/page.tsx:257",
+      "app/research/page.tsx:316",
+      "app/research/page.tsx:390",
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "text-3xl": [
+      "app/blog/page.tsx:292",
+      "app/experience/page.tsx:307",
+      "app/research/page.tsx:490",
+      "app/skills/page.tsx:157",
+      "components/primitives.ts:16",
+      "components/ui/typewriter-effect.tsx:75"
+    ],
+    "text-xl": [
+      "app/contact/page.tsx:104",
+      "app/experience/page.tsx:159",
+      "app/page.tsx:360",
+      "app/projects/page.tsx:143",
+      "components/navbar.tsx:11",
+      "components/primitives.ts:44",
+      "components/ui/typewriter-effect.tsx:75",
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "text-5xl": [
+      "app/page.tsx:206",
+      "components/primitives.ts:17",
+      "components/ui/typewriter-effect.tsx:75",
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "text-base": [
+      "app/page.tsx:319",
+      "components/ui/typewriter-effect.tsx:75",
+      "components/ui/typewriter-effect.tsx:159"
+    ]
+  },
+  "durations": {
+    "duration-1000": [
+      "app/about/page.tsx:59",
+      "app/about/page.tsx:80",
+      "app/about/page.tsx:94",
+      "app/about/page.tsx:137",
+      "app/blog/page.tsx:229",
+      "app/contact/page.tsx:83",
+      "app/experience/page.tsx:271",
+      "app/page.tsx:151",
+      "app/page.tsx:283",
+      "app/projects/page.tsx:226",
+      "app/research/page.tsx:463",
+      "app/skills/page.tsx:108",
+      "app/skills/page.tsx:197"
+    ],
+    "duration-700": [
+      "app/blog/page.tsx:54",
+      "app/experience/page.tsx:120",
+      "app/projects/page.tsx:114",
+      "app/research/page.tsx:200",
+      "app/skills/page.tsx:67"
+    ],
+    "duration-300": [
+      "app/blog/page.tsx:59",
+      "app/blog/page.tsx:86",
+      "app/blog/page.tsx:109",
+      "app/blog/page.tsx:290",
+      "app/contact/page.tsx:230",
+      "app/experience/page.tsx:143",
+      "app/experience/page.tsx:159",
+      "app/experience/page.tsx:304",
+      "app/page.tsx:328",
+      "app/page.tsx:333",
+      "app/projects/page.tsx:118",
+      "app/projects/page.tsx:259",
+      "app/research/page.tsx:204",
+      "app/research/page.tsx:487",
+      "app/research/page.tsx:529",
+      "app/skills/page.tsx:72",
+      "app/skills/page.tsx:80",
+      "components/navbar.tsx:66",
+      "components/navbar.tsx:96",
+      "components/navbar.tsx:148"
+    ],
+    "duration-500": [
+      "app/blog/page.tsx:70",
+      "app/blog/page.tsx:78",
+      "app/projects/page.tsx:129",
+      "app/skills/page.tsx:152"
+    ],
+    "duration-200": [
+      "app/blog/page.tsx:137",
+      "app/contact/page.tsx:130",
+      "app/contact/page.tsx:171",
+      "app/contact/page.tsx:187",
+      "app/contact/page.tsx:205",
+      "app/contact/page.tsx:222",
+      "app/layout.tsx:84",
+      "app/page.tsx:341",
+      "app/page.tsx:345",
+      "app/projects/page.tsx:163",
+      "app/projects/page.tsx:173",
+      "app/research/page.tsx:276",
+      "app/research/page.tsx:341",
+      "app/research/page.tsx:510",
+      "components/navbar.tsx:12",
+      "components/navbar.tsx:13",
+      "components/navbar.tsx:15",
+      "components/navbar.tsx:16",
+      "components/navbar.tsx:89",
+      "components/navbar.tsx:92",
+      "components/navbar.tsx:119",
+      "components/navbar.tsx:130",
+      "components/navbar.tsx:164",
+      "components/navbar.tsx:198"
+    ]
+  },
+  "timing": {
+    "animation: ": [
+      "app/blog/page.tsx:83",
+      "app/page.tsx:177",
+      "app/page.tsx:181",
+      "app/page.tsx:187",
+      "app/page.tsx:192",
+      "app/page.tsx:194"
+    ],
+    "animation: glitch-1 6s ease-in-out infinite": [
+      "app/page.tsx:137"
+    ],
+    "animation: glitch-2 6s ease-in-out infinite 0.5s": [
+      "app/page.tsx:141"
+    ],
+    "animation: `float-tag 3s ease-in-out infinite ${tag.delay": [
+      "app/page.tsx:233"
+    ],
+    "animation: scan-line 3s ease-in-out infinite": [
+      "app/projects/page.tsx:208"
+    ],
+    "animation: menu-slide-down 0.25s ease forwards": [
+      "components/navbar.tsx:62"
+    ],
+    "animation: float 3s ease-in-out infinite": [
+      "styles/globals.css:159"
+    ]
+  },
+  "responsive": {
+    "md:text-6xl": [
+      "app/about/page.tsx:67",
+      "app/blog/page.tsx:235",
+      "app/contact/page.tsx:89",
+      "app/experience/page.tsx:280",
+      "app/projects/page.tsx:232",
+      "app/research/page.tsx:471",
+      "app/skills/page.tsx:203"
+    ],
+    "lg:grid-cols-2": [
+      "app/about/page.tsx:78",
+      "app/contact/page.tsx:100"
+    ],
+    "sm:grid-cols-2": [
+      "app/about/page.tsx:144"
+    ],
+    "lg:grid-cols-4": [
+      "app/about/page.tsx:144"
+    ],
+    "lg:grid-cols-3": [
+      "app/blog/page.tsx:265",
+      "app/projects/page.tsx:244",
+      "app/research/page.tsx:531",
+      "app/research/page.tsx:536",
+      "app/research/page.tsx:541",
+      "app/skills/page.tsx:215"
+    ],
+    "md:grid-cols-2": [
+      "app/blog/page.tsx:265",
+      "app/page.tsx:280",
+      "app/projects/page.tsx:244",
+      "app/research/page.tsx:531",
+      "app/research/page.tsx:536",
+      "app/research/page.tsx:541",
+      "app/skills/page.tsx:215"
+    ],
+    "md:grid-cols-3": [
+      "app/blog/page.tsx:282"
+    ],
+    "md:text-4xl": [
+      "app/blog/page.tsx:292",
+      "app/experience/page.tsx:307",
+      "app/research/page.tsx:490",
+      "app/skills/page.tsx:157"
+    ],
+    "md:grid-cols-4": [
+      "app/experience/page.tsx:299",
+      "app/research/page.tsx:483",
+      "app/skills/page.tsx:222"
+    ],
+    "sm:flex-row": [
+      "app/layout.tsx:66"
+    ],
+    "md:text-xl": [
+      "components/navbar.tsx:11",
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "sm:px-6": [
+      "components/navbar.tsx:75"
+    ],
+    "sm:flex": [
+      "components/navbar.tsx:81",
+      "components/navbar.tsx:106"
+    ],
+    "sm:hidden": [
+      "components/navbar.tsx:130",
+      "components/navbar.tsx:141",
+      "components/navbar.tsx:148"
+    ],
+    "lg:text-4xl": [
+      "components/primitives.ts:16"
+    ],
+    "lg:text-5xl": [
+      "components/primitives.ts:17",
+      "components/ui/typewriter-effect.tsx:75"
+    ],
+    "lg:text-6xl": [
+      "components/primitives.ts:18"
+    ],
+    "md:w-1/2": [
+      "components/primitives.ts:44"
+    ],
+    "lg:text-xl": [
+      "components/primitives.ts:44"
+    ],
+    "lg:w-[84%]": [
+      "components/ui/spotlight.tsx:13"
+    ],
+    "md:text-3xl": [
+      "components/ui/typewriter-effect.tsx:75"
+    ],
+    "sm:text-xl": [
+      "components/ui/typewriter-effect.tsx:75"
+    ],
+    "md:h-6": [
+      "components/ui/typewriter-effect.tsx:93"
+    ],
+    "lg:h-10": [
+      "components/ui/typewriter-effect.tsx:93"
+    ],
+    "sm:text-base": [
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "xl:text-5xl": [
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "lg:text:3xl": [
+      "components/ui/typewriter-effect.tsx:159"
+    ],
+    "xl:h-12": [
+      "components/ui/typewriter-effect.tsx:181"
+    ],
+    "sm:h-6": [
+      "components/ui/typewriter-effect.tsx:181"
+    ]
+  }
+}

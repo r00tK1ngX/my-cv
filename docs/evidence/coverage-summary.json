@@ -1,0 +1,17 @@
+{
+  "expectedRouteViewportCases": 40,
+  "verifiedRouteViewportCases": 40,
+  "missing": [],
+  "screenshots": 109,
+  "totalScreenshotBytes": 21311546,
+  "screenshotsByFolder": {
+    "desktop": 28,
+    "laptop": 20,
+    "mobile": 41,
+    "tablet": 20
+  },
+  "vision": "unavailable HTTP403; human pixel review pending",
+  "hover": "media false; actual render unverified",
+  "build": "not attempted; readonly phase",
+  "capturedAt": "2026-11-17T09:44:48.832699+00:00"
+}

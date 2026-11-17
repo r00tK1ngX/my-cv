@@ -1,0 +1,43 @@
+{
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/145.0.7632.6",
+    "revision": "@47e20adcc15fc15f01825aa17e570c8f5492ac0f",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.0.0 Safari/537.36",
+    "jsVersion": "14.5.201.2"
+  },
+  "visualInterpretation": "vision_analyze failed twice: HTTP 403 client_not_allowed. Screenshots captured but not pixel-inspected by image model. Findings grounded in DOM/computed CSS/source.",
+  "hover": {
+    "hoverMedia": false,
+    "pointerFine": false,
+    "tried": [
+      "Input.dispatchMouseEvent",
+      "CSS.forcePseudoState",
+      "Emulation.setTouchEmulationEnabled(false)",
+      "Emulation.setEmulatedMedia hover/pointer"
+    ],
+    "result": "Hover-gated Tailwind styles did not activate. Hover definitions source-verified, actual hover rendering unverified."
+  },
+  "aboutMorph": {
+    "cssKeyframes": [
+      "float",
+      "gradient-shift",
+      "spin",
+      "pulse",
+      "shimmer",
+      "spinner-spin",
+      "drip-expand",
+      "appearance-in",
+      "indeterminate-bar",
+      "sway",
+      "blink",
+      "fade-out",
+      "menu-slide-down"
+    ],
+    "morphDefined": false,
+    "morphAnimationInstances": 0
+  },
+  "emailDelivery": "Not attempted; validation and blocked-transport pending/error/reset verified; provider success is source-only.",
+  "build": "No build/install/lint --fix run against READ-ONLY reference; static export not tested in this phase.",
+  "sourceDeployIdentity": "Reference has no .git. Deployed Next.js version and exact source commit not inferable; markup content matches inspected routes."
+}

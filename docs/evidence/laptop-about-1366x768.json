@@ -1,0 +1,724 @@
+{
+  "url": "https://rbn0x00.vercel.app/about",
+  "title": "Riadh Portfolio",
+  "viewport": [
+    1366,
+    768
+  ],
+  "document": [
+    1366,
+    1366,
+    1423
+  ],
+  "text": "[\nrbn0x00\n@\nportfolio\n]\n$_\nABOUT\nEXPERIENCE\nSKILLS\nPROJECTS\nBLOG\nRESEARCH\nCONTACT\nAVAILABLE\nHIRE ME\n◈ ABOUT ME\nWho I Am\n\nCybersecurity enthusiast and junior penetration tester focused on offensive security, vulnerability research, and building tools that expose attacker tradecraft.\n\nRBN\n\nI’m Riadh Benalmine, a cybersecurity enthusiast and junior penetration tester with practical experience in offensive security, Django development, and system administration. I thrive on solving complex technical challenges and continuously expanding my expertise in security and full-stack development.\n\nI actively sharpen my skills on platforms such as Hack The Box and BTLO. My hands‑on experience spans building custom security tools, reverse engineering crackme binaries, and contributing to a published CVE, demonstrating my commitment to offensive security research and practical problem‑solving.\n\nBeyond penetration testing, I develop full‑stack applications with Django and Next.js, prioritizing secure design principles. I’m deeply interested in red team operations, Active Directory, network security, and SOC. Combining offensive security expertise with practical system administration and development skills.\n\nI’m currently strengthening my networking and defensive security fundamentals while preparing for industry certifications and real‑world security roles.\n\nGITHUB\nBLOG\nWhat I Do\nPenetration Tester\n\nOffensive security assessments and adversary simulation\n\nDeveloper\n\nDeveloping custom software for clients using Python and C++\n\nSecurity Researcher\n\nCVE research, reverse engineering, and malware analysis\n\nSOC & Log Analysis\n\nDetection engineering and anomaly hunting\n\nSystem Administrator\n\nWindows/Linux administration, Active Directory management\n\n[RBN0x00]\n© 2026 RIADH BENLAMINE · SECURITY RESEARCHER\nGITHUB\nBLOG\nCONTACT",
+  "links": [
+    {
+      "i": 0,
+      "text": "[\nrbn0x00\n@\nportfolio\n]\n$_",
+      "label": null,
+      "href": "/",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 1,
+      "text": "ABOUT",
+      "label": null,
+      "href": "/about",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 2,
+      "text": "EXPERIENCE",
+      "label": null,
+      "href": "/experience",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 3,
+      "text": "SKILLS",
+      "label": null,
+      "href": "/skills",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 4,
+      "text": "PROJECTS",
+      "label": null,
+      "href": "/projects",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 5,
+      "text": "BLOG",
+      "label": null,
+      "href": "/blog",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 6,
+      "text": "RESEARCH",
+      "label": null,
+      "href": "/research",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 7,
+      "text": "CONTACT",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 8,
+      "text": "HIRE ME",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    },
+    {
+      "i": 9,
+      "text": "AboutACTIVE",
+      "label": null,
+      "href": "/about",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 10,
+      "text": "Experience",
+      "label": null,
+      "href": "/experience",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 11,
+      "text": "Skills",
+      "label": null,
+      "href": "/skills",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 12,
+      "text": "Projects",
+      "label": null,
+      "href": "/projects",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 13,
+      "text": "Blog",
+      "label": null,
+      "href": "/blog",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 14,
+      "text": "Research",
+      "label": null,
+      "href": "/research",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 15,
+      "text": "Contact",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 16,
+      "text": "Get In Touch",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": false
+    },
+    {
+      "i": 17,
+      "text": "GITHUB",
+      "label": null,
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 18,
+      "text": "BLOG",
+      "label": null,
+      "href": "https://medium.com/@rbn0x00",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 19,
+      "text": "GITHUB",
+      "label": null,
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 20,
+      "text": "BLOG",
+      "label": null,
+      "href": "https://medium.com/@rbn0x00",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "visible": true
+    },
+    {
+      "i": 21,
+      "text": "CONTACT",
+      "label": null,
+      "href": "/contact",
+      "target": "",
+      "rel": "",
+      "visible": true
+    }
+  ],
+  "controls": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "text": "Open menu",
+      "type": "submit",
+      "name": "",
+      "placeholder": null,
+      "disabled": false,
+      "visible": false,
+      "html": "<button class=\"sm:hidden flex items-center justify-center w-9 h-9 border border-[rgba(0,245,255,0.2)] bg-[#070d1a]/80 text-cyan-400 transition-all duration-200 hover:border-cyan-400/50 hover:shadow-[0_0_12px_rgba(0,245,255,0.15)]\" aria-label=\"Open menu\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-menu w-4 h-4\" aria-hidden=\"true\"><path d=\"M4 5h16\"></path><path d=\"M4 12h16\"></path><path d=\"M4 19h16\"></path></svg></button>"
+    }
+  ],
+  "layout": [
+    {
+      "tag": "NAV",
+      "id": "",
+      "cls": "fixed top-0 left-0 right-0 z-[1000] transition-all duration-300\n          bg-[rgba(4,8,16,0.8)] backdrop-blur-md border-b border-[rgba(0,245,255,0.08)] py-0",
+      "text": "[\nrbn0x00\n@\nportfolio\n]\n$_\nABOUT\nEXPERIENCE\nSKILLS\nPROJECTS\nBLOG\nRESEARCH\nCONTACT\nAVAILABLE\nHIRE ME",
+      "top": 0,
+      "left": 0,
+      "width": 1366,
+      "height": 65,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(4, 8, 16, 0.8)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "fixed",
+      "overflow": "visible"
+    },
+    {
+      "tag": "MAIN",
+      "id": "",
+      "cls": "flex-grow pt-16",
+      "text": "◈ ABOUT ME\nWho I Am\n\nCybersecurity enthusiast and junior penetration tester focused on offensive sec",
+      "top": 0,
+      "left": 0,
+      "width": 1366,
+      "height": 1353.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "64px 0px 0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "SECTION",
+      "id": "",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden",
+      "text": "◈ ABOUT ME\nWho I Am\n\nCybersecurity enthusiast and junior penetration tester focused on offensive sec",
+      "top": 64,
+      "left": 0,
+      "width": 1366,
+      "height": 1289.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgb(4, 8, 16)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "hidden"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "container mx-auto px-6 py-8 relative z-10 max-w-5xl",
+      "text": "◈ ABOUT ME\nWho I Am\n\nCybersecurity enthusiast and junior penetration tester focused on offensive sec",
+      "top": 64,
+      "left": 171,
+      "width": 1024,
+      "height": 1289.40625,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "32px 24px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H1",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-4xl md:text-6xl font-extrabold text-white mb-4",
+      "text": "Who I Am",
+      "top": 153.609375,
+      "left": 195,
+      "width": 976,
+      "height": 60,
+      "font": "Oxanium, monospace",
+      "fontSize": "60px",
+      "weight": "800",
+      "line": "60px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-start",
+      "text": "RBN\n\nI’m Riadh Benalmine, a cybersecurity enthusiast and junior penetration tester with practical ex",
+      "top": 368.109375,
+      "left": 195,
+      "width": 976,
+      "height": 437.296875,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "48px",
+      "columns": "464px 464px",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "cls": "font-['Oxanium',monospace] text-2xl font-bold text-white",
+      "text": "What I Do",
+      "top": 885.40625,
+      "left": 195,
+      "width": 976,
+      "height": 32,
+      "font": "Oxanium, monospace",
+      "fontSize": "24px",
+      "weight": "700",
+      "line": "32px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+      "text": "Penetration Tester\n\nOffensive security assessments and adversary simulation\n\nDeveloper\n\nDeveloping c",
+      "top": 957.40625,
+      "left": 195,
+      "width": 976,
+      "height": 364,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "16px",
+      "columns": "232px 232px 232px 232px",
+      "border": "0px solid lab(90.952 0 -0.0000119209)",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "static",
+      "overflow": "visible"
+    },
+    {
+      "tag": "FOOTER",
+      "id": "",
+      "cls": "relative z-10 border-t border-[rgba(0,245,255,0.08)] mt-auto",
+      "text": "[RBN0x00]\n© 2026 RIADH BENLAMINE · SECURITY RESEARCHER\nGITHUB\nBLOG\nCONTACT",
+      "top": 1353.40625,
+      "left": 0,
+      "width": 1366,
+      "height": 70,
+      "font": "Rajdhani, sans-serif",
+      "fontSize": "16px",
+      "weight": "400",
+      "line": "24px",
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "gap": "normal",
+      "columns": "none",
+      "border": "",
+      "radius": "0px",
+      "shadow": "none",
+      "position": "relative",
+      "overflow": "visible"
+    }
+  ],
+  "images": [],
+  "animations": [
+    {
+      "name": "pulse",
+      "playState": "running",
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 2000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      }
+    },
+    {
+      "name": "pulse",
+      "playState": "running",
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 2000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "JetBrains Mono",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "200"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "200"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "600"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "700"
+    },
+    {
+      "family": "Oxanium",
+      "status": "unloaded",
+      "weight": "800"
+    },
+    {
+      "family": "Oxanium",
+      "status": "loaded",
+      "weight": "800"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "loaded",
+      "weight": "300"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Rajdhani",
+      "status": "unloaded",
+      "weight": "700"
+    }
+  ],
+  "errors": [],
+  "capturedAt": "2026-11-17T09:28:35.976944+00:00",
+  "screenshots": [
+    "screenshots/laptop/about-1366x768-top.png",
+    "screenshots/laptop/about-1366x768-full.png"
+  ],
+  "emulation": {
+    "mobile": false,
+    "deviceScaleFactor": 1,
+    "note": "CSS viewport emulation; not physical-device certification"
+  }
+}

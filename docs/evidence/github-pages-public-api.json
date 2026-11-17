@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/tykerai/my-cv/pages",
+  "status": 404,
+  "body": {
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site",
+    "status": "404"
+  },
+  "captured_at": "2026-11-17T09:15:27.399140+00:00"
+}

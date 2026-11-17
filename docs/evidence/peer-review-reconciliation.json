@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-11-17T10:15:19.399227+00:00",
+  "delegation": "deleg_de9b6ae8",
+  "independentReviews": 3,
+  "artifacts": [
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/source-architecture-notes.md",
+      "bytes": 71192,
+      "sha256": "3cd5c28cd8796faf594c3eecbd5b6b83c2117ca599b4189e59061442006d3a7e",
+      "role": "independent source notes; not sole proof of external state"
+    },
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/existing-cv-notes.md",
+      "bytes": 39906,
+      "sha256": "426d63d7c2d3ddd709466c071d35498619adff070601df82113055fa96dd349e",
+      "role": "independent source notes; not sole proof of external state"
+    },
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/source-design-interactions.md",
+      "bytes": 198593,
+      "sha256": "2fb8c446ec4c5134ca252515ceb2c2c0243cb796453e8cd0df0779c0fde0eac6",
+      "role": "independent source notes; not sole proof of external state"
+    },
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/source-architecture-evidence.json",
+      "bytes": 50626,
+      "sha256": "c92f96ea9aee214b708ac0868fff5cb6966026f8ce758697e2075bde887a60cb",
+      "role": "independent source notes; not sole proof of external state"
+    },
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/existing-source-inventory.json",
+      "bytes": 24901,
+      "sha256": "f01b1c4f156ec3c8ef4152eb9cf473585321414e7b5c144f8cfb5ad6c9f26e17",
+      "role": "independent source notes; not sole proof of external state"
+    },
+    {
+      "path": "/home/r00tK1ngX/.hermes/cache/scratch/phase1-reference-audit/existing-runtime-evidence.json",
+      "bytes": 2267,
+      "sha256": "179d9188a3659a4727fe4e23185f8f480a53bf9ad0983c674795b5ce581de5fe",
+      "role": "independent source notes; not sole proof of external state"
+    }
+  ],
+  "reconciledClaims": [
+    {
+      "finding": "Reference stack/routes/active-dormant render tree",
+      "checkedAgainst": [
+        "source-file-index.json",
+        "dependencies.json",
+        "reference-component-map.md"
+      ],
+      "outcome": "matches; local versions not attributed to deployment"
+    },
+    {
+      "finding": "Reference file integrity",
+      "checkedAgainst": [
+        "repository-baseline.json",
+        "final-verification.json"
+      ],
+      "outcome": "parent compares75456 metadata records and42 source/asset/log hashes; peer excludes logs and compares40; scopes explain count difference"
+    },
+    {
+      "finding": "Legacy script invalid and placeholders throw",
+      "checkedAgainst": [
+        "existing-javascript-syntax-checks.json",
+        "existing-runtime-parent-verification.json"
+      ],
+      "outcome": "parent independently repeated syntax check and actual local Download CV click"
+    },
+    {
+      "finding": "Existing form serializes empty",
+      "checkedAgainst": [
+        "existing-runtime-parent-verification.json"
+      ],
+      "outcome": "parent filled all4 fields and FormData stayed[]; no submission"
+    },
+    {
+      "finding": "Menu mobile-open then desktop keeps overflow hidden",
+      "checkedAgainst": [
+        "foreground-interactions.json"
+      ],
+      "outcome": "parent reproduced390 to1440 with toggle/drawer hidden and body locked; added risk/F08/map"
+    },
+    {
+      "finding": "Resend result error semantics",
+      "checkedAgainst": [
+        "/home/r00tK1ngX/web_CV/node_modules/resend/dist/index.mjs:954-960,1722-1730",
+        "/home/r00tK1ngX/web_CV/app/contact/actions.ts:19-31"
+      ],
+      "outcome": "source confirms resolved error object ignored; no provider request/production false-success reproduction"
+    },
+    {
+      "finding": "Icon set licenses",
+      "checkedAgainst": [
+        "/home/r00tK1ngX/web_CV/node_modules/react-icons/README.md:72,91",
+        "/home/r00tK1ngX/web_CV/node_modules/react-icons/LICENSE:10-17"
+      ],
+      "outcome": "Font Awesome5 CC BY4.0, Simple Icons CC0 declared in installed package; attribution/trademark review required"
+    },
+    {
+      "finding": "Live/source divergence, hover, visual pixels, remote infrastructure",
+      "checkedAgainst": [
+        "browser-limitations.json",
+        "http-readonly-checks.json",
+        "github-pages-public-api.json"
+      ],
+      "outcome": "limitations preserved; no unverifiable worker conclusion promoted to verified fact"
+    }
+  ],
+  "boundary": "Only documentation/evidence changed. Peer screenshot artifacts remain in scratch and are not counted among109 delivered reference PNGs."
+}

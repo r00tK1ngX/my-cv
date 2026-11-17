@@ -1,0 +1,167 @@
+[
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "",
+    "declared": "https://github.com/RiadhBenlamine/",
+    "newTabs": [
+      "https://github.com/RiadhBenlamine/"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "",
+    "declared": "https://www.linkedin.com/in/riadh-benlamine/",
+    "newTabs": [
+      "https://www.linkedin.com/in/riadh-benlamine"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/Apache-logger",
+    "newTabs": [
+      "https://github.com/RiadhBenlamine/Apache-logger"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/infostealer",
+    "newTabs": [
+      "https://github.com/RiadhBenlamine/infostealer"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/gmail-shell",
+    "newTabs": [
+      "https://github.com/RiadhBenlamine/gmail-shell"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine",
+    "newTabs": [
+      "https://github.com/RiadhBenlamine"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "DEMO",
+    "declared": "https://smartmedica-frontend.vercel.app/",
+    "newTabs": [
+      "https://smartmedica-frontend.vercel.app/"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/",
+    "label": "BLOG",
+    "declared": "https://medium.com/@rbn0x00",
+    "newTabs": [
+      "https://medium.com/@rbn0x00"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/blog",
+    "label": "READ ON MEDIUM",
+    "declared": "https://medium.com/@rbn0x00/hackthebox-devvortex-2d5332f3bfb5?source=rss-b090df2fcf44------2",
+    "newTabs": [
+      "https://medium.com/@rbn0x00/hackthebox-devvortex-2d5332f3bfb5?source=rss-b090df2fcf44------2"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/contact",
+    "label": "linkedin.com/\nLINKEDIN",
+    "declared": "https://rbn0x00.vercel.app/",
+    "newTabs": [
+      "https://rbn0x00.vercel.app/"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/research",
+    "label": "VIEW CVE DETAILS",
+    "declared": "https://nvd.nist.gov/vuln/detail/CVE-2025-26186",
+    "newTabs": [
+      "https://nvd.nist.gov/vuln/detail/CVE-2025-26186"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/49974",
+    "newTabs": [
+      "https://www.exploit-db.com/exploits/49974"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/49994",
+    "newTabs": [
+      "https://www.exploit-db.com/exploits/49994"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/50043",
+    "newTabs": [
+      "https://www.exploit-db.com/exploits/50043"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  },
+  {
+    "test": "trusted outbound click per destination",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/50044",
+    "newTabs": [
+      "https://www.exploit-db.com/exploits/50044"
+    ],
+    "newWindowVerified": true,
+    "scope": "Pointer click/new tab target only; not backend behavior or author attribution"
+  }
+]

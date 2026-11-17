@@ -1,0 +1,138 @@
+[
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "",
+    "declared": "https://github.com/RiadhBenlamine/",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "",
+    "declared": "https://www.linkedin.com/in/riadh-benlamine/",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/Apache-logger",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/infostealer",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine/gmail-shell",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "CODE",
+    "declared": "https://github.com/RiadhBenlamine",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "DEMO",
+    "declared": "https://smartmedica-frontend.vercel.app/",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/",
+    "label": "BLOG",
+    "declared": "https://medium.com/@rbn0x00",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/blog",
+    "label": "READ ON MEDIUM",
+    "declared": "https://medium.com/@rbn0x00/hackthebox-devvortex-2d5332f3bfb5?source=rss-b090df2fcf44------2",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/contact",
+    "label": "linkedin.com/\nLINKEDIN",
+    "declared": "https://rbn0x00.vercel.app/",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/research",
+    "label": "VIEW CVE DETAILS",
+    "declared": "https://nvd.nist.gov/vuln/detail/CVE-2025-26186",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/49974",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/49994",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/50043",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "actual outbound click",
+    "route": "/research",
+    "label": "VIEW ON EXPLOIT-DB",
+    "declared": "https://www.exploit-db.com/exploits/50044",
+    "newTabs": [],
+    "note": "Programmatic element.click did not open a browser target in this environment. Superseded by trusted-outbound-clicks.json, which uses pointer input and verifies actual new tabs."
+  },
+  {
+    "test": "trusted external click via coordinates",
+    "event": {
+      "trusted": true,
+      "href": "https://github.com/RiadhBenlamine",
+      "defaultPrevented": false
+    },
+    "newTargets": [
+      {
+        "url": "https://github.com/RiadhBenlamine",
+        "id": "50CEA72CFCEC0D2BB8F0E6A97381C46F"
+      }
+    ],
+    "browserPopupVerified": true,
+    "limitation": "If newTargets empty, outbound click dispatch and href are verified but new-window presentation is not verified."
+  }
+]

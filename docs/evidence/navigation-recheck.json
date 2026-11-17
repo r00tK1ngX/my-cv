@@ -1,0 +1,29 @@
+[
+  {
+    "test": "desktop nav click with up to 7s route-ready wait",
+    "href": "/about",
+    "samples": [
+      "/about"
+    ],
+    "actualURL": "https://rbn0x00.vercel.app/about",
+    "errors": []
+  },
+  {
+    "test": "desktop nav click with up to 7s route-ready wait",
+    "href": "/experience",
+    "samples": [
+      "/experience"
+    ],
+    "actualURL": "https://rbn0x00.vercel.app/experience",
+    "errors": []
+  },
+  {
+    "test": "desktop nav click with up to 7s route-ready wait",
+    "href": "/skills",
+    "samples": [
+      "/skills"
+    ],
+    "actualURL": "https://rbn0x00.vercel.app/skills",
+    "errors": []
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "path": "hacker.png",
+    "bytes": 170164,
+    "sha256": "ed804e11158aa138129881023a0af9e7194030f44f8ac921ebc63327d7adb7dc",
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  {
+    "path": "public/hacker.png",
+    "bytes": 170164,
+    "sha256": "ed804e11158aa138129881023a0af9e7194030f44f8ac921ebc63327d7adb7dc",
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  {
+    "path": "favicon.ico",
+    "bytes": 15086,
+    "sha256": "6b9a300f2dc0ba954b504b17b17c69d10b2a337a67561dc5b9ea325765d0159f",
+    "iconEntries": 3,
+    "dimensions": [
+      [
+        48,
+        48
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        16,
+        16
+      ]
+    ]
+  },
+  {
+    "path": "public/favicon.ico",
+    "bytes": 15086,
+    "sha256": "6b9a300f2dc0ba954b504b17b17c69d10b2a337a67561dc5b9ea325765d0159f",
+    "iconEntries": 3,
+    "dimensions": [
+      [
+        48,
+        48
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        16,
+        16
+      ]
+    ]
+  }
+]

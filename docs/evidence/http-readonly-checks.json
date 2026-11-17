@@ -1,0 +1,104 @@
+{
+  "capturedAt": "2026-11-17T09:41:59.557906+00:00",
+  "results": [
+    {
+      "url": "https://chauanhdung.id.vn/",
+      "status": 200,
+      "finalURL": "https://chauanhdung.id.vn/",
+      "contentType": "text/html; charset=utf-8",
+      "server": "cloudflare",
+      "bytes": 68744,
+      "redirects": []
+    },
+    {
+      "url": "https://tykerai.github.io/my-cv/",
+      "status": 404,
+      "finalURL": "https://tykerai.github.io/my-cv/",
+      "contentType": "text/html; charset=utf-8",
+      "server": "GitHub.com",
+      "bytes": 9115,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/about",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/about",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/experience",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/experience",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/skills",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/skills",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/projects",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/projects",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/blog",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/blog",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/research",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/research",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/contact",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/contact",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    },
+    {
+      "url": "https://rbn0x00.vercel.app/_vercel/insights/script.js",
+      "status": 429,
+      "finalURL": "https://rbn0x00.vercel.app/_vercel/insights/script.js",
+      "contentType": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "bytes": 25091,
+      "redirects": []
+    }
+  ]
+}

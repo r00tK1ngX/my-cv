@@ -1,0 +1,338 @@
+[
+  {
+    "route": "/",
+    "expected": 10,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine/",
+        "text": "",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://www.linkedin.com/in/riadh-benlamine/",
+        "text": "",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine/Apache-logger",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine/infostealer",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine/gmail-shell",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://smartmedica-frontend.vercel.app/",
+        "text": "DEMO",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "VIEW ALL ON GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/about",
+    "expected": 4,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/experience",
+    "expected": 2,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/skills",
+    "expected": 2,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/projects",
+    "expected": 8,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine/Apache-logger",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine/infostealer",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine/gmail-shell",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "CODE",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://smartmedica-frontend.vercel.app/",
+        "text": "DEMO",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "VIEW ALL ON GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/blog",
+    "expected": 3,
+    "events": [
+      {
+        "href": "https://medium.com/@rbn0x00/hackthebox-devvortex-2d5332f3bfb5?source=rss-b090df2fcf44------2",
+        "text": "READ ON MEDIUM",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/contact",
+    "expected": 5,
+    "events": [
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "github.com/RiadhBenlamine\nGITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://rbn0x00.vercel.app/",
+        "text": "linkedin.com/\nLINKEDIN",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "mailto:benlamineriadh@gmail.com",
+        "text": "benlamineriadh@gmail.com\nEMAIL",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  },
+  {
+    "route": "/research",
+    "expected": 6,
+    "events": [
+      {
+        "href": "https://www.exploit-db.com/exploits/49974",
+        "text": "VIEW ON EXPLOIT-DB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://www.exploit-db.com/exploits/49994",
+        "text": "VIEW ON EXPLOIT-DB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://www.exploit-db.com/exploits/50043",
+        "text": "VIEW ON EXPLOIT-DB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://www.exploit-db.com/exploits/50044",
+        "text": "VIEW ON EXPLOIT-DB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://github.com/RiadhBenlamine",
+        "text": "GITHUB",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      },
+      {
+        "href": "https://medium.com/@rbn0x00",
+        "text": "BLOG",
+        "label": null,
+        "trusted": false,
+        "preventedNavigation": true
+      }
+    ],
+    "scope": "Real DOM click handlers exercised; outbound navigation prevented. Destination availability tested separately, mail client not launched."
+  }
+]

@@ -1,0 +1,1110 @@
+{
+  "lockfileVersion": 3,
+  "dependencies": [
+    {
+      "name": "@eslint/compat",
+      "kind": "dependencies",
+      "declared": "^1.4.1",
+      "lock": "1.4.1",
+      "installed": "1.4.1",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 152
+    },
+    {
+      "name": "@heroui/accordion",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 319
+    },
+    {
+      "name": "@heroui/alert",
+      "kind": "dependencies",
+      "declared": "2.2.30",
+      "lock": "2.2.30",
+      "installed": "2.2.30",
+      "installedLicense": "MIT",
+      "lockLine": 347
+    },
+    {
+      "name": "@heroui/autocomplete",
+      "kind": "dependencies",
+      "declared": "2.3.32",
+      "lock": "2.3.32",
+      "installed": "2.3.32",
+      "installedLicense": "MIT",
+      "lockLine": 408
+    },
+    {
+      "name": "@heroui/avatar",
+      "kind": "dependencies",
+      "declared": "2.2.25",
+      "lock": "2.2.25",
+      "installed": "2.2.25",
+      "installedLicense": "MIT",
+      "lockLine": 439
+    },
+    {
+      "name": "@heroui/badge",
+      "kind": "dependencies",
+      "declared": "2.2.18",
+      "lock": "2.2.18",
+      "installed": "2.2.18",
+      "installedLicense": "MIT",
+      "lockLine": 458
+    },
+    {
+      "name": "@heroui/button",
+      "kind": "dependencies",
+      "declared": "2.2.30",
+      "lock": "2.2.30",
+      "installed": "2.2.30",
+      "installedLicense": "MIT",
+      "lockLine": 493
+    },
+    {
+      "name": "@heroui/card",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 556
+    },
+    {
+      "name": "@heroui/chip",
+      "kind": "dependencies",
+      "declared": "2.2.24",
+      "lock": "2.2.24",
+      "installed": "2.2.24",
+      "installedLicense": "MIT",
+      "lockLine": 607
+    },
+    {
+      "name": "@heroui/code",
+      "kind": "dependencies",
+      "declared": "2.2.23",
+      "lock": "2.2.23",
+      "installed": "2.2.23",
+      "installedLicense": "MIT",
+      "lockLine": 626
+    },
+    {
+      "name": "@heroui/divider",
+      "kind": "dependencies",
+      "declared": "2.2.22",
+      "lock": "2.2.22",
+      "installed": "2.2.22",
+      "installedLicense": "MIT",
+      "lockLine": 701
+    },
+    {
+      "name": "@heroui/drawer",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 735
+    },
+    {
+      "name": "@heroui/dropdown",
+      "kind": "dependencies",
+      "declared": "2.3.30",
+      "lock": "2.3.30",
+      "installed": "2.3.30",
+      "installedLicense": "MIT",
+      "lockLine": 753
+    },
+    {
+      "name": "@heroui/form",
+      "kind": "dependencies",
+      "declared": "2.1.30",
+      "lock": "2.1.30",
+      "installed": "2.1.30",
+      "installedLicense": "MIT",
+      "lockLine": 777
+    },
+    {
+      "name": "@heroui/framer-utils",
+      "kind": "dependencies",
+      "declared": "2.1.26",
+      "lock": "2.1.26",
+      "installed": "2.1.26",
+      "installedLicense": "MIT",
+      "lockLine": 810
+    },
+    {
+      "name": "@heroui/image",
+      "kind": "dependencies",
+      "declared": "2.2.19",
+      "lock": "2.2.19",
+      "installed": "2.2.19",
+      "installedLicense": "MIT",
+      "lockLine": 834
+    },
+    {
+      "name": "@heroui/input",
+      "kind": "dependencies",
+      "declared": "2.4.31",
+      "lock": "2.4.31",
+      "installed": "2.4.31",
+      "installedLicense": "MIT",
+      "lockLine": 851
+    },
+    {
+      "name": "@heroui/kbd",
+      "kind": "dependencies",
+      "declared": "2.2.24",
+      "lock": "2.2.24",
+      "installed": "2.2.24",
+      "installedLicense": "MIT",
+      "lockLine": 973
+    },
+    {
+      "name": "@heroui/link",
+      "kind": "dependencies",
+      "declared": "2.2.25",
+      "lock": "2.2.25",
+      "installed": "2.2.25",
+      "installedLicense": "MIT",
+      "lockLine": 989
+    },
+    {
+      "name": "@heroui/listbox",
+      "kind": "dependencies",
+      "declared": "2.3.29",
+      "lock": "2.3.29",
+      "installed": "2.3.29",
+      "installedLicense": "MIT",
+      "lockLine": 1009
+    },
+    {
+      "name": "@heroui/modal",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 1129
+    },
+    {
+      "name": "@heroui/navbar",
+      "kind": "dependencies",
+      "declared": "2.2.28",
+      "lock": "2.2.28",
+      "installed": "2.2.28",
+      "installedLicense": "MIT",
+      "lockLine": 1209
+    },
+    {
+      "name": "@heroui/pagination",
+      "kind": "dependencies",
+      "declared": "2.2.26",
+      "lock": "2.2.26",
+      "installed": "2.2.26",
+      "installedLicense": "MIT",
+      "lockLine": 1268
+    },
+    {
+      "name": "@heroui/popover",
+      "kind": "dependencies",
+      "declared": "2.3.30",
+      "lock": "2.3.30",
+      "installed": "2.3.30",
+      "installedLicense": "MIT",
+      "lockLine": 1292
+    },
+    {
+      "name": "@heroui/progress",
+      "kind": "dependencies",
+      "declared": "2.2.24",
+      "lock": "2.2.24",
+      "installed": "2.2.24",
+      "installedLicense": "MIT",
+      "lockLine": 1333
+    },
+    {
+      "name": "@heroui/radio",
+      "kind": "dependencies",
+      "declared": "2.3.30",
+      "lock": "2.3.30",
+      "installed": "2.3.30",
+      "installedLicense": "MIT",
+      "lockLine": 1352
+    },
+    {
+      "name": "@heroui/react",
+      "kind": "dependencies",
+      "declared": "^2.8.8",
+      "lock": "2.8.10",
+      "installed": "2.8.10",
+      "installedLicense": "MIT",
+      "lockLine": 1376
+    },
+    {
+      "name": "@heroui/react-utils",
+      "kind": "dependencies",
+      "declared": "2.1.14",
+      "lock": "2.1.14",
+      "installed": "2.1.14",
+      "installedLicense": "MIT",
+      "lockLine": 1439
+    },
+    {
+      "name": "@heroui/scroll-shadow",
+      "kind": "dependencies",
+      "declared": "2.3.19",
+      "lock": "2.3.19",
+      "installed": "2.3.19",
+      "installedLicense": "MIT",
+      "lockLine": 3377
+    },
+    {
+      "name": "@heroui/select",
+      "kind": "dependencies",
+      "declared": "2.4.31",
+      "lock": "2.4.31",
+      "installed": "2.4.31",
+      "installedLicense": "MIT",
+      "lockLine": 3394
+    },
+    {
+      "name": "@heroui/skeleton",
+      "kind": "dependencies",
+      "declared": "2.2.18",
+      "lock": "2.2.18",
+      "installed": "2.2.18",
+      "installedLicense": "MIT",
+      "lockLine": 3510
+    },
+    {
+      "name": "@heroui/snippet",
+      "kind": "dependencies",
+      "declared": "2.2.31",
+      "lock": "2.2.31",
+      "installed": "2.2.31",
+      "installedLicense": "MIT",
+      "lockLine": 3551
+    },
+    {
+      "name": "@heroui/spacer",
+      "kind": "dependencies",
+      "declared": "2.2.23",
+      "lock": "2.2.23",
+      "installed": "2.2.23",
+      "installedLicense": "MIT",
+      "lockLine": 3573
+    },
+    {
+      "name": "@heroui/spinner",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 3589
+    },
+    {
+      "name": "@heroui/switch",
+      "kind": "dependencies",
+      "declared": "2.2.26",
+      "lock": "2.2.26",
+      "installed": "2.2.26",
+      "installedLicense": "MIT",
+      "lockLine": 3605
+    },
+    {
+      "name": "@heroui/system",
+      "kind": "dependencies",
+      "declared": "2.4.26",
+      "lock": "2.4.26",
+      "installed": "2.4.26",
+      "installedLicense": "MIT",
+      "lockLine": 3627
+    },
+    {
+      "name": "@heroui/table",
+      "kind": "dependencies",
+      "declared": "2.2.30",
+      "lock": "2.2.30",
+      "installed": "2.2.30",
+      "installedLicense": "MIT",
+      "lockLine": 3658
+    },
+    {
+      "name": "@heroui/tabs",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 3811
+    },
+    {
+      "name": "@heroui/theme",
+      "kind": "dependencies",
+      "declared": "2.4.26",
+      "lock": "2.4.26",
+      "installed": "2.4.26",
+      "installedLicense": "MIT",
+      "lockLine": 3836
+    },
+    {
+      "name": "@heroui/toast",
+      "kind": "dependencies",
+      "declared": "2.0.20",
+      "lock": "2.0.20",
+      "installed": "2.0.20",
+      "installedLicense": "MIT",
+      "lockLine": 3863
+    },
+    {
+      "name": "@heroui/tooltip",
+      "kind": "dependencies",
+      "declared": "2.2.27",
+      "lock": "2.2.27",
+      "installed": "2.2.27",
+      "installedLicense": "MIT",
+      "lockLine": 3886
+    },
+    {
+      "name": "@heroui/user",
+      "kind": "dependencies",
+      "declared": "2.2.25",
+      "lock": "2.2.25",
+      "installed": "2.2.25",
+      "installedLicense": "MIT",
+      "lockLine": 4131
+    },
+    {
+      "name": "@nextui-org/react",
+      "kind": "dependencies",
+      "declared": "^2.6.11",
+      "lock": "2.6.11",
+      "installed": "2.6.11",
+      "installedLicense": "MIT",
+      "lockLine": 5358
+    },
+    {
+      "name": "@react-aria/ssr",
+      "kind": "dependencies",
+      "declared": "3.9.10",
+      "lock": "3.9.10",
+      "installed": "3.9.10",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 6773
+    },
+    {
+      "name": "@react-aria/visually-hidden",
+      "kind": "dependencies",
+      "declared": "3.8.29",
+      "lock": "3.8.29",
+      "installed": "3.8.29",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 6928
+    },
+    {
+      "name": "@vercel/analytics",
+      "kind": "dependencies",
+      "declared": "^1.6.1",
+      "lock": "1.6.1",
+      "installed": "1.6.1",
+      "installedLicense": "MPL-2.0",
+      "lockLine": 8102
+    },
+    {
+      "name": "class-variance-authority",
+      "kind": "dependencies",
+      "declared": "^0.7.1",
+      "lock": "0.7.1",
+      "installed": "0.7.1",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 8454
+    },
+    {
+      "name": "clsx",
+      "kind": "dependencies",
+      "declared": "^2.1.1",
+      "lock": "2.1.1",
+      "installed": "2.1.1",
+      "installedLicense": "MIT",
+      "lockLine": 8468
+    },
+    {
+      "name": "framer-motion",
+      "kind": "dependencies",
+      "declared": "11.18.2",
+      "lock": "11.18.2",
+      "installed": "11.18.2",
+      "installedLicense": "MIT",
+      "lockLine": 9568
+    },
+    {
+      "name": "he",
+      "kind": "dependencies",
+      "declared": "^1.2.0",
+      "lock": "1.2.0",
+      "installed": "1.2.0",
+      "installedLicense": "MIT",
+      "lockLine": 9786
+    },
+    {
+      "name": "intl-messageformat",
+      "kind": "dependencies",
+      "declared": "10.7.16",
+      "lock": "10.7.16",
+      "installed": "10.7.16",
+      "installedLicense": "BSD-3-Clause",
+      "lockLine": 9847
+    },
+    {
+      "name": "lucide-react",
+      "kind": "dependencies",
+      "declared": "^0.563.0",
+      "lock": "0.563.0",
+      "installed": "0.563.0",
+      "installedLicense": "ISC",
+      "lockLine": 10152
+    },
+    {
+      "name": "motion",
+      "kind": "dependencies",
+      "declared": "^12.29.2",
+      "lock": "12.43.0",
+      "installed": "12.43.0",
+      "installedLicense": "MIT",
+      "lockLine": 10238
+    },
+    {
+      "name": "next",
+      "kind": "dependencies",
+      "declared": "^16.1.6",
+      "lock": "16.4.3",
+      "installed": "16.4.3",
+      "installedLicense": "MIT",
+      "lockLine": 10358
+    },
+    {
+      "name": "next-themes",
+      "kind": "dependencies",
+      "declared": "0.4.6",
+      "lock": "0.4.6",
+      "installed": "0.4.6",
+      "installedLicense": "MIT",
+      "lockLine": 10411
+    },
+    {
+      "name": "react",
+      "kind": "dependencies",
+      "declared": "^19.2.4",
+      "lock": "19.3.1",
+      "installed": "19.3.1",
+      "installedLicense": "MIT",
+      "lockLine": 10784
+    },
+    {
+      "name": "react-dom",
+      "kind": "dependencies",
+      "declared": "^19.2.4",
+      "lock": "19.3.1",
+      "installed": "19.3.1",
+      "installedLicense": "MIT",
+      "lockLine": 10794
+    },
+    {
+      "name": "react-icons",
+      "kind": "dependencies",
+      "declared": "^5.5.0",
+      "lock": "5.7.0",
+      "installed": "5.7.0",
+      "installedLicense": "MIT",
+      "lockLine": 10806
+    },
+    {
+      "name": "resend",
+      "kind": "dependencies",
+      "declared": "^6.9.1",
+      "lock": "6.37.0",
+      "installed": "6.37.0",
+      "installedLicense": "MIT",
+      "lockLine": 10865
+    },
+    {
+      "name": "tailwind-merge",
+      "kind": "dependencies",
+      "declared": "^3.4.0",
+      "lock": "3.7.0",
+      "installed": "3.7.0",
+      "installedLicense": "MIT",
+      "lockLine": 11327
+    },
+    {
+      "name": "typewriter-effect",
+      "kind": "dependencies",
+      "declared": "^2.22.0",
+      "lock": "2.22.0",
+      "installed": "2.22.0",
+      "installedLicense": "MIT",
+      "lockLine": 11478
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "kind": "devDependencies",
+      "declared": "15.5.9",
+      "lock": "15.5.9",
+      "installed": "15.5.9",
+      "installedLicense": "MIT",
+      "lockLine": 4314
+    },
+    {
+      "name": "@react-types/shared",
+      "kind": "devDependencies",
+      "declared": "3.32.1",
+      "lock": "3.32.1",
+      "installed": "3.32.1",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 7609
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "kind": "devDependencies",
+      "declared": "4.1.11",
+      "lock": "4.1.11",
+      "installed": "4.1.11",
+      "installedLicense": "MIT",
+      "lockLine": 7772
+    },
+    {
+      "name": "@types/he",
+      "kind": "devDependencies",
+      "declared": "^1.2.3",
+      "lock": "1.2.3",
+      "installed": "1.2.3",
+      "installedLicense": "MIT",
+      "lockLine": 7814
+    },
+    {
+      "name": "@types/node",
+      "kind": "devDependencies",
+      "declared": "20.5.7",
+      "lock": "20.5.7",
+      "installed": "20.5.7",
+      "installedLicense": "MIT",
+      "lockLine": 7841
+    },
+    {
+      "name": "@types/react",
+      "kind": "devDependencies",
+      "declared": "18.3.3",
+      "lock": "18.3.3",
+      "installed": "18.3.3",
+      "installedLicense": "MIT",
+      "lockLine": 7853
+    },
+    {
+      "name": "@types/react-dom",
+      "kind": "devDependencies",
+      "declared": "18.3.0",
+      "lock": "18.3.0",
+      "installed": "18.3.0",
+      "installedLicense": "MIT",
+      "lockLine": 7864
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "kind": "devDependencies",
+      "declared": "8.34.1",
+      "lock": "8.34.1",
+      "installed": "8.34.1",
+      "installedLicense": "MIT",
+      "lockLine": 7874
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "kind": "devDependencies",
+      "declared": "8.34.1",
+      "lock": "8.34.1",
+      "installed": "8.34.1",
+      "installedLicense": "MIT",
+      "lockLine": 7904
+    },
+    {
+      "name": "eslint",
+      "kind": "devDependencies",
+      "declared": "^9.39.2",
+      "lock": "9.39.5",
+      "installed": "9.39.5",
+      "installedLicense": "MIT",
+      "lockLine": 8749
+    },
+    {
+      "name": "eslint-config-next",
+      "kind": "devDependencies",
+      "declared": "15.5.9",
+      "lock": "15.5.9",
+      "installed": "15.5.9",
+      "installedLicense": "MIT",
+      "lockLine": 8810
+    },
+    {
+      "name": "eslint-config-prettier",
+      "kind": "devDependencies",
+      "declared": "9.1.0",
+      "lock": "9.1.0",
+      "installed": "9.1.0",
+      "installedLicense": "MIT",
+      "lockLine": 8838
+    },
+    {
+      "name": "eslint-plugin-import",
+      "kind": "devDependencies",
+      "declared": "2.31.0",
+      "lock": "2.31.0",
+      "installed": "2.31.0",
+      "installedLicense": "MIT",
+      "lockLine": 8934
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "kind": "devDependencies",
+      "declared": "6.10.2",
+      "lock": "6.10.2",
+      "installed": "6.10.2",
+      "installedLicense": "MIT",
+      "lockLine": 9012
+    },
+    {
+      "name": "eslint-plugin-node",
+      "kind": "devDependencies",
+      "declared": "11.1.0",
+      "lock": "11.1.0",
+      "installed": "11.1.0",
+      "installedLicense": "MIT",
+      "lockLine": 9086
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "kind": "devDependencies",
+      "declared": "5.2.1",
+      "lock": "5.2.1",
+      "installed": "5.2.1",
+      "installedLicense": "MIT",
+      "lockLine": 9169
+    },
+    {
+      "name": "eslint-plugin-react",
+      "kind": "devDependencies",
+      "declared": "7.37.5",
+      "lock": "7.37.5",
+      "installed": "7.37.5",
+      "installedLicense": "MIT",
+      "lockLine": 9200
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "kind": "devDependencies",
+      "declared": "5.2.0",
+      "lock": "5.2.0",
+      "installed": "5.2.0",
+      "installedLicense": "MIT",
+      "lockLine": 9233
+    },
+    {
+      "name": "eslint-plugin-unused-imports",
+      "kind": "devDependencies",
+      "declared": "4.1.4",
+      "lock": "4.1.4",
+      "installed": "4.1.4",
+      "installedLicense": "MIT",
+      "lockLine": 9280
+    },
+    {
+      "name": "globals",
+      "kind": "devDependencies",
+      "declared": "16.0.0",
+      "lock": "16.0.0",
+      "installed": "16.0.0",
+      "installedLicense": "MIT",
+      "lockLine": 9668
+    },
+    {
+      "name": "postcss",
+      "kind": "devDependencies",
+      "declared": "8.5.6",
+      "lock": "8.5.6",
+      "installed": "8.5.6",
+      "installedLicense": "MIT",
+      "lockLine": 10677
+    },
+    {
+      "name": "prettier",
+      "kind": "devDependencies",
+      "declared": "3.5.3",
+      "lock": "3.5.3",
+      "installed": "3.5.3",
+      "installedLicense": "MIT",
+      "lockLine": 10714
+    },
+    {
+      "name": "tailwind-variants",
+      "kind": "devDependencies",
+      "declared": "3.2.2",
+      "lock": "3.2.2",
+      "installed": "3.2.2",
+      "installedLicense": "MIT",
+      "lockLine": 11337
+    },
+    {
+      "name": "tailwindcss",
+      "kind": "devDependencies",
+      "declared": "4.1.11",
+      "lock": "4.1.11",
+      "installed": "4.1.11",
+      "installedLicense": "MIT",
+      "lockLine": 11356
+    },
+    {
+      "name": "tw-animate-css",
+      "kind": "devDependencies",
+      "declared": "^1.4.0",
+      "lock": "1.4.0",
+      "installed": "1.4.0",
+      "installedLicense": "MIT",
+      "lockLine": 11445
+    },
+    {
+      "name": "typescript",
+      "kind": "devDependencies",
+      "declared": "5.6.3",
+      "lock": "5.6.3",
+      "installed": "5.6.3",
+      "installedLicense": "Apache-2.0",
+      "lockLine": 11464
+    }
+  ],
+  "imports": [
+    {
+      "path": "app/about/page.tsx",
+      "line": 4,
+      "module": "react"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "line": 5,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "line": 6,
+      "module": "react-icons/fa"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "line": 7,
+      "module": "react-icons/si"
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "line": 4,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "app/contact/actions.ts",
+      "line": 3,
+      "module": "resend"
+    },
+    {
+      "path": "app/contact/actions.ts",
+      "line": 4,
+      "module": "he"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "line": 3,
+      "module": "react"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "line": 4,
+      "module": "react"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "line": 5,
+      "module": "react-icons/fa"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "line": 6,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "line": 7,
+      "module": "./actions"
+    },
+    {
+      "path": "app/error.tsx",
+      "line": 3,
+      "module": "react"
+    },
+    {
+      "path": "app/experience/page.tsx",
+      "line": 4,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/experience/page.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "app/layout.tsx",
+      "line": 2,
+      "module": "next"
+    },
+    {
+      "path": "app/layout.tsx",
+      "line": 3,
+      "module": "@vercel/analytics/next"
+    },
+    {
+      "path": "app/layout.tsx",
+      "line": 4,
+      "module": "react"
+    },
+    {
+      "path": "app/layout.tsx",
+      "line": 5,
+      "module": "@/components/navbar"
+    },
+    {
+      "path": "app/layout.tsx",
+      "line": 6,
+      "module": "@/config/site"
+    },
+    {
+      "path": "app/page.tsx",
+      "line": 4,
+      "module": "react-icons/fa"
+    },
+    {
+      "path": "app/page.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "app/page.tsx",
+      "line": 6,
+      "module": "./skills/page"
+    },
+    {
+      "path": "app/page.tsx",
+      "line": 7,
+      "module": "./projects/page"
+    },
+    {
+      "path": "app/page.tsx",
+      "line": 8,
+      "module": "@/app/experience/page"
+    },
+    {
+      "path": "app/projects/page.tsx",
+      "line": 4,
+      "module": "react-icons/fa"
+    },
+    {
+      "path": "app/projects/page.tsx",
+      "line": 5,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/projects/page.tsx",
+      "line": 6,
+      "module": "react"
+    },
+    {
+      "path": "app/providers.tsx",
+      "line": 3,
+      "module": "next-themes"
+    },
+    {
+      "path": "app/providers.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "app/providers.tsx",
+      "line": 6,
+      "module": "@heroui/system"
+    },
+    {
+      "path": "app/providers.tsx",
+      "line": 7,
+      "module": "next/navigation"
+    },
+    {
+      "path": "app/providers.tsx",
+      "line": 8,
+      "module": "next-themes"
+    },
+    {
+      "path": "app/research/page.tsx",
+      "line": 4,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/research/page.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "app/skills/page.tsx",
+      "line": 6,
+      "module": "lucide-react"
+    },
+    {
+      "path": "app/skills/page.tsx",
+      "line": 7,
+      "module": "react"
+    },
+    {
+      "path": "components/counter.tsx",
+      "line": 3,
+      "module": "react"
+    },
+    {
+      "path": "components/counter.tsx",
+      "line": 4,
+      "module": "@heroui/button"
+    },
+    {
+      "path": "components/icons.tsx",
+      "line": 1,
+      "module": "react"
+    },
+    {
+      "path": "components/icons.tsx",
+      "line": 3,
+      "module": "@/types"
+    },
+    {
+      "path": "components/navbar.tsx",
+      "line": 3,
+      "module": "react"
+    },
+    {
+      "path": "components/navbar.tsx",
+      "line": 4,
+      "module": "next/navigation"
+    },
+    {
+      "path": "components/navbar.tsx",
+      "line": 5,
+      "module": "next/link"
+    },
+    {
+      "path": "components/navbar.tsx",
+      "line": 6,
+      "module": "lucide-react"
+    },
+    {
+      "path": "components/navbar.tsx",
+      "line": 7,
+      "module": "react-icons/fa"
+    },
+    {
+      "path": "components/primitives.ts",
+      "line": 1,
+      "module": "tailwind-variants"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 3,
+      "module": "react"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 4,
+      "module": "@react-aria/visually-hidden"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 5,
+      "module": "@heroui/switch"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 6,
+      "module": "next-themes"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 7,
+      "module": "@react-aria/ssr"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 8,
+      "module": "clsx"
+    },
+    {
+      "path": "components/theme-switch.tsx",
+      "line": 10,
+      "module": "@/components/icons"
+    },
+    {
+      "path": "components/ui/spotlight.tsx",
+      "line": 1,
+      "module": "react"
+    },
+    {
+      "path": "components/ui/spotlight.tsx",
+      "line": 2,
+      "module": "@/lib/utils"
+    },
+    {
+      "path": "components/ui/typewriter-effect.tsx",
+      "line": 3,
+      "module": "@/lib/utils"
+    },
+    {
+      "path": "components/ui/typewriter-effect.tsx",
+      "line": 4,
+      "module": "motion/react"
+    },
+    {
+      "path": "components/ui/typewriter-effect.tsx",
+      "line": 5,
+      "module": "react"
+    },
+    {
+      "path": "config/fonts.ts",
+      "line": 1,
+      "module": "next/font/google"
+    },
+    {
+      "path": "lib/utils.ts",
+      "line": 1,
+      "module": "clsx"
+    },
+    {
+      "path": "lib/utils.ts",
+      "line": 2,
+      "module": "tailwind-merge"
+    },
+    {
+      "path": "types/index.ts",
+      "line": 1,
+      "module": "react"
+    }
+  ]
+}

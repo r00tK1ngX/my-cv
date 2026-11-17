@@ -1,0 +1,54 @@
+{
+  "scope": "Parent read-only verification of unchanged local files via file://; no form submitted, no remote deployment checked",
+  "root": {
+    "url": "file:///home/r00tK1ngX/my-cv-redesign/index.html",
+    "errors": [],
+    "preloader": "none",
+    "h1": "Châu Anh Dũng",
+    "formMethod": "get",
+    "formAction": "file:///home/r00tK1ngX/my-cv-redesign/index.html",
+    "form": {
+      "data": [],
+      "valid": true,
+      "fields": [
+        {
+          "id": "name",
+          "name": "",
+          "required": false,
+          "filled": true
+        },
+        {
+          "id": "email",
+          "name": "",
+          "required": false,
+          "filled": true
+        },
+        {
+          "id": "subject",
+          "name": "",
+          "required": false,
+          "filled": true
+        },
+        {
+          "id": "message",
+          "name": "",
+          "required": false,
+          "filled": true
+        }
+      ]
+    },
+    "downloadErrors": [
+      "Uncaught SyntaxError: Failed to execute 'querySelector' on 'Document': '#' is not a valid selector."
+    ]
+  },
+  "nested": {
+    "url": "file:///home/r00tK1ngX/my-cv-redesign/web-cv/index.html",
+    "errors": [
+      "Script error."
+    ],
+    "preloaderDisplay": "flex",
+    "loadingBar": "0%",
+    "h1": "",
+    "backToTopExists": false
+  }
+}

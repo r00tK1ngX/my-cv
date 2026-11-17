@@ -1,0 +1,152 @@
+[
+  {
+    "width": 639,
+    "media": {
+      "sm": false,
+      "md": false,
+      "lg": false,
+      "xl": false
+    },
+    "toggle": "flex",
+    "navList": "none",
+    "container": 624,
+    "heroColumns": "576px",
+    "skillColumns": "576px",
+    "projectColumns": "576px"
+  },
+  {
+    "width": 640,
+    "media": {
+      "sm": true,
+      "md": false,
+      "lg": false,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 625,
+    "heroColumns": "577px",
+    "skillColumns": "577px",
+    "projectColumns": "577px"
+  },
+  {
+    "width": 767,
+    "media": {
+      "sm": true,
+      "md": false,
+      "lg": false,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 640,
+    "heroColumns": "592px",
+    "skillColumns": "592px",
+    "projectColumns": "592px"
+  },
+  {
+    "width": 768,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": false,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 753,
+    "heroColumns": "320.5px 320.5px",
+    "skillColumns": "342.5px 342.5px",
+    "projectColumns": "340.5px 340.5px"
+  },
+  {
+    "width": 1023,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": false,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 768,
+    "heroColumns": "328px 328px",
+    "skillColumns": "350px 350px",
+    "projectColumns": "348px 348px"
+  },
+  {
+    "width": 1024,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": true,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 1009,
+    "heroColumns": "448.5px 448.5px",
+    "skillColumns": "307px 307px 307px",
+    "projectColumns": "304.328px 304.328px 304.344px"
+  },
+  {
+    "width": 1279,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": true,
+      "xl": false
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 1024,
+    "heroColumns": "456px 456px",
+    "skillColumns": "312px 312px 312px",
+    "projectColumns": "309.328px 309.328px 309.344px"
+  },
+  {
+    "width": 1280,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": true,
+      "xl": true
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 1265,
+    "heroColumns": "576.5px 576.5px",
+    "skillColumns": "392.328px 392.328px 392.344px",
+    "projectColumns": "389.656px 389.672px 389.656px"
+  },
+  {
+    "width": 1535,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": true,
+      "xl": true
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 1280,
+    "heroColumns": "584px 584px",
+    "skillColumns": "397.328px 397.328px 397.344px",
+    "projectColumns": "394.656px 394.672px 394.656px"
+  },
+  {
+    "width": 1536,
+    "media": {
+      "sm": true,
+      "md": true,
+      "lg": true,
+      "xl": true
+    },
+    "toggle": "none",
+    "navList": "flex",
+    "container": 1521,
+    "heroColumns": "704.5px 704.5px",
+    "skillColumns": "477.656px 477.672px 477.656px",
+    "projectColumns": "475px 475px 475px"
+  }
+]

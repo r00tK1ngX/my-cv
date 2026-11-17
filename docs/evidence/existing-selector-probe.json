@@ -1,0 +1,11 @@
+[
+  {
+    "test": "Existing CV href=# passed to document.querySelector; isolated browser API probe, not production form/link submission",
+    "result": {
+      "threw": true,
+      "name": "SyntaxError",
+      "message": "Failed to execute 'querySelector' on 'Document': '#' is not a valid selector."
+    },
+    "source": "my-cv-redesign/index.html:1184-1189 and placeholder anchors at533,731,774,796,838"
+  }
+]

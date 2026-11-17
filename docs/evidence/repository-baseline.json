@@ -1,0 +1,880 @@
+{
+  "capturedAt": "2026-11-17T09:06:23.060483+00:00",
+  "reference": {
+    "root": "/home/r00tK1ngX/web_CV",
+    "git": {
+      "head": "fatal: not a git repository (or any of the parent directories): .git",
+      "status": "fatal: not a git repository (or any of the parent directories): .git",
+      "branch": "fatal: not a git repository (or any of the parent directories): .git",
+      "tracked": "fatal: not a git repository (or any of the parent directories): .git",
+      "main": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    "top_level": [
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "size": 422
+      },
+      {
+        "name": ".npmrc",
+        "type": "file",
+        "size": 17
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "size": 1064
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "size": 1469
+      },
+      {
+        "name": "app",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "components",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "components.json",
+        "type": "file",
+        "size": 537
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "core.130921",
+        "type": "file",
+        "size": 693497856
+      },
+      {
+        "name": "core.131051",
+        "type": "file",
+        "size": 693133312
+      },
+      {
+        "name": "core.131337",
+        "type": "file",
+        "size": 693174272
+      },
+      {
+        "name": "core.131544",
+        "type": "file",
+        "size": 693264384
+      },
+      {
+        "name": "core.131774",
+        "type": "file",
+        "size": 693272576
+      },
+      {
+        "name": "core.131911",
+        "type": "file",
+        "size": 693710848
+      },
+      {
+        "name": "core.132059",
+        "type": "file",
+        "size": 693121024
+      },
+      {
+        "name": "core.132479",
+        "type": "file",
+        "size": 692703232
+      },
+      {
+        "name": "core.134632",
+        "type": "file",
+        "size": 693428224
+      },
+      {
+        "name": "core.134719",
+        "type": "file",
+        "size": 692658176
+      },
+      {
+        "name": "core.134789",
+        "type": "file",
+        "size": 693526528
+      },
+      {
+        "name": "core.135493",
+        "type": "file",
+        "size": 687247360
+      },
+      {
+        "name": "core.135774",
+        "type": "file",
+        "size": 691253248
+      },
+      {
+        "name": "core.135850",
+        "type": "file",
+        "size": 671784960
+      },
+      {
+        "name": "dev.log",
+        "type": "file",
+        "size": 241
+      },
+      {
+        "name": "eslint.config.mjs",
+        "type": "file",
+        "size": 4205
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file",
+        "size": 15086
+      },
+      {
+        "name": "hacker.png",
+        "type": "file",
+        "size": 170164
+      },
+      {
+        "name": "hero.ts",
+        "type": "file",
+        "size": 65
+      },
+      {
+        "name": "lib",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "next.config.js",
+        "type": "file",
+        "size": 94
+      },
+      {
+        "name": "next.log",
+        "type": "file",
+        "size": 163
+      },
+      {
+        "name": "node_modules",
+        "type": "dir",
+        "size": 20480
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "size": 411067
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "size": 3110
+      },
+      {
+        "name": "postcss.config.js",
+        "type": "file",
+        "size": 72
+      },
+      {
+        "name": "public",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "styles",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "size": 693
+      },
+      {
+        "name": "types",
+        "type": "dir",
+        "size": 4096
+      }
+    ],
+    "counts_by_top": {
+      ".gitignore": 1,
+      ".npmrc": 1,
+      "LICENSE": 1,
+      "README.md": 1,
+      "components.json": 1,
+      "core.130921": 1,
+      "core.131051": 1,
+      "core.131337": 1,
+      "core.131544": 1,
+      "core.131774": 1,
+      "core.131911": 1,
+      "core.132059": 1,
+      "core.132479": 1,
+      "core.134632": 1,
+      "core.134719": 1,
+      "core.134789": 1,
+      "core.135493": 1,
+      "core.135774": 1,
+      "core.135850": 1,
+      "dev.log": 1,
+      "eslint.config.mjs": 1,
+      "favicon.ico": 1,
+      "hacker.png": 1,
+      "hero.ts": 1,
+      "next.config.js": 1,
+      "next.log": 1,
+      "package-lock.json": 1,
+      "package.json": 1,
+      "postcss.config.js": 1,
+      "tsconfig.json": 1,
+      "app": 12,
+      "components": 7,
+      "config": 2,
+      "lib": 1,
+      "node_modules": 75400,
+      "public": 2,
+      "styles": 1,
+      "types": 1
+    },
+    "bytes_by_top": {
+      ".gitignore": 422,
+      ".npmrc": 17,
+      "LICENSE": 1064,
+      "README.md": 1469,
+      "components.json": 537,
+      "core.130921": 693497856,
+      "core.131051": 693133312,
+      "core.131337": 693174272,
+      "core.131544": 693264384,
+      "core.131774": 693272576,
+      "core.131911": 693710848,
+      "core.132059": 693121024,
+      "core.132479": 692703232,
+      "core.134632": 693428224,
+      "core.134719": 692658176,
+      "core.134789": 693526528,
+      "core.135493": 687247360,
+      "core.135774": 691253248,
+      "core.135850": 671784960,
+      "dev.log": 241,
+      "eslint.config.mjs": 4205,
+      "favicon.ico": 15086,
+      "hacker.png": 170164,
+      "hero.ts": 65,
+      "next.config.js": 94,
+      "next.log": 163,
+      "package-lock.json": 411067,
+      "package.json": 3110,
+      "postcss.config.js": 72,
+      "tsconfig.json": 693,
+      "app": 134662,
+      "components": 27168,
+      "config": 1501,
+      "lib": 169,
+      "node_modules": 618070736,
+      "public": 185250,
+      "styles": 5181,
+      "types": 110
+    },
+    "files": [
+      {
+        "path": ".gitignore",
+        "size": 422,
+        "mtime_ns": 1793554796607182817,
+        "mode": 420,
+        "sha256": "6e4887971691f101d85275cdc6ec02af485b4de0cbd66107a684a8083b9d3498"
+      },
+      {
+        "path": ".npmrc",
+        "size": 17,
+        "mtime_ns": 1793554796607229817,
+        "mode": 420,
+        "sha256": "939b064945436d29e2934e1a3bb74a5d031283426f844c51f0bbf83aaa56a308"
+      },
+      {
+        "path": "LICENSE",
+        "size": 1064,
+        "mtime_ns": 1793554795003610519,
+        "mode": 420,
+        "sha256": "af77ebcb3b3069badaecda0c862256e59ac8dceb20001a6c71b62f8e93cb2ecf"
+      },
+      {
+        "path": "README.md",
+        "size": 1469,
+        "mtime_ns": 1793554796605810917,
+        "mode": 420,
+        "sha256": "fe930a6e161002636ce8c40157a58c224da01bb0d58e88c3df15b4daf3649e27"
+      },
+      {
+        "path": "components.json",
+        "size": 537,
+        "mtime_ns": 1793554795001159319,
+        "mode": 420,
+        "sha256": "6d17e0e1cc673b0219a45c3d7507581887ad279e36a3222d95ec27a09e07c424"
+      },
+      {
+        "path": "core.130921",
+        "size": 693497856,
+        "mtime_ns": 1793556260394709630,
+        "mode": 384
+      },
+      {
+        "path": "core.131051",
+        "size": 693133312,
+        "mtime_ns": 1793556306810709848,
+        "mode": 384
+      },
+      {
+        "path": "core.131337",
+        "size": 693174272,
+        "mtime_ns": 1793556401818708655,
+        "mode": 384
+      },
+      {
+        "path": "core.131544",
+        "size": 693264384,
+        "mtime_ns": 1793556506026707897,
+        "mode": 384
+      },
+      {
+        "path": "core.131774",
+        "size": 693272576,
+        "mtime_ns": 1793556556718707685,
+        "mode": 384
+      },
+      {
+        "path": "core.131911",
+        "size": 693710848,
+        "mtime_ns": 1793556572046707783,
+        "mode": 384
+      },
+      {
+        "path": "core.132059",
+        "size": 693121024,
+        "mtime_ns": 1793556594998708511,
+        "mode": 384
+      },
+      {
+        "path": "core.132479",
+        "size": 692703232,
+        "mtime_ns": 1793556753170706941,
+        "mode": 384
+      },
+      {
+        "path": "core.134632",
+        "size": 693428224,
+        "mtime_ns": 1793558811466709296,
+        "mode": 384
+      },
+      {
+        "path": "core.134719",
+        "size": 692658176,
+        "mtime_ns": 1793558818922709382,
+        "mode": 384
+      },
+      {
+        "path": "core.134789",
+        "size": 693526528,
+        "mtime_ns": 1793558826442709465,
+        "mode": 384
+      },
+      {
+        "path": "core.135493",
+        "size": 687247360,
+        "mtime_ns": 1793559017930709368,
+        "mode": 384
+      },
+      {
+        "path": "core.135774",
+        "size": 691253248,
+        "mtime_ns": 1793559080746709473,
+        "mode": 384
+      },
+      {
+        "path": "core.135850",
+        "size": 671784960,
+        "mtime_ns": 1793559094618709433,
+        "mode": 384
+      },
+      {
+        "path": "dev.log",
+        "size": 241,
+        "mtime_ns": 1793556752966706950,
+        "mode": 420,
+        "sha256": "18000bdb0affbc46af53e5007f53c8bb5a7863376757d6319892b6b2415c4bfc"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "size": 4205,
+        "mtime_ns": 1793554795003103119,
+        "mode": 420,
+        "sha256": "04c38ea0f29ccd39249883446a0f5ec5d422eb206ea0970e3f55579f388e33b1"
+      },
+      {
+        "path": "favicon.ico",
+        "size": 15086,
+        "mtime_ns": 1793554826624618610,
+        "mode": 420,
+        "sha256": "6b9a300f2dc0ba954b504b17b17c69d10b2a337a67561dc5b9ea325765d0159f"
+      },
+      {
+        "path": "hacker.png",
+        "size": 170164,
+        "mtime_ns": 1793554826622464510,
+        "mode": 420,
+        "sha256": "ed804e11158aa138129881023a0af9e7194030f44f8ac921ebc63327d7adb7dc"
+      },
+      {
+        "path": "hero.ts",
+        "size": 65,
+        "mtime_ns": 1793554795003168119,
+        "mode": 420,
+        "sha256": "dc52e0c82aefd6b8750e1af2a23a8f15ac5157c9f921d55b688018487f32c9c2"
+      },
+      {
+        "path": "next.config.js",
+        "size": 94,
+        "mtime_ns": 1793554795003633919,
+        "mode": 420,
+        "sha256": "549704cecfddd6f6c20e181566bbabb2e390f729be865edf881a4464ff50f50d"
+      },
+      {
+        "path": "next.log",
+        "size": 163,
+        "mtime_ns": 1793556556514707686,
+        "mode": 420,
+        "sha256": "da33587263cabc7427f34bfdcb721cf702276d6486b83ed8be8bc1fd8d6556a0"
+      },
+      {
+        "path": "package-lock.json",
+        "size": 411067,
+        "mtime_ns": 1793556196990708970,
+        "mode": 420,
+        "sha256": "11f21da0416c5559688a8b5ec8ef27204e3bdc38cf1f148c63f3aaaa180546af"
+      },
+      {
+        "path": "package.json",
+        "size": 3110,
+        "mtime_ns": 1793556619578708764,
+        "mode": 420,
+        "sha256": "ee9b80b9abb503673afc6e18f96668f1eac279844741daa702f0951a4d1c894e"
+      },
+      {
+        "path": "postcss.config.js",
+        "size": 72,
+        "mtime_ns": 1793554796604709417,
+        "mode": 420,
+        "sha256": "8fa4b01f6633f478ec8ea70633058c85858e2298649cf0aee711362e5bce7b7a"
+      },
+      {
+        "path": "tsconfig.json",
+        "size": 693,
+        "mtime_ns": 1793554796606271617,
+        "mode": 420,
+        "sha256": "53cee749008899c15576e5b73defa9cbee101ba347717470cc3af3c1024d96dc"
+      },
+      {
+        "path": "app/error.tsx",
+        "size": 430,
+        "mtime_ns": 1793554794998523219,
+        "mode": 420,
+        "sha256": "318dfd0ae2aa072b324e7526d436b5c7bdd4a4a5e71d5e160583f3efedda76a1"
+      },
+      {
+        "path": "app/layout.tsx",
+        "size": 4463,
+        "mtime_ns": 1793554794998738819,
+        "mode": 420,
+        "sha256": "c4e84b98a2b82bcf2bfc5d21aee75282f11bbcb88a60d1384381e183dfe08ad4"
+      },
+      {
+        "path": "app/page.tsx",
+        "size": 21786,
+        "mtime_ns": 1793554794998759219,
+        "mode": 420,
+        "sha256": "4c44e5eb1b8144ab8c6a74d30b52fb282660c176d292fdf1c6fc32fb7b5efaeb"
+      },
+      {
+        "path": "app/providers.tsx",
+        "size": 795,
+        "mtime_ns": 1793554794999092219,
+        "mode": 420,
+        "sha256": "df146c2ca4932871c7d1fa65c485e9c2813c26f85e6cb6968448d07c4d6704ac"
+      },
+      {
+        "path": "app/about/page.tsx",
+        "size": 9860,
+        "mtime_ns": 1793554794997955019,
+        "mode": 420,
+        "sha256": "1aefd6c805ae24a4f6b41fb42672afe809734b0a6691f16ce89a84ff3594a441"
+      },
+      {
+        "path": "app/blog/page.tsx",
+        "size": 14997,
+        "mtime_ns": 1793554794998233419,
+        "mode": 420,
+        "sha256": "a2c46fdecc43c738d6c875ebc1c245f9fa3eedf755c5e95682151390ca16e321"
+      },
+      {
+        "path": "app/contact/actions.ts",
+        "size": 874,
+        "mtime_ns": 1793554794998468819,
+        "mode": 420,
+        "sha256": "fa2957afe2030073273d06ba38091c1aa631b82da568da5eab6402e2046538d3"
+      },
+      {
+        "path": "app/contact/page.tsx",
+        "size": 14820,
+        "mtime_ns": 1793554794998495719,
+        "mode": 420,
+        "sha256": "997f0789af5616d80fa3caf2461a45593308be1299cb8a5a8c4cdb04e9502bd8"
+      },
+      {
+        "path": "app/experience/page.tsx",
+        "size": 13145,
+        "mtime_ns": 1793554794998707919,
+        "mode": 420,
+        "sha256": "418a564c5f1f6fbeaf9c37c3eab6b2d142185c2fbbc44031dc5527efd0edcff8"
+      },
+      {
+        "path": "app/projects/page.tsx",
+        "size": 13349,
+        "mtime_ns": 1793554794998976719,
+        "mode": 420,
+        "sha256": "dec60ad3cf4c84487feb423b899d89d559bcecd0f3764facdf06a49e06bbf83d"
+      },
+      {
+        "path": "app/research/page.tsx",
+        "size": 27952,
+        "mtime_ns": 1793554794999287219,
+        "mode": 420,
+        "sha256": "a42e7b41a6d98bcd567eb0d7afec9898d248d82f7708b9e45158264afb556a1a"
+      },
+      {
+        "path": "app/skills/page.tsx",
+        "size": 12191,
+        "mtime_ns": 1793554794999492119,
+        "mode": 420,
+        "sha256": "db66120372dfe3c95fdd7e9a0cb63a7ea2c8bbc5132ce3e8fdad917e006aedd6"
+      },
+      {
+        "path": "components/counter.tsx",
+        "size": 283,
+        "mtime_ns": 1793554795000027819,
+        "mode": 420,
+        "sha256": "2e2caabd81a1c5712df73083ab7524d53097f477790461633ad375df95ceaa77"
+      },
+      {
+        "path": "components/icons.tsx",
+        "size": 6482,
+        "mtime_ns": 1793554795000360119,
+        "mode": 420,
+        "sha256": "710f861761d9450a6805a98bf35cb61e78d3d58a7529e467d8206860f49a0655"
+      },
+      {
+        "path": "components/navbar.tsx",
+        "size": 11638,
+        "mtime_ns": 1793554795000532619,
+        "mode": 420,
+        "sha256": "f8becc0c2470dfda4ec9b25cc8afa73bbc71e9f69cd1bdb6f923f4ea86dd52b2"
+      },
+      {
+        "path": "components/primitives.ts",
+        "size": 1181,
+        "mtime_ns": 1793554795000585819,
+        "mode": 420,
+        "sha256": "7b7b45d5f2c82982cc44a64da960d5ac00d44f0a95f74ff171a09c97a7a50e50"
+      },
+      {
+        "path": "components/theme-switch.tsx",
+        "size": 1954,
+        "mtime_ns": 1793554795000615319,
+        "mode": 420,
+        "sha256": "a524433c0e9bf0e10fb5b574ab859752c8dd7f410def12d32f18b3c970735905"
+      },
+      {
+        "path": "components/ui/spotlight.tsx",
+        "size": 1451,
+        "mtime_ns": 1793554795001102719,
+        "mode": 420,
+        "sha256": "d3977ba315218acd1df6d273cd3d69e1c049ec46f7d41f2ec680e9b165d7a39f"
+      },
+      {
+        "path": "components/ui/typewriter-effect.tsx",
+        "size": 4179,
+        "mtime_ns": 1793554795001132619,
+        "mode": 420,
+        "sha256": "0d077f88debd901f11690d0be6eef3d2de860d15ef0ffa5e6819dff50297cd73"
+      },
+      {
+        "path": "config/fonts.ts",
+        "size": 255,
+        "mtime_ns": 1793554795002561319,
+        "mode": 420,
+        "sha256": "39bfa10ad89910b2ecb26106e109b69fc348ba68f6078a86bcf758567bc61a70"
+      },
+      {
+        "path": "config/site.ts",
+        "size": 1246,
+        "mtime_ns": 1793554795002611319,
+        "mode": 420,
+        "sha256": "4b5b5af1b3f9ccfb94f221286de39b80018bedd9f561d4e3cb7cfb4c865d307f"
+      },
+      {
+        "path": "lib/utils.ts",
+        "size": 169,
+        "mtime_ns": 1793554795003570619,
+        "mode": 420,
+        "sha256": "d1f1e0d62cb8d8d1e04c26e14de842d8a151f75812d81b046c65b5d1fe8e4b27"
+      },
+      {
+        "path": "public/favicon.ico",
+        "size": 15086,
+        "mtime_ns": 1793554796605132017,
+        "mode": 420,
+        "sha256": "6b9a300f2dc0ba954b504b17b17c69d10b2a337a67561dc5b9ea325765d0159f"
+      },
+      {
+        "path": "public/hacker.png",
+        "size": 170164,
+        "mtime_ns": 1793554796605275417,
+        "mode": 420,
+        "sha256": "ed804e11158aa138129881023a0af9e7194030f44f8ac921ebc63327d7adb7dc"
+      },
+      {
+        "path": "styles/globals.css",
+        "size": 5181,
+        "mtime_ns": 1793554796606184717,
+        "mode": 420,
+        "sha256": "6bfd2ad6a683aa6769209f849efaff8d9b251b0e7dbc794d2dc7d98b9274c189"
+      },
+      {
+        "path": "types/index.ts",
+        "size": 110,
+        "mtime_ns": 1793554796606512317,
+        "mode": 420,
+        "sha256": "8b3693bb4b2cd13308c52b56be9a92640be69f10ce8192f1649774a6274ac77b"
+      }
+    ]
+  },
+  "development": {
+    "root": "/home/r00tK1ngX/my-cv-redesign",
+    "top_level": [
+      {
+        "name": ".git",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "CNAME",
+        "type": "file",
+        "size": 18
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "size": 3499
+      },
+      {
+        "name": "avatar.jpg",
+        "type": "file",
+        "size": 177308
+      },
+      {
+        "name": "html,js,css",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "images",
+        "type": "dir",
+        "size": 4096
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "size": 68386
+      },
+      {
+        "name": "logo.svg",
+        "type": "file",
+        "size": 2062612
+      },
+      {
+        "name": "web-cv",
+        "type": "dir",
+        "size": 4096
+      }
+    ],
+    "counts_by_top": {
+      "CNAME": 1,
+      "README.md": 1,
+      "avatar.jpg": 1,
+      "index.html": 1,
+      "logo.svg": 1,
+      ".git": 30,
+      ".github": 1,
+      "html,js,css": 5,
+      "images": 2,
+      "web-cv": 5
+    },
+    "bytes_by_top": {
+      "CNAME": 18,
+      "README.md": 3499,
+      "avatar.jpg": 177308,
+      "index.html": 68386,
+      "logo.svg": 2062612,
+      ".git": 1869623,
+      ".github": 1250,
+      "html,js,css": 2307953,
+      "images": 2239920,
+      "web-cv": 2307953
+    },
+    "file_count": 48,
+    "git": {
+      "head": "f62fc0fa5c33bb65f0ac411fbfcc935294684745",
+      "status": "",
+      "branch": "redesign/portfolio-v2",
+      "tracked": ".github/workflows/static.yml\nCNAME\nREADME.md\navatar.jpg\nhtml,js,css/avatar.jpg\nhtml,js,css/index.html\nhtml,js,css/logo.svg\nhtml,js,css/script.js\nhtml,js,css/styles.css\nimages/avatar.jpg\nimages/logo.svg\nindex.html\nlogo.svg\nweb-cv/avatar.jpg\nweb-cv/index.html\nweb-cv/logo.svg\nweb-cv/script.js\nweb-cv/styles.css",
+      "main": "f62fc0fa5c33bb65f0ac411fbfcc935294684745"
+    }
+  },
+  "developmentFiles": [
+    {
+      "path": "CNAME",
+      "size": 18,
+      "mtime_ns": 1794906017878382892,
+      "mode": 420,
+      "sha256": "4e0d4c3b5e32937e68619f19be3707bdbc136451017cda668b3b31d49dc6b2d2"
+    },
+    {
+      "path": "README.md",
+      "size": 3499,
+      "mtime_ns": 1794906017878382892,
+      "mode": 420,
+      "sha256": "b85f35d5ffc88e6c679a2e8055a2a707bd8d9e2d6cee8cecee8fe78c8ce25dd6"
+    },
+    {
+      "path": "avatar.jpg",
+      "size": 177308,
+      "mtime_ns": 1794906017878382892,
+      "mode": 420,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "index.html",
+      "size": 68386,
+      "mtime_ns": 1794906017897536292,
+      "mode": 420,
+      "sha256": "c16271769562a85258dc516f43734831f35ce91dc3beeed78f056e02b8db3174"
+    },
+    {
+      "path": "logo.svg",
+      "size": 2062612,
+      "mtime_ns": 1794906017905536292,
+      "mode": 420,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": ".github/workflows/static.yml",
+      "size": 1250,
+      "mtime_ns": 1794906017878382892,
+      "mode": 420,
+      "sha256": "efb50260b6f1003a19d220d34b4152f5913b98d4d6d91b2dce7205b0572ac0e7"
+    },
+    {
+      "path": "html,js,css/avatar.jpg",
+      "size": 177308,
+      "mtime_ns": 1794906017878382892,
+      "mode": 420,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "html,js,css/index.html",
+      "size": 42146,
+      "mtime_ns": 1794906017880206392,
+      "mode": 420,
+      "sha256": "aa935e81283c1da579ffc5f6d67dfcc9b75011d88ed7824fef9b4f3cb0b3ef0f"
+    },
+    {
+      "path": "html,js,css/logo.svg",
+      "size": 2062612,
+      "mtime_ns": 1794906017885536292,
+      "mode": 420,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "html,js,css/script.js",
+      "size": 14312,
+      "mtime_ns": 1794906017885536292,
+      "mode": 420,
+      "sha256": "37d25f0faa4ce60f0f806aa5e48e5fd9e9b64108f341cf88917b2af980803345"
+    },
+    {
+      "path": "html,js,css/styles.css",
+      "size": 11575,
+      "mtime_ns": 1794906017885536292,
+      "mode": 420,
+      "sha256": "73437902871de4f05522332f2657cf20e47eb0611fe41c0be4fe9a1b5ff6bcb4"
+    },
+    {
+      "path": "images/avatar.jpg",
+      "size": 177308,
+      "mtime_ns": 1794906017885536292,
+      "mode": 420,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "images/logo.svg",
+      "size": 2062612,
+      "mtime_ns": 1794906017897536292,
+      "mode": 420,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "web-cv/avatar.jpg",
+      "size": 177308,
+      "mtime_ns": 1794906017905536292,
+      "mode": 420,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "web-cv/index.html",
+      "size": 42146,
+      "mtime_ns": 1794906017909270092,
+      "mode": 420,
+      "sha256": "aa935e81283c1da579ffc5f6d67dfcc9b75011d88ed7824fef9b4f3cb0b3ef0f"
+    },
+    {
+      "path": "web-cv/logo.svg",
+      "size": 2062612,
+      "mtime_ns": 1794906017913536292,
+      "mode": 420,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "web-cv/script.js",
+      "size": 14312,
+      "mtime_ns": 1794906017913536292,
+      "mode": 420,
+      "sha256": "37d25f0faa4ce60f0f806aa5e48e5fd9e9b64108f341cf88917b2af980803345"
+    },
+    {
+      "path": "web-cv/styles.css",
+      "size": 11575,
+      "mtime_ns": 1794906017913536292,
+      "mode": 420,
+      "sha256": "73437902871de4f05522332f2657cf20e47eb0611fe41c0be4fe9a1b5ff6bcb4"
+    }
+  ]
+}

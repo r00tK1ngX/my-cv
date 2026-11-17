@@ -1,0 +1,48 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/experience",
+    "/skills",
+    "/projects",
+    "/blog",
+    "/research",
+    "/contact"
+  ],
+  "viewports": [
+    {
+      "folder": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "folder": "laptop",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "folder": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "folder": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "folder": "mobile",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "emulation": {
+    "mobile": false,
+    "deviceScaleFactor": 1,
+    "foreground": true
+  },
+  "scroll": "Each route traversed in 75%-viewport increments before full screenshot; reveal effects triggered. Some counters in overview frames remain mid-animation; settled skill capture is separate.",
+  "screenshots": "top exact viewport; full page uses actual document height; homepage has section frames",
+  "claimLimits": "DOM/computed-style visual analysis only because image API403; hover media false; no successful email send; no physical mobile/touch/Safari check.",
+  "readOnly": "No ref files/build/dependency writes; no external message delivery; browser-only transient network blocking for errors; no fabricated success data."
+}

@@ -1,0 +1,994 @@
+[
+  {
+    "test": "desktop nav foreground",
+    "href": "/about",
+    "passed": true,
+    "actualURL": "/about",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/experience",
+    "passed": true,
+    "actualURL": "/experience",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/skills",
+    "passed": true,
+    "actualURL": "/skills",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/projects",
+    "passed": true,
+    "actualURL": "/projects",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/blog",
+    "passed": true,
+    "actualURL": "/blog",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/research",
+    "passed": true,
+    "actualURL": "/research",
+    "activeCyan": true
+  },
+  {
+    "test": "desktop nav foreground",
+    "href": "/contact",
+    "passed": true,
+    "actualURL": "/contact",
+    "activeCyan": true
+  },
+  {
+    "test": "Hire Me",
+    "passed": true
+  },
+  {
+    "test": "hero anchor foreground projects",
+    "url": "https://rbn0x00.vercel.app/#projects",
+    "earlyY": 68,
+    "finalY": 3740,
+    "targetTop": 79.9375,
+    "nav": {
+      "height": 65,
+      "background": "rgba(4, 8, 16, 0.97)"
+    }
+  },
+  {
+    "test": "hero anchor foreground experience",
+    "url": "https://rbn0x00.vercel.app/#experience",
+    "earlyY": 182,
+    "finalY": 913,
+    "targetTop": 80.1875,
+    "nav": {
+      "height": 65,
+      "background": "rgba(4, 8, 16, 0.97)"
+    }
+  },
+  {
+    "test": "footer Contact foreground",
+    "passed": true
+  },
+  {
+    "buttons": [
+      {
+        "text": "CVES\n1",
+        "active": true
+      },
+      {
+        "text": "EXPLOITS\n4",
+        "active": false
+      },
+      {
+        "text": "BUG BOUNTIES\n3",
+        "active": false
+      }
+    ],
+    "titles": [
+      "CVE-2025-26186"
+    ],
+    "links": [
+      {
+        "text": "VIEW CVE DETAILS",
+        "href": "https://nvd.nist.gov/vuln/detail/CVE-2025-26186"
+      }
+    ],
+    "errors": [],
+    "test": "research tab CVEs",
+    "expectedCards": 1,
+    "passed": true
+  },
+  {
+    "buttons": [
+      {
+        "text": "CVES\n1",
+        "active": false
+      },
+      {
+        "text": "EXPLOITS\n4",
+        "active": true
+      },
+      {
+        "text": "BUG BOUNTIES\n3",
+        "active": false
+      }
+    ],
+    "titles": [
+      "EDB-49974",
+      "EDB-49994",
+      "EDB-50043",
+      "EDB-50044"
+    ],
+    "links": [
+      {
+        "text": "VIEW ON EXPLOIT-DB",
+        "href": "https://www.exploit-db.com/exploits/49974"
+      },
+      {
+        "text": "VIEW ON EXPLOIT-DB",
+        "href": "https://www.exploit-db.com/exploits/49994"
+      },
+      {
+        "text": "VIEW ON EXPLOIT-DB",
+        "href": "https://www.exploit-db.com/exploits/50043"
+      },
+      {
+        "text": "VIEW ON EXPLOIT-DB",
+        "href": "https://www.exploit-db.com/exploits/50044"
+      }
+    ],
+    "errors": [],
+    "test": "research tab Exploits",
+    "expectedCards": 4,
+    "passed": true
+  },
+  {
+    "buttons": [
+      {
+        "text": "CVES\n1",
+        "active": false
+      },
+      {
+        "text": "EXPLOITS\n4",
+        "active": false
+      },
+      {
+        "text": "BUG BOUNTIES\n3",
+        "active": true
+      }
+    ],
+    "titles": [
+      "Deutsch Telekom",
+      "Deutsch Telekom",
+      "Deutsch Telekom"
+    ],
+    "links": [],
+    "errors": [],
+    "test": "research tab Bug Bounties",
+    "expectedCards": 3,
+    "passed": true
+  },
+  {
+    "buttons": [
+      {
+        "text": "CVES\n1",
+        "active": true
+      },
+      {
+        "text": "EXPLOITS\n4",
+        "active": false
+      },
+      {
+        "text": "BUG BOUNTIES\n3",
+        "active": false
+      }
+    ],
+    "titles": [
+      "CVE-2025-26186"
+    ],
+    "links": [
+      {
+        "text": "VIEW CVE DETAILS",
+        "href": "https://nvd.nist.gov/vuln/detail/CVE-2025-26186"
+      }
+    ],
+    "errors": [],
+    "test": "research tab CVEs return",
+    "expectedCards": 1,
+    "passed": true
+  },
+  {
+    "test": "mobile drawer open",
+    "state": {
+      "url": "/",
+      "label": "Close menu",
+      "overflow": "hidden",
+      "expanded": null,
+      "drawerOpacity": "1"
+    }
+  },
+  {
+    "test": "mobile Escape dismissal",
+    "state": {
+      "url": "/",
+      "label": "Close menu",
+      "overflow": "hidden",
+      "expanded": null,
+      "drawerOpacity": "1"
+    }
+  },
+  {
+    "test": "mobile toggle close",
+    "state": {
+      "url": "/",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "mobile outside overlay dismissal",
+    "state": {
+      "url": "/",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0.00168169"
+    }
+  },
+  {
+    "test": "mobile route /about",
+    "state": {
+      "url": "/about",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0.00166483"
+    }
+  },
+  {
+    "test": "mobile route /experience",
+    "state": {
+      "url": "/experience",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0.00166483"
+    }
+  },
+  {
+    "test": "mobile route /skills",
+    "state": {
+      "url": "/skills",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "mobile route /projects",
+    "state": {
+      "url": "/projects",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0.00166318"
+    }
+  },
+  {
+    "test": "mobile route /blog",
+    "state": {
+      "url": "/blog",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0.00700227"
+    }
+  },
+  {
+    "test": "mobile route /research",
+    "state": {
+      "url": "/research",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "mobile route /contact",
+    "state": {
+      "url": "/contact",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "mobile CTA Get In Touch",
+    "state": {
+      "url": "/contact",
+      "label": "Open menu",
+      "overflow": "",
+      "expanded": null,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "hover/focus hero primary CTA",
+    "route": "/",
+    "selector": "a[href=\"#projects\"]",
+    "before": {
+      "color": "rgb(4, 8, 16)",
+      "bg": "lab(76.6045 -40.9406 -29.6231)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)",
+      "x": 200.46875,
+      "y": 489.515625
+    },
+    "after": {
+      "color": "rgb(4, 8, 16)",
+      "bg": "lab(76.6045 -40.9406 -29.6231)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)",
+      "x": 200.46875,
+      "y": 489.515625
+    }
+  },
+  {
+    "test": "hover/focus desktop nav",
+    "route": "/",
+    "selector": "nav a[href=\"/about\"]",
+    "before": {
+      "color": "lab(48.0876 -2.03595 -16.5814)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 389.5625,
+      "y": 31.9921875
+    },
+    "after": {
+      "color": "lab(48.0876 -2.03595 -16.5814)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 389.5625,
+      "y": 31.9921875
+    }
+  },
+  {
+    "test": "hover/focus project card",
+    "route": "/projects",
+    "selector": "main div.group",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 293.828125,
+      "y": 490.28125
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 293.828125,
+      "y": 490.28125
+    }
+  },
+  {
+    "test": "hover/focus skill card",
+    "route": "/skills",
+    "selector": "main div.group",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 295.1640625,
+      "y": 409.21875
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 295.1640625,
+      "y": 409.21875
+    }
+  },
+  {
+    "test": "hover/focus blog card",
+    "route": "/blog",
+    "selector": "main div.group",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 293.828125,
+      "y": 489.8828125
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 293.828125,
+      "y": 489.8828125
+    }
+  },
+  {
+    "test": "hover/focus contact focus",
+    "route": "/contact",
+    "selector": "form input",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgb(4, 8, 16)",
+      "border": "rgba(0, 245, 255, 0.15)",
+      "shadow": "none",
+      "transform": "none",
+      "clip": "none",
+      "x": 871,
+      "y": 399.25
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "rgb(4, 8, 16)",
+      "border": "oklab(0.788992 -0.131265 -0.0805134 / 0.5)",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 245, 255, 0.08) 0px 0px 12px 0px",
+      "transform": "none",
+      "clip": "none",
+      "x": 871,
+      "y": 399.25
+    }
+  },
+  {
+    "test": "typewriter text changes",
+    "before": "Cybersecurity Ent",
+    "after": "Cybersecurity Enthusiast",
+    "animations": [
+      "pulse",
+      "glitch-1",
+      "glitch-2",
+      "blink",
+      "orbit-spin",
+      "orbit-spin-rev",
+      "morph-hero",
+      "hacker-float",
+      "pulse-core",
+      "float-tag",
+      "scan-line"
+    ]
+  },
+  {
+    "test": "settled skills and stats",
+    "text": "◈ CAPABILITIES\nSkills & Expertise\n\nTechnologies and security tools I work with to find vulnerabilities and build secure systems.\n\nNetwork Penetration Testing\n\nSECURITY\n\nADVANCED\nProficiency\n70%\nWeb Penetration Testing\n\nSECURITY\n\nINTERMEDIATE\nProficiency\n65%\nVulnerability Management\n\nSECURITY\n\nADVANCED\nProficiency\n70%\nPython\n\nPROGRAMMING\n\nADVANCED\nProficiency\n75%\nC++\n\nPROGRAMMING\n\nINTERMEDIATE\nProficiency\n50%\nNetworking\n\nSYSTEMS\n\nINTERMEDIATE\nProficiency\n60%\nLinux\n\nSYSTEMS\n\nEXPERT\nProficiency\n85%\nLog Analysis\n\nANALYSIS\n\nEXPERT\nProficiency\n90%\nWindows Server 2022\n\nSYSTEMS\n\nADVANCED\nProficiency\n70%\nDatabase Management\n\nSYSTEMS\n\nINTERMEDIATE\nProficiency\n65%\n2\nEXPERT SKILLS\n4\nADVANCED\n10\nTOTAL SKILLS\n70%\nAVG LEVEL",
+    "errors": []
+  },
+  {
+    "test": "hover CSS pseudo-state primary CTA",
+    "route": "/",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "rgb(4, 8, 16)",
+      "bg": "lab(76.6045 -40.9406 -29.6231)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "rgb(4, 8, 16)",
+      "bg": "lab(76.6045 -40.9406 -29.6231)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state nav link",
+    "route": "/",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(48.0876 -2.03595 -16.5814)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(48.0876 -2.03595 -16.5814)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state project card",
+    "route": "/projects",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state skill card",
+    "route": "/skills",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state experience card",
+    "route": "/experience",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.828004 0.0183412 0.188112 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.828004 0.0183412 0.188112 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state blog card",
+    "route": "/blog",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.788992 -0.131265 -0.0805134 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "hover CSS pseudo-state research card",
+    "route": "/research",
+    "mechanism": "CSS.forcePseudoState with hover media override; not physical pointer-device certification",
+    "before": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.704006 0.176798 0.0722319 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "after": {
+      "color": "lab(91.7353 -0.998765 -4.76968)",
+      "bg": "lab(3.5989 0.454932 -8.49186 / 0.8)",
+      "border": "rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) rgba(0, 245, 255, 0.12) oklab(0.704006 0.176798 0.0722319 / 0.4)",
+      "shadow": "none",
+      "transform": "none",
+      "translate": "none"
+    },
+    "hoverMedia": false
+  },
+  {
+    "test": "all card bodies /about",
+    "cards": [
+      {
+        "title": "Penetration Tester",
+        "before": "https://rbn0x00.vercel.app/about",
+        "after": "https://rbn0x00.vercel.app/about",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Developer",
+        "before": "https://rbn0x00.vercel.app/about",
+        "after": "https://rbn0x00.vercel.app/about",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Security Researcher",
+        "before": "https://rbn0x00.vercel.app/about",
+        "after": "https://rbn0x00.vercel.app/about",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "SOC & Log Analysis",
+        "before": "https://rbn0x00.vercel.app/about",
+        "after": "https://rbn0x00.vercel.app/about",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "System Administrator",
+        "before": "https://rbn0x00.vercel.app/about",
+        "after": "https://rbn0x00.vercel.app/about",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      }
+    ]
+  },
+  {
+    "test": "all card bodies /experience",
+    "cards": [
+      {
+        "title": "Certified Phishing Prevention Specialist (CPPS)",
+        "before": "https://rbn0x00.vercel.app/experience",
+        "after": "https://rbn0x00.vercel.app/experience",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Junior Penetration Tester",
+        "before": "https://rbn0x00.vercel.app/experience",
+        "after": "https://rbn0x00.vercel.app/experience",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "IT Support",
+        "before": "https://rbn0x00.vercel.app/experience",
+        "after": "https://rbn0x00.vercel.app/experience",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      }
+    ]
+  },
+  {
+    "test": "all card bodies /skills",
+    "cards": [
+      {
+        "title": "Network Penetration Testing",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Web Penetration Testing",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Vulnerability Management",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Python",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "C++",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Networking",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Linux",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Log Analysis",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Windows Server 2022",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Database Management",
+        "before": "https://rbn0x00.vercel.app/skills",
+        "after": "https://rbn0x00.vercel.app/skills",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      }
+    ]
+  },
+  {
+    "test": "all card bodies /projects",
+    "cards": [
+      {
+        "title": "Apache-logger",
+        "before": "https://rbn0x00.vercel.app/projects",
+        "after": "https://rbn0x00.vercel.app/projects",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Infostealer",
+        "before": "https://rbn0x00.vercel.app/projects",
+        "after": "https://rbn0x00.vercel.app/projects",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "Gmail-Shell",
+        "before": "https://rbn0x00.vercel.app/projects",
+        "after": "https://rbn0x00.vercel.app/projects",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      },
+      {
+        "title": "SmartMedica",
+        "before": "https://rbn0x00.vercel.app/projects",
+        "after": "https://rbn0x00.vercel.app/projects",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      }
+    ]
+  },
+  {
+    "test": "all card bodies /blog",
+    "cards": [
+      {
+        "title": "Hackthebox Devvortex",
+        "before": "https://rbn0x00.vercel.app/blog",
+        "after": "https://rbn0x00.vercel.app/blog",
+        "hasLinkAncestor": false,
+        "dialogCount": 0
+      }
+    ]
+  },
+  {
+    "test": "mobile research tab 0",
+    "titles": [
+      "CVE-2025-26186"
+    ],
+    "errors": []
+  },
+  {
+    "test": "mobile research tab 1",
+    "titles": [
+      "EDB-49974",
+      "EDB-49994",
+      "EDB-50043",
+      "EDB-50044"
+    ],
+    "errors": []
+  },
+  {
+    "test": "mobile research tab 2",
+    "titles": [
+      "Deutsch Telekom",
+      "Deutsch Telekom",
+      "Deutsch Telekom"
+    ],
+    "errors": []
+  },
+  {
+    "test": "Tab after menu toggle while drawer closed",
+    "focused": {
+      "tag": "A",
+      "text": "ABOUT",
+      "href": "/about",
+      "inDrawer": true,
+      "drawerOpacity": "0"
+    }
+  },
+  {
+    "test": "CVE details anchor click; navigation suppressed",
+    "href": "https://nvd.nist.gov/vuln/detail/CVE-2025-26186"
+  },
+  {
+    "test": "blog rss2json network blocked",
+    "body": "◈ BLOG & ARTICLES\nLatest Posts\n\nSecurity research, CTF writeups, and technical articles about cybersecurity.\n\nFailed to load blog posts. Please try again later.",
+    "cards": 0,
+    "note": "Network failure path only; no fabricated API response"
+  },
+  {
+    "test": "contact UI pending and rejected transport; NO network send",
+    "mechanism": "temporary fetch rejecting Promise in browser, no mocked success or provider response",
+    "pending": {
+      "text": "TRANSMITTING…",
+      "disabled": true,
+      "requests": [
+        {
+          "url": "/contact",
+          "method": "POST"
+        }
+      ]
+    },
+    "error": {
+      "text": "TRANSMISSION FAILED — RETRY",
+      "disabled": false
+    }
+  },
+  {
+    "test": "research card bodies tab 0",
+    "cards": [
+      {
+        "title": "CVE-2025-26186",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      }
+    ]
+  },
+  {
+    "test": "research card bodies tab 1",
+    "cards": [
+      {
+        "title": "EDB-49974",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      },
+      {
+        "title": "EDB-49994",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      },
+      {
+        "title": "EDB-50043",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      },
+      {
+        "title": "EDB-50044",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      }
+    ]
+  },
+  {
+    "test": "research card bodies tab 2",
+    "cards": [
+      {
+        "title": "Deutsch Telekom",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      },
+      {
+        "title": "Deutsch Telekom",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      },
+      {
+        "title": "Deutsch Telekom",
+        "before": "https://rbn0x00.vercel.app/research",
+        "after": "https://rbn0x00.vercel.app/research",
+        "linkAncestor": false,
+        "dialogs": 0
+      }
+    ]
+  },
+  {
+    "test": "mobile-open then resize desktop",
+    "before": {
+      "width": 390,
+      "toggleLabel": "Close menu",
+      "overflow": "hidden"
+    },
+    "after": {
+      "width": 1440,
+      "toggleDisplay": "none",
+      "drawerDisplay": "none",
+      "bodyOverflow": "hidden",
+      "menuLabel": "Close menu"
+    },
+    "source": "components/navbar.tsx:35-53,128-149",
+    "interpretation": "Desktop hides drawer/toggle but retained isMenuOpen keeps body overflow hidden."
+  }
+]

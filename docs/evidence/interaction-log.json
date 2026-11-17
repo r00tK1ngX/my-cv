@@ -1,0 +1,227 @@
+[
+  {
+    "test": "empty form submit",
+    "invalid": [
+      {
+        "placeholder": "John Doe",
+        "valid": false,
+        "missing": true,
+        "message": "Please fill out this field."
+      },
+      {
+        "placeholder": "you@example.com",
+        "valid": false,
+        "missing": true,
+        "message": "Please fill out this field."
+      },
+      {
+        "placeholder": "Penetration testing inquiry",
+        "valid": false,
+        "missing": true,
+        "message": "Please fill out this field."
+      },
+      {
+        "placeholder": "Tell me about your project or inquiry...",
+        "valid": false,
+        "missing": true,
+        "message": "Please fill out this field."
+      }
+    ],
+    "submitEvents": 0,
+    "button": "SEND MESSAGE",
+    "evidenceStatus": "valid validation/blocked network observation; foreground rerun pending/error captured separately"
+  },
+  {
+    "test": "invalid email submit",
+    "emailValidity": {
+      "valid": false,
+      "typeMismatch": true,
+      "message": "Please include an '@' in the email address. 'invalid-email' is missing an '@'."
+    },
+    "submitEvents": 0,
+    "evidenceStatus": "valid validation/blocked network observation; foreground rerun pending/error captured separately"
+  },
+  {
+    "test": "valid UI submit with all same-origin requests blocked at CDP Network layer; no email delivery",
+    "sendingSample": {
+      "text": "TRANSMISSION FAILED — RETRY",
+      "disabled": false
+    },
+    "failure": {
+      "text": "TRANSMISSION FAILED — RETRY",
+      "disabled": false,
+      "requests": [
+        {
+          "url": "/contact",
+          "method": "POST"
+        }
+      ],
+      "errors": [],
+      "submitEvents": 1
+    },
+    "reset": {
+      "text": "SEND MESSAGE",
+      "disabled": false,
+      "formValues": [
+        "Phase 1 audit",
+        "phase1-audit@example.invalid",
+        "Local UI test only",
+        "Request will be blocked before any network delivery."
+      ]
+    },
+    "screenshots": [
+      "screenshots/desktop/contact-1440x900-blocked-error.png"
+    ],
+    "evidenceStatus": "valid validation/blocked network observation; foreground rerun pending/error captured separately"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/about",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/experience",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/skills",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/projects",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/blog",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/research",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "desktop nav click",
+    "href": "/contact",
+    "actualURL": "/",
+    "active": "relative flex items-center gap-1.5 px-4 py-5 font-['Oxanium',monospace] text-[0.72rem] font-semibold tracking-[1.5px] uppercase no-underline transition-all duration-200 group\n                      text-slate-500 hover:text-white",
+    "heading": [
+      "Riadh\nBenlamine",
+      "Experience & Certifications",
+      "Skills & Expertise",
+      "Featured Projects"
+    ],
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "Hire Me",
+    "actualURL": "/",
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "hero anchor projects",
+    "url": "https://rbn0x00.vercel.app/",
+    "earlyScrollY": 0,
+    "finalScrollY": 0,
+    "targetViewportTop": 3819.9375,
+    "htmlScroll": "smooth",
+    "nav": {
+      "position": "fixed",
+      "background": "rgba(4, 8, 16, 0.8)",
+      "height": 65
+    },
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "hero anchor experience",
+    "url": "https://rbn0x00.vercel.app/#experience",
+    "earlyScrollY": 0,
+    "finalScrollY": 0,
+    "targetViewportTop": 993.1875,
+    "htmlScroll": "smooth",
+    "nav": {
+      "position": "fixed",
+      "background": "rgba(4, 8, 16, 0.8)",
+      "height": 65
+    },
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "card body click skills",
+    "before": "https://rbn0x00.vercel.app/#experience",
+    "after": "https://rbn0x00.vercel.app/#experience",
+    "dialogCount": 0,
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "card body click projects",
+    "before": "https://rbn0x00.vercel.app/#experience",
+    "after": "https://rbn0x00.vercel.app/#experience",
+    "dialogCount": 0,
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "card body click experience",
+    "before": "https://rbn0x00.vercel.app/#experience",
+    "after": "https://rbn0x00.vercel.app/#experience",
+    "dialogCount": 0,
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  },
+  {
+    "test": "footer contact",
+    "actualURL": "/contact",
+    "evidenceStatus": "superseded by foreground-interactions.json; hidden-tab timing invalid, not an application defect"
+  }
+]

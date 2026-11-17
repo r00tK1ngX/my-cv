@@ -1,0 +1,312 @@
+{
+  "url": "https://rbn0x00.vercel.app/",
+  "title": "Riadh Portfolio",
+  "viewport": [
+    1440,
+    900
+  ],
+  "doc": [
+    1425,
+    1425,
+    5309
+  ],
+  "links": [
+    {
+      "i": 0,
+      "text": "[\nrbn0x00\n@\nportfolio\n]\n$_",
+      "href": "/",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 1,
+      "text": "ABOUT",
+      "href": "/about",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 2,
+      "text": "EXPERIENCE",
+      "href": "/experience",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 3,
+      "text": "SKILLS",
+      "href": "/skills",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 4,
+      "text": "PROJECTS",
+      "href": "/projects",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 5,
+      "text": "BLOG",
+      "href": "/blog",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 6,
+      "text": "RESEARCH",
+      "href": "/research",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 7,
+      "text": "CONTACT",
+      "href": "/contact",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 8,
+      "text": "HIRE ME",
+      "href": "/contact",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 9,
+      "text": "About",
+      "href": "/about",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 10,
+      "text": "Experience",
+      "href": "/experience",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 11,
+      "text": "Skills",
+      "href": "/skills",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 12,
+      "text": "Projects",
+      "href": "/projects",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 13,
+      "text": "Blog",
+      "href": "/blog",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 14,
+      "text": "Research",
+      "href": "/research",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 15,
+      "text": "Contact",
+      "href": "/contact",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 16,
+      "text": "Get In Touch",
+      "href": "/contact",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 17,
+      "text": "⬡ VIEW PROJECTS",
+      "href": "#projects",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 18,
+      "text": "⬡ MY JOURNEY",
+      "href": "#experience",
+      "target": "",
+      "rel": ""
+    },
+    {
+      "i": 19,
+      "text": "",
+      "href": "https://github.com/RiadhBenlamine/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 20,
+      "text": "",
+      "href": "https://www.linkedin.com/in/riadh-benlamine/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 21,
+      "text": "CODE",
+      "href": "https://github.com/RiadhBenlamine/Apache-logger",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 22,
+      "text": "CODE",
+      "href": "https://github.com/RiadhBenlamine/infostealer",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 23,
+      "text": "CODE",
+      "href": "https://github.com/RiadhBenlamine/gmail-shell",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 24,
+      "text": "CODE",
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 25,
+      "text": "DEMO",
+      "href": "https://smartmedica-frontend.vercel.app",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 26,
+      "text": "VIEW ALL ON GITHUB",
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 27,
+      "text": "GITHUB",
+      "href": "https://github.com/RiadhBenlamine",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 28,
+      "text": "BLOG",
+      "href": "https://medium.com/@rbn0x00",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "i": 29,
+      "text": "CONTACT",
+      "href": "/contact",
+      "target": "",
+      "rel": ""
+    }
+  ],
+  "controls": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "text": "Open menu",
+      "html": "<button class=\"sm:hidden flex items-center justify-center w-9 h-9 border border-[rgba(0,245,255,0.2)] bg-[#070d1a]/80 text-cyan-400 transition-all duration-200 hover:border-cyan-400/50 hover:shadow-[0_0_12px_rgba(0,245,255,0.15)]\" aria-label=\"Open menu\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linec"
+    }
+  ],
+  "sections": [
+    {
+      "tag": "MAIN",
+      "id": "",
+      "cls": "flex-grow pt-16",
+      "top": 0,
+      "width": 1425,
+      "height": 5239.25,
+      "padding": "64px 0px 0px",
+      "display": "block",
+      "gap": "normal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "home",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden flex items-center",
+      "top": 64,
+      "width": 1425,
+      "height": 900,
+      "padding": "0px",
+      "display": "flex",
+      "gap": "normal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden",
+      "top": 993.1875,
+      "width": 1425,
+      "height": 1607.40625,
+      "padding": "0px",
+      "display": "block",
+      "gap": "normal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden",
+      "top": 2600.59375,
+      "width": 1425,
+      "height": 1219.34375,
+      "padding": "0px",
+      "display": "block",
+      "gap": "normal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "",
+      "cls": "relative min-h-screen bg-[#040810] overflow-hidden",
+      "top": 3819.9375,
+      "width": 1425,
+      "height": 1419.3125,
+      "padding": "0px",
+      "display": "block",
+      "gap": "normal"
+    },
+    {
+      "tag": "FOOTER",
+      "id": "",
+      "cls": "relative z-10 border-t border-[rgba(0,245,255,0.08)] mt-auto",
+      "top": 5239.25,
+      "width": 1425,
+      "height": 70,
+      "padding": "0px",
+      "display": "block",
+      "gap": "normal"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://rbn0x00.vercel.app/hacker.png",
+      "loaded": true,
+      "natural": [
+        500,
+        500
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap",
+    "status": 0,
+    "initiator": "link",
+    "duration": 0
+  },
+  {
+    "name": "https://fonts.gstatic.com/s/oxanium/v21/RrQQboN_4yJ0JmiMe2LE0Q.woff2",
+    "status": 200,
+    "initiator": "css",
+    "duration": 0
+  },
+  {
+    "name": "https://fonts.gstatic.com/s/rajdhani/v17/LDI2apCSOBg7S-QT7pasEfOreec.woff2",
+    "status": 200,
+    "initiator": "css",
+    "duration": 0
+  },
+  {
+    "name": "https://fonts.gstatic.com/s/rajdhani/v17/LDIxapCSOBg7S-QT7p4HM-Y.woff2",
+    "status": 200,
+    "initiator": "css",
+    "duration": 0
+  },
+  {
+    "name": "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40rbn0x00",
+    "status": 200,
+    "initiator": "fetch",
+    "duration": 241.70000000018626
+  },
+  {
+    "name": "https://rbn0x00.vercel.app/_vercel/insights/script.js",
+    "status": 200,
+    "initiator": "script",
+    "duration": 0
+  }
+]

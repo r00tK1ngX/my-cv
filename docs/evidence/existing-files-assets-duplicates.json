@@ -1,0 +1,197 @@
+{
+  "logo": {
+    "bytes": 2062612,
+    "rootAttributes": {
+      "width": "500",
+      "zoomAndPan": "magnify",
+      "viewBox": "0 0 375 374.999991",
+      "height": "500",
+      "preserveAspectRatio": "xMidYMid meet",
+      "version": "1.0"
+    },
+    "elementCounts": {
+      "svg": 1,
+      "defs": 1,
+      "filter": 2,
+      "feColorMatrix": 2,
+      "clipPath": 1,
+      "path": 1,
+      "image": 4,
+      "mask": 1,
+      "g": 5
+    },
+    "embeddedImages": [
+      {
+        "width": "1563",
+        "height": "1600",
+        "hrefPrefix": "data:image/png;base64,iVBORw0K",
+        "hrefLength": 43010
+      },
+      {
+        "width": "1563",
+        "height": "1600",
+        "hrefPrefix": "data:image/png;base64,iVBORw0K",
+        "hrefLength": 43010
+      },
+      {
+        "width": "1563",
+        "height": "1600",
+        "hrefPrefix": "data:image/png;base64,iVBORw0K",
+        "hrefLength": 987582
+      },
+      {
+        "width": "1563",
+        "height": "1600",
+        "hrefPrefix": "data:image/png;base64,iVBORw0K",
+        "hrefLength": 987582
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "avatar.jpg",
+      "bytes": 177308,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "logo.svg",
+      "bytes": 2062612,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3499,
+      "sha256": "b85f35d5ffc88e6c679a2e8055a2a707bd8d9e2d6cee8cecee8fe78c8ce25dd6"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 18,
+      "sha256": "4e0d4c3b5e32937e68619f19be3707bdbc136451017cda668b3b31d49dc6b2d2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 68386,
+      "sha256": "c16271769562a85258dc516f43734831f35ce91dc3beeed78f056e02b8db3174"
+    },
+    {
+      "path": "web-cv/avatar.jpg",
+      "bytes": 177308,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "web-cv/logo.svg",
+      "bytes": 2062612,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "web-cv/styles.css",
+      "bytes": 11575,
+      "sha256": "73437902871de4f05522332f2657cf20e47eb0611fe41c0be4fe9a1b5ff6bcb4"
+    },
+    {
+      "path": "web-cv/script.js",
+      "bytes": 14312,
+      "sha256": "37d25f0faa4ce60f0f806aa5e48e5fd9e9b64108f341cf88917b2af980803345"
+    },
+    {
+      "path": "web-cv/index.html",
+      "bytes": 42146,
+      "sha256": "aa935e81283c1da579ffc5f6d67dfcc9b75011d88ed7824fef9b4f3cb0b3ef0f"
+    },
+    {
+      "path": "html,js,css/avatar.jpg",
+      "bytes": 177308,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "html,js,css/logo.svg",
+      "bytes": 2062612,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": "html,js,css/styles.css",
+      "bytes": 11575,
+      "sha256": "73437902871de4f05522332f2657cf20e47eb0611fe41c0be4fe9a1b5ff6bcb4"
+    },
+    {
+      "path": "html,js,css/script.js",
+      "bytes": 14312,
+      "sha256": "37d25f0faa4ce60f0f806aa5e48e5fd9e9b64108f341cf88917b2af980803345"
+    },
+    {
+      "path": "html,js,css/index.html",
+      "bytes": 42146,
+      "sha256": "aa935e81283c1da579ffc5f6d67dfcc9b75011d88ed7824fef9b4f3cb0b3ef0f"
+    },
+    {
+      "path": "images/avatar.jpg",
+      "bytes": 177308,
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f"
+    },
+    {
+      "path": "images/logo.svg",
+      "bytes": 2062612,
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c"
+    },
+    {
+      "path": ".github/workflows/static.yml",
+      "bytes": 1250,
+      "sha256": "efb50260b6f1003a19d220d34b4152f5913b98d4d6d91b2dce7205b0572ac0e7"
+    }
+  ],
+  "duplicateGroups": [
+    {
+      "sha256": "5f3d00b5411c8e78b4f61ef7636ba1d4043600f455a40c6dcc22d73b2da5446f",
+      "files": [
+        "avatar.jpg",
+        "web-cv/avatar.jpg",
+        "html,js,css/avatar.jpg",
+        "images/avatar.jpg"
+      ],
+      "bytesEach": 177308
+    },
+    {
+      "sha256": "63141766d58abc297431e273bbf44c9f9e258071ddd83e201cb9ef99f47c194c",
+      "files": [
+        "logo.svg",
+        "web-cv/logo.svg",
+        "html,js,css/logo.svg",
+        "images/logo.svg"
+      ],
+      "bytesEach": 2062612
+    },
+    {
+      "sha256": "73437902871de4f05522332f2657cf20e47eb0611fe41c0be4fe9a1b5ff6bcb4",
+      "files": [
+        "web-cv/styles.css",
+        "html,js,css/styles.css"
+      ],
+      "bytesEach": 11575
+    },
+    {
+      "sha256": "37d25f0faa4ce60f0f806aa5e48e5fd9e9b64108f341cf88917b2af980803345",
+      "files": [
+        "web-cv/script.js",
+        "html,js,css/script.js"
+      ],
+      "bytesEach": 14312
+    },
+    {
+      "sha256": "aa935e81283c1da579ffc5f6d67dfcc9b75011d88ed7824fef9b4f3cb0b3ef0f",
+      "files": [
+        "web-cv/index.html",
+        "html,js,css/index.html"
+      ],
+      "bytesEach": 42146
+    }
+  ],
+  "avatar": {
+    "format": "JPEG",
+    "dimensions": [
+      961,
+      1281
+    ],
+    "bytes": 177308
+  },
+  "duplicateBytesBeyondOneEach": 6787793
+}
