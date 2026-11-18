@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-18",
+  "method": "GET",
+  "authenticated": false,
+  "sideEffects": false,
+  "target": "Production custom domain (hostname omitted)",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "lang": "en",
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "markers": {
+        "excludedProgramA": true,
+        "excludedProgramB": true,
+        "oldGithub": true,
+        "approvedGithub": false,
+        "approvedEmail": false,
+        "phonePattern": true
+      }
+    },
+    {
+      "path": "/about",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/experience",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/skills",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/projects",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/blog",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/research",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/contact",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/about",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/experience",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/skills",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/projects",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/blog",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/research",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/vi/contact",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "bodyRead": false
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bodyRead": true,
+      "sourceFileInWorkspace": false
+    }
+  ]
+}
