@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "purpose": "Public isolated source-code review inventory; not a deployment or release approval",
-  "payloadFileCount": 92,
-  "payloadBytes": 522644,
+  "payloadFileCount": 93,
+  "payloadBytes": 536996,
   "hashAlgorithm": "SHA-256",
   "payloadSnapshotEncoding": "SHA-256 of UTF-8 sorted lines: lowercase file SHA256 + two spaces + relative POSIX path + LF",
-  "payloadSnapshotSha256": "067ecf74b365d3f2706ba9c0fbb68d2247db3798ff73b29dfc65c5b16ffbe46a",
+  "payloadSnapshotSha256": "fecd734d1a390e7f91c062374593a0ab967474251ee60b126f2c220febe1e892",
   "selfReferencePolicy": "SOURCE-INVENTORY.json excluded from its own payload list; final whole-source digest is handed off separately",
   "files": [
     {
@@ -270,8 +270,8 @@
     },
     {
       "path": "src/components/site-shell.tsx",
-      "bytes": 11926,
-      "sha256": "47bf642efb22bc5d73230969f4b222088db656c52c05c424c116e70ed38b5f5a"
+      "bytes": 13347,
+      "sha256": "e170b46574439b7d200a730da5244f9f015413ff49ded7e9703e559702dc382b"
     },
     {
       "path": "src/data/portfolio.ts",
@@ -317,6 +317,11 @@
       "path": "tests/integration/enhancement.spec.ts",
       "bytes": 1280,
       "sha256": "86b0b951cc1905ccb72b8ae0524a6c7701654c91cf62f87ebbd12b5fec72a78a"
+    },
+    {
+      "path": "tests/integration/focus-restoration-round3.spec.ts",
+      "bytes": 12931,
+      "sha256": "c85a78dfb27a5bf6febbe22d7bdb2ca336325a436063c9c960b4745b69b19dbf"
     },
     {
       "path": "tests/integration/modal-focus-round2.spec.ts",

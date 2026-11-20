@@ -13,6 +13,12 @@ import {
 import { profile } from "@/data/portfolio";
 import { Icon } from "./icon";
 
+function availableFocusTarget(element: HTMLElement | null): element is HTMLElement {
+  return !!element?.isConnected && !element.closest("[inert]") &&
+    !element.matches(":disabled") && element.getClientRects().length > 0 &&
+    getComputedStyle(element).visibility === "visible";
+}
+
 export function SiteShell({
   locale,
   page,
@@ -26,6 +32,7 @@ export function SiteShell({
   const [closing, setClosing] = useState(false);
   const main = useRef<HTMLElement>(null);
   const closeMenu = useCallback((immediate = false) => {
+    restoreFocus.current = !immediate;
     setClosing(
       !immediate && !matchMedia("(prefers-reduced-motion: reduce)").matches,
     );
@@ -38,7 +45,37 @@ export function SiteShell({
   const focusGeneration = useRef(0);
   const drawer = useRef<HTMLDivElement>(null);
   const modal = useRef<HTMLDivElement>(null);
+  const lastFocused = useRef<EventTarget | null>(null);
+  const restoreMenuFocus = useCallback((generation = focusGeneration.current) => {
+    cancelAnimationFrame(focusFrame.current);
+    const activeBefore = document.activeElement;
+    const path = location.pathname;
+    focusFrame.current = requestAnimationFrame(() => {
+      const scope = modal.current;
+      const active = document.activeElement;
+      if (focusGeneration.current !== generation || !scope?.isConnected ||
+          scope.getAttribute("role") === "dialog" || location.pathname !== path) return;
+      // A newer valid focus choice takes precedence over deferred restoration.
+      if (active instanceof HTMLElement && active !== document.body &&
+          active !== toggle.current && !drawer.current?.contains(active) &&
+          availableFocusTarget(active)) return;
+      if (active !== activeBefore && active !== document.body && active !== toggle.current) return;
+      const target = availableFocusTarget(toggle.current)
+        ? toggle.current
+        : scope.querySelector<HTMLElement>(".wordmark");
+      if (availableFocusTarget(target)) target.focus();
+    });
+  }, []);
   const vi = locale === "vi";
+  useEffect(() => {
+    const focused = (event: FocusEvent) => { lastFocused.current = event.target; };
+    document.addEventListener("focusin", focused);
+    return () => {
+      document.removeEventListener("focusin", focused);
+      cancelAnimationFrame(focusFrame.current);
+      ++focusGeneration.current;
+    };
+  }, []);
   useEffect(() => {
     if (main.current) return mountMotion(main.current);
   }, [locale, page]);
@@ -65,26 +102,27 @@ export function SiteShell({
     const media = matchMedia("(min-width: 1180px)");
     const resize = () => {
       if (media.matches) {
+        const active = document.activeElement;
+        const hiddenToggleHadFocus = active === toggle.current ||
+          (active === document.body && lastFocused.current === toggle.current);
         setOpen(false);
         setClosing(false);
+        if (hiddenToggleHadFocus) restoreMenuFocus();
       }
     };
     media.addEventListener("change", resize);
     return () => media.removeEventListener("change", resize);
-  }, []);
+  }, [restoreMenuFocus]);
   useEffect(() => {
     if (!open) return;
     cancelAnimationFrame(focusFrame.current);
     const generation = ++focusGeneration.current;
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const previousFocus = document.activeElement as HTMLElement | null;
-    const opener = toggle.current;
     drawer.current?.querySelector<HTMLElement>("a,button")?.focus();
     const key = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
-        restoreFocus.current = true;
         closeMenu();
       }
       if (event.key === "Tab") {
@@ -121,20 +159,10 @@ export function SiteShell({
       document.removeEventListener("focusin", containFocus);
       if (restoreFocus.current || matchMedia("(min-width: 1180px)").matches) {
         restoreFocus.current = false;
-        focusFrame.current = requestAnimationFrame(() => {
-          if (focusGeneration.current === generation && opener?.isConnected &&
-              !drawer.current?.closest('[data-state="open"]')) {
-            const target = opener.getClientRects().length
-              ? opener
-              : modal.current?.querySelector<HTMLElement>(".wordmark");
-            if (target?.isConnected && !target.closest("[inert]")) target.focus();
-          }
-        });
-      } else if (open) {
-        previousFocus?.focus();
+        restoreMenuFocus(generation);
       }
     };
-  }, [open, closeMenu]);
+  }, [open, closeMenu, restoreMenuFocus]);
   const nav = pageKeys.filter((p) => p !== "home");
   return (
     <>
@@ -217,7 +245,6 @@ export function SiteShell({
             className="menu-toggle"
             onClick={() => {
               if (open) {
-                restoreFocus.current = true;
                 closeMenu();
               } else {
                 setClosing(false);
