@@ -76,7 +76,7 @@ Serving this build under a GitHub project subpath would require a separately rev
 
 ## Review scope and packaging
 
-This accessibility-remediation candidate is based on immutable review commit `da419d73a1cbc58e3e3929f4b4e29001fe8ee87a`. It changes the shared shell's accessible wordmark name and mobile modal isolation, and adds regression assertions. The visible wordmark, CSS, typography, layout, animation definitions, personal claims, dependencies and static-export configuration are unchanged.
+This Round 2 accessibility-remediation candidate is based on immutable review commit `a2f175dbe0f55268fdd734afb460a860f77b5a6c` (whose parent is `da419d73a1cbc58e3e3929f4b4e29001fe8ee87a`). It fixes mixed pointer/keyboard modal focus containment, narrows the modal semantic boundary to the existing header close control and mobile drawer, and advertises the controls relationship only while its target is mounted. Permanent EN/VI regression tests cover the exact pointer-down/drag/release then Shift+Tab reproduction. The visible wordmark, CSS, typography, layout, animation definitions, personal claims, dependencies and static-export configuration are unchanged. This local-only branch is not authorized for publication or deployment.
 
 The original source-review packaging remains: public inventory, generated-file ignores, sanitized third-party notice provenance, and omission of internal QA recordings and private/obsolete data. The public inventory is refreshed for this candidate; it is not a deployment approval. The modal uses native `inert` for background interaction plus synchronized accessibility state, and both existing close controls remain available within the modal scope.
 

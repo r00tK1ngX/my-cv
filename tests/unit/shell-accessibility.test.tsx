@@ -21,4 +21,14 @@ for (const locale of ["en", "vi"] as const) {
     assert.doesNotMatch(html, /<main[^>]*\sinert(?:=|\s|>)/);
     assert.doesNotMatch(html, /<footer[^>]*\sinert(?:=|\s|>)/);
   });
+  test(`${locale}: a fully closed menu does not advertise an unmounted controls target`, () => {
+    const html = renderToStaticMarkup(
+      <SiteShell locale={locale} page="about"><h1>About</h1></SiteShell>,
+    );
+    const toggle = html.match(/<button\b[^>]*class="menu-toggle"[^>]*>/)?.[0];
+    assert.ok(toggle);
+    assert.match(toggle, /aria-expanded="false"/);
+    assert.doesNotMatch(toggle, /aria-controls=/);
+    assert.doesNotMatch(html, /id="mobile-navigation"/);
+  });
 }

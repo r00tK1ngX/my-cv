@@ -95,10 +95,15 @@ export function SiteShell({
         ].filter((element) => element.tabIndex >= 0 && !element.closest("[inert]") && element.getClientRects().length > 0);
         const first = elements[0],
           last = elements[elements.length - 1];
-        if (event.shiftKey && document.activeElement === first) {
+        const active = document.activeElement;
+        if (!elements.some((element) => element === active)) {
+          // Pointer focus can land on the header close control (tabIndex -1).
+          event.preventDefault();
+          (event.shiftKey ? last : first)?.focus();
+        } else if (event.shiftKey && active === first) {
           event.preventDefault();
           last?.focus();
-        } else if (!event.shiftKey && document.activeElement === last) {
+        } else if (!event.shiftKey && active === last) {
           event.preventDefault();
           first?.focus();
         }
@@ -114,11 +119,16 @@ export function SiteShell({
       document.body.style.overflow = previous;
       document.removeEventListener("keydown", key);
       document.removeEventListener("focusin", containFocus);
-      if (restoreFocus.current) {
+      if (restoreFocus.current || matchMedia("(min-width: 1180px)").matches) {
         restoreFocus.current = false;
         focusFrame.current = requestAnimationFrame(() => {
           if (focusGeneration.current === generation && opener?.isConnected &&
-              !drawer.current?.closest('[data-state="open"]')) opener.focus();
+              !drawer.current?.closest('[data-state="open"]')) {
+            const target = opener.getClientRects().length
+              ? opener
+              : modal.current?.querySelector<HTMLElement>(".wordmark");
+            if (target?.isConnected && !target.closest("[inert]")) target.focus();
+          }
         });
       } else if (open) {
         previousFocus?.focus();
@@ -127,22 +137,25 @@ export function SiteShell({
   }, [open, closeMenu]);
   const nav = pageKeys.filter((p) => p !== "home");
   return (
-    <div
-      ref={modal}
-      role={open ? "dialog" : undefined}
-      aria-modal={open ? true : undefined}
-      aria-label={open ? (vi ? "Menu điều hướng" : "Navigation menu") : undefined}
-    >
+    <>
       <a className="skip-link" href="#main-content" inert={open} aria-hidden={open || undefined}>
         {vi ? "Bỏ qua đến nội dung" : "Skip to content"}
       </a>
       <div className="global-grid" aria-hidden="true" />
       <div className="ambient ambient-cyan" aria-hidden="true" />
       <div className="ambient ambient-pink" aria-hidden="true" />
-      <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
+      <div
+        ref={modal}
+        style={open ? { position: "fixed", inset: 0, zIndex: 1000 } : undefined}
+        role={open ? "dialog" : undefined}
+        aria-modal={open ? true : undefined}
+        aria-label={open ? (vi ? "Menu điều hướng" : "Navigation menu") : undefined}
+      >
+      <header role={open ? "none" : undefined} className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <nav
+          role={open ? "none" : undefined}
           className="header-inner"
-          aria-label={vi ? "Điều hướng chính" : "Main navigation"}
+          aria-label={open ? undefined : vi ? "Điều hướng chính" : "Main navigation"}
         >
           <Link
             href={routeFor(locale, "home")}
@@ -221,7 +234,7 @@ export function SiteShell({
                   : "Open menu"
             }
             aria-expanded={open}
-            aria-controls="mobile-navigation"
+            aria-controls={open || closing ? "mobile-navigation" : undefined}
             tabIndex={open ? -1 : undefined}
           >
             <Icon name={open ? "close" : "menu"} />
@@ -286,6 +299,7 @@ export function SiteShell({
           </div>
         </div>
       )}
+      </div>
       <noscript>
         <nav
           className="static-navigation"
@@ -322,6 +336,6 @@ export function SiteShell({
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

@@ -86,7 +86,8 @@ for (const locale of ["en", "vi"] as const) {
       await expect(page.getByRole("dialog")).toHaveCount(0);
       await expect(toggle).toBeFocused();
       await page.locator(".language-switch").click();
-      await expect(page).toHaveURL(new RegExp(`${locale === "en" ? "/vi" : ""}/about/$`));
+      await expect.poll(() => new URL(page.url()).pathname).toBe(`${locale === "en" ? "/vi" : ""}/about/`);
+      await expect(page.locator("html")).toHaveAttribute("lang", locale === "en" ? "vi" : "en");
     });
   }
 }
