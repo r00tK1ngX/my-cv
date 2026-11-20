@@ -1,0 +1,4 @@
+Font Awesome Free icons used: GitHub and LinkedIn brand glyphs, via react-icons/fa.
+Font Awesome by Dave Gandy - https://fontawesome.com/
+Icon license: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Brand marks are trademarks of their respective owners and are used only to identify approved destination links, not endorsement.
