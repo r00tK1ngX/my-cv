@@ -76,8 +76,10 @@ Serving this build under a GitHub project subpath would require a separately rev
 
 ## Review scope and packaging
 
-All application source and public assets are preserved from the reviewed implementation. Only review packaging is different: this README, a public source inventory, broader generated-file ignores, sanitized third-party notice provenance, and removal of obsolete/private literal identifiers from negative test/validator patterns. No UI, motion, public content, dependency resolution or static-export architecture is changed.
+This accessibility-remediation candidate is based on immutable review commit `da419d73a1cbc58e3e3929f4b4e29001fe8ee87a`. It changes the shared shell's accessible wordmark name and mobile modal isolation, and adds regression assertions. The visible wordmark, CSS, typography, layout, animation definitions, personal claims, dependencies and static-export configuration are unchanged.
 
-Known limits include Chromium-focused browser evidence, residual cold-font layout shifts, experimental global-not-found support, the mail-client dependency and remaining content/release decisions. Lint and installation warnings must be read rather than treated as a zero-warning guarantee.
+The original source-review packaging remains: public inventory, generated-file ignores, sanitized third-party notice provenance, and omission of internal QA recordings and private/obsolete data. The public inventory is refreshed for this candidate; it is not a deployment approval. The modal uses native `inert` for background interaction plus synchronized accessibility state, and both existing close controls remain available within the modal scope.
+
+Known limits include the need for real screen-reader/device validation, WebKit host-library availability, residual cold-font layout shifts, experimental global-not-found support, the mail-client dependency and remaining content/release decisions. Chromium/Firefox regression tests are source assertions, not a conformance certificate. Lint and installation warnings must be read rather than treated as a zero-warning guarantee.
 
 See `SOURCE-INVENTORY.json` for the exact intended source-review paths and hashes. It excludes itself to avoid a circular hash. Licensing and attribution are in `THIRD-PARTY-NOTICES.md` and `public/legal/`.

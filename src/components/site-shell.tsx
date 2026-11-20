@@ -37,6 +37,7 @@ export function SiteShell({
   const focusFrame = useRef(0);
   const focusGeneration = useRef(0);
   const drawer = useRef<HTMLDivElement>(null);
+  const modal = useRef<HTMLDivElement>(null);
   const vi = locale === "vi";
   useEffect(() => {
     if (main.current) return mountMotion(main.current);
@@ -88,10 +89,10 @@ export function SiteShell({
       }
       if (event.key === "Tab") {
         const elements = [
-          ...(drawer.current?.querySelectorAll<HTMLElement>(
+          ...(modal.current?.querySelectorAll<HTMLElement>(
             "a[href],button:not([disabled])",
           ) ?? []),
-        ];
+        ].filter((element) => element.tabIndex >= 0 && !element.closest("[inert]") && element.getClientRects().length > 0);
         const first = elements[0],
           last = elements[elements.length - 1];
         if (event.shiftKey && document.activeElement === first) {
@@ -104,7 +105,7 @@ export function SiteShell({
       }
     };
     const containFocus = (event: FocusEvent) => {
-      if (event.target instanceof Node && !drawer.current?.contains(event.target))
+      if (event.target instanceof Node && !modal.current?.contains(event.target))
         drawer.current?.querySelector<HTMLElement>("a,button")?.focus();
     };
     document.addEventListener("keydown", key);
@@ -126,8 +127,13 @@ export function SiteShell({
   }, [open, closeMenu]);
   const nav = pageKeys.filter((p) => p !== "home");
   return (
-    <>
-      <a className="skip-link" href="#main-content">
+    <div
+      ref={modal}
+      role={open ? "dialog" : undefined}
+      aria-modal={open ? true : undefined}
+      aria-label={open ? (vi ? "Menu điều hướng" : "Navigation menu") : undefined}
+    >
+      <a className="skip-link" href="#main-content" inert={open} aria-hidden={open || undefined}>
         {vi ? "Bỏ qua đến nội dung" : "Skip to content"}
       </a>
       <div className="global-grid" aria-hidden="true" />
@@ -141,8 +147,10 @@ export function SiteShell({
           <Link
             href={routeFor(locale, "home")}
             className="wordmark"
+            inert={open}
+            aria-hidden={open || undefined}
             aria-label={
-              vi ? "Châu Anh Dũng — Trang chủ" : "Châu Anh Dũng — Home"
+              `${profile.handle} / portfolio — Châu Anh Dũng — ${vi ? "Trang chủ" : "Home"}`
             }
           >
             <span>[</span>
@@ -154,7 +162,7 @@ export function SiteShell({
               $<em>_</em>
             </i>
           </Link>
-          <ul className="desktop-nav">
+          <ul className="desktop-nav" inert={open} aria-hidden={open || undefined}>
             {nav.map((key) => (
               <li key={key}>
                 <Link
@@ -167,7 +175,7 @@ export function SiteShell({
               </li>
             ))}
           </ul>
-          <div className="header-actions">
+          <div className="header-actions" inert={open} aria-hidden={open || undefined}>
             <span className="availability">
               <i />
               {vi ? "Thực tập" : "Available"}
@@ -182,6 +190,8 @@ export function SiteShell({
           </div>
           <a
             className="language-switch"
+            inert={open}
+            aria-hidden={open || undefined}
             href={routeFor(vi ? "en" : "vi", page)}
             lang={vi ? "en" : "vi"}
             hrefLang={vi ? "en" : "vi"}
@@ -193,8 +203,10 @@ export function SiteShell({
             ref={toggle}
             className="menu-toggle"
             onClick={() => {
-              if (open) closeMenu();
-              else {
+              if (open) {
+                restoreFocus.current = true;
+                closeMenu();
+              } else {
                 setClosing(false);
                 setOpen(true);
               }
@@ -202,14 +214,15 @@ export function SiteShell({
             aria-label={
               open
                 ? vi
-                  ? "Đóng menu"
-                  : "Close menu"
+                  ? "Đóng menu điều hướng"
+                  : "Close navigation menu"
                 : vi
                   ? "Mở menu"
                   : "Open menu"
             }
             aria-expanded={open}
             aria-controls="mobile-navigation"
+            tabIndex={open ? -1 : undefined}
           >
             <Icon name={open ? "close" : "menu"} />
           </button>
@@ -227,9 +240,6 @@ export function SiteShell({
             id="mobile-navigation"
             ref={drawer}
             className="mobile-drawer"
-            role="dialog"
-            aria-modal="true"
-            aria-label={vi ? "Menu điều hướng" : "Navigation menu"}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="drawer-heading">
@@ -292,10 +302,10 @@ export function SiteShell({
           ))}
         </nav>
       </noscript>
-      <main ref={main} id="main-content" className="site-main">
+      <main ref={main} id="main-content" className="site-main" inert={open} aria-hidden={open || undefined}>
         {children}
       </main>
-      <footer className="site-footer">
+      <footer className="site-footer" inert={open} aria-hidden={open || undefined}>
         <div className="footer-inner">
           <span className="footer-mark">[CHÂU ANH DŨNG]</span>
           <span className="footer-copyright">
@@ -312,6 +322,6 @@ export function SiteShell({
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
