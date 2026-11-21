@@ -1074,18 +1074,17 @@ img {
   border-color: #00f5ff22;
   animation-direction: reverse;
 }
-.about-avatar b {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-portrait {
+  display: block;
+  flex-shrink: 0;
   width: 160px;
   height: 160px;
-  border: 1px solid #00f5ff44;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 1px solid #22d3eebb;
   border-radius: 50%;
-  background: linear-gradient(135deg, #22d3ee19, #ff006e0a);
-  font: 800 36px var(--heading);
-  color: #22d3ee;
-  text-shadow: 0 0 30px #00f5ff99;
+  background: #040810;
+  box-shadow: 0 0 16px #00f5ff26;
 }
 .bio {
   display: flex;

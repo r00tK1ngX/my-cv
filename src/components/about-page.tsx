@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Locale } from "@/lib/routes";
 import { profile } from "@/data/portfolio";
 import { SectionHeading } from "./section-heading";
@@ -51,7 +52,15 @@ export function AboutPage({ locale }: { locale: Locale }) {
           <div className="about-avatar" aria-hidden="true">
             <i />
             <i />
-            <b>CAD</b>
+            <Image
+              className="about-portrait"
+              src="/images/chau-anh-dung-avatar.webp"
+              width={512}
+              height={512}
+              alt=""
+              loading="eager"
+              unoptimized
+            />
           </div>
           <div className="bio reveal">
             <p>
