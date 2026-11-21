@@ -41,6 +41,12 @@ const descriptions: Record<Locale, Record<PageKey, string>> = {
       "Liên hệ Châu Anh Dũng về thực tập an ninh mạng, học tập và dự án qua chauanhdung@dtu.edu.vn.",
   },
 };
+export const bootInitScript =
+  'try{if(!sessionStorage.getItem("r00t_boot_done")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.dataset.bootPending="1"}}catch{}';
+
+export const bootCriticalCss =
+  'html[data-boot-pending="1"] body{background:#040810}html:not([data-boot-pending="1"]) .boot-preloader{display:none}';
+
 export const siteIcons: Metadata["icons"] = {
   icon: [
     { url: "/favicon.ico", sizes: "any" },

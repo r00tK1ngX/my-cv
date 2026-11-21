@@ -28,11 +28,11 @@ const BOOT_LOGS: Record<Locale, readonly string[]> = {
   ],
 };
 
-type Phase = "idle" | "booting" | "ready" | "exiting" | "done";
+type Phase = "booting" | "ready" | "exiting" | "done";
 
 export function BootPreloader({ locale }: { locale: Locale }) {
   const vi = locale === "vi";
-  const [phase, setPhase] = useState<Phase>("idle");
+  const [phase, setPhase] = useState<Phase>("booting");
   const [visibleLines, setVisibleLines] = useState(0);
   const [progress, setProgress] = useState(0);
   const timers = useRef<number[]>([]);
@@ -49,29 +49,37 @@ export function BootPreloader({ locale }: { locale: Locale }) {
     } catch {
       // Ignore restricted storage contexts.
     }
-    setPhase((prev) => (prev === "idle" || prev === "done" ? "done" : "exiting"));
-    const exitId = window.setTimeout(() => setPhase("done"), 340);
+    setPhase((prev) => (prev === "done" ? "done" : "exiting"));
+    const exitId = window.setTimeout(() => {
+      delete document.documentElement.dataset.bootPending;
+      setPhase("done");
+    }, 340);
     timers.current.push(exitId);
   }, [clearTimers]);
 
   useEffect(() => {
+    let skip = false;
     try {
-      if (sessionStorage.getItem(STORAGE_KEY) === "1") return;
+      if (sessionStorage.getItem(STORAGE_KEY) === "1") skip = true;
     } catch {
       // Proceed when sessionStorage is unavailable.
     }
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (!skip && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       try {
         sessionStorage.setItem(STORAGE_KEY, "1");
       } catch {
         // Ignore restricted storage contexts.
       }
-      return;
+      skip = true;
     }
 
-    const startId = window.setTimeout(() => setPhase("booting"), 0);
-    timers.current.push(startId);
+    if (skip) {
+      delete document.documentElement.dataset.bootPending;
+      const doneId = window.setTimeout(() => setPhase("done"), 0);
+      timers.current.push(doneId);
+      return () => clearTimers();
+    }
     const totalLines = BOOT_LOGS[locale].length;
     for (let i = 1; i <= totalLines; i++) {
       const id = window.setTimeout(() => {
@@ -104,7 +112,7 @@ export function BootPreloader({ locale }: { locale: Locale }) {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [phase, finishBoot]);
 
-  if (phase === "idle" || phase === "done") return null;
+  if (phase === "done") return null;
 
   const logs = BOOT_LOGS[locale];
   const isReady = phase === "ready" || phase === "exiting";

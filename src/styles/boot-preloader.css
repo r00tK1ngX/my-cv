@@ -1,3 +1,6 @@
+html:not([data-boot-pending="1"]) .boot-preloader {
+  display: none;
+}
 .boot-preloader {
   position: fixed;
   inset: 0;
@@ -270,7 +273,10 @@
 }
 
 @media (max-width: 639px) {
-  .boot-preloader {
+  html:not([data-boot-pending="1"]) .boot-preloader {
+  display: none;
+}
+.boot-preloader {
     padding: 14px;
   }
   .boot-emblem-ring {

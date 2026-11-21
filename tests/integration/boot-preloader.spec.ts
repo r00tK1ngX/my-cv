@@ -64,3 +64,48 @@ test("BootPreloader fits cleanly without horizontal overflow across desktop, tab
     await context.close();
   }
 });
+
+test("First-paint zero-flicker: preloader covers viewport before homepage paints even under CPU/network throttling", async ({ browser }) => {
+  for (const url of ["/", "/vi/"]) {
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "no-preference" });
+    const page = await ctx.newPage();
+    const cdp = await ctx.newCDPSession(page);
+    await cdp.send("Emulation.setCPUThrottlingRate", { rate: 4 });
+    await cdp.send("Network.enable");
+    await cdp.send("Network.emulateNetworkConditions", {
+      offline: false,
+      latency: 80,
+      downloadThroughput: 500 * 1024,
+      uploadThroughput: 250 * 1024,
+    });
+    await page.addInitScript(() => {
+      (window as unknown as { __firstPaintHits: boolean[] }).__firstPaintHits = [];
+      const sample = () => {
+        const el = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2);
+        const pre = document.querySelector(".boot-preloader");
+        if (pre) {
+          (window as unknown as { __firstPaintHits: boolean[] }).__firstPaintHits.push(
+            !!el?.closest(".boot-preloader") && getComputedStyle(pre).display !== "none",
+          );
+        }
+      };
+      document.addEventListener("DOMContentLoaded", sample, { once: true });
+    });
+    await page.goto(url, { waitUntil: "domcontentloaded" });
+    const hits = await page.evaluate(() => (window as unknown as { __firstPaintHits: boolean[] }).__firstPaintHits);
+    expect(hits.length).toBeGreaterThan(0);
+    expect(hits.every(Boolean), `Homepage flashed before preloader on ${url}`).toBe(true);
+    await expect(page.locator(".boot-preloader")).toHaveCount(0, { timeout: 6000 });
+    await expect(page.locator("h1")).toBeVisible();
+    await ctx.close();
+  }
+});
+
+test("No-JS fallback keeps homepage accessible without preloader blocking", async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false });
+  const page = await ctx.newPage();
+  await page.goto("/");
+  await expect(page.locator(".boot-preloader")).toBeHidden();
+  await expect(page.locator("h1")).toBeVisible();
+  await ctx.close();
+});

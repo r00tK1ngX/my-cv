@@ -5,10 +5,14 @@ import { renderToStaticMarkup } from "react-dom/server";
 import React from "react";
 import { BootPreloader } from "../../src/components/boot-preloader";
 
-test("BootPreloader renders nothing on SSR to avoid hydration mismatch and never block no-JS", () => {
+test("BootPreloader renders in SSR HTML for zero-flicker first paint and gates visibility on bootPending", () => {
   for (const locale of ["en", "vi"] as const) {
-    assert.equal(renderToStaticMarkup(<BootPreloader locale={locale} />), "");
+    const html = renderToStaticMarkup(<BootPreloader locale={locale} />);
+    assert.match(html, /class="boot-preloader /);
+    assert.match(html, /r00tK1ngX@portfolio/);
   }
+  const css = fs.readFileSync("src/styles/boot-preloader.css", "utf8");
+  assert.match(css, /html:not\(\[data-boot-pending="1"\]\) \.boot-preloader/);
 });
 
 test("BootPreloader contains localized EN/VI boot messages, approved logo, and reduced-motion/skip support", () => {
