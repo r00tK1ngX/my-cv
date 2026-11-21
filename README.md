@@ -1,69 +1,85 @@
-# Châu Anh Dũng | Red Team Specialist in Training ⚔️ | Cyber AI Visionary 💡
+# Bilingual CV website — source review copy
 
-[![Awesome](https://img.shields.io/badge/awesome-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/sindresorhus/awesome)
-[![Website](https://img.shields.io/badge/Website-chauanhdung.id.vn-brightgreen?style=flat-square)](https://chauanhdung.id.vn)
+This repository is an isolated source-code review copy. It is not connected to production hosting or automatic deployment.
 
+This is a review candidate, not a production-ready release or final product acceptance. No GitHub Actions workflow, GitHub Pages configuration, Vercel project connection, deployment secret or domain configuration is included.
 
-Welcome to the digital command center 🚀 of Châu Anh Dũng! This isn't just a resume; it's a manifesto of my journey to become a top-tier Red Teamer, a pioneer in Cyber AI, and a tech-savvy disruptor.
+## Overview and stack
 
->   "To protect the digital world – first, understand how it's attacked." (Professional Philosophy)
->   "Learn to do. Do to lead." (Learning Philosophy)
->   "When you learn, learn deeply. When you do, do it wholeheartedly." (Action Philosophy)
+A bilingual personal portfolio built with Next.js 16.4.6 App Router, React 19.3.1, TypeScript 5.9.3 and Tailwind CSS 4.3.5 through the PostCSS plugin. Fonts are self-hosted with Fontsource. Tailwind's configuration is CSS-first in `src/styles/globals.css`; no separate Tailwind JavaScript configuration is required.
 
-**🔥 The Ultimate Quest**
+The application is statically exported. Contact prepares an encoded `mailto:` draft, not a server-delivered message. Blog and Research intentionally have empty public collections. No replacement CV PDF or unsupported achievement data is supplied.
 
-* Become a legendary white-hat hacker, dominating the Red Team Arena.
-* Infuse AI into every facet of Cybersecurity – pioneering Cyber AI.
-* Revolutionize the family business – Traditional Laundry → Laundry 4.0 Empire.
-* Build financial fortress with knowledge, tech, and strategic prowess.
+## Routes and language architecture
 
-**😎 Hacker Profile**
+| Page | English | Vietnamese |
+|---|---|---|
+| Home | `/` | `/vi/` |
+| About | `/about/` | `/vi/about/` |
+| Experience | `/experience/` | `/vi/experience/` |
+| Skills | `/skills/` | `/vi/skills/` |
+| Projects | `/projects/` | `/vi/projects/` |
+| Blog | `/blog/` | `/vi/blog/` |
+| Research | `/research/` | `/vi/research/` |
+| Contact | `/contact/` | `/vi/contact/` |
 
-* Full Name: Châu Anh Dũng (aka Dũng "the Cool")
-* Birth Year: 2003 (Gen Z)
-* University: Duy Tan University – Da Nang (Cybersecurity)
-* "Brain-Hacking" Programs:
-    * Samsung Innovation Campus – AI Masterclass
-    * VNNIC Internet School (VISY 2025) – Internet "Cheat Codes"
-* Self-Built Website: [chauanhdung.id.vn](https://chauanhdung.id.vn) (DeepSite "Magic" + Cloudflare "Armor")
+English is the root language. The language switch preserves the equivalent page. Separate root layouts set the actual HTML language. The global static 404 is English. Route helpers and metadata live in `src/lib/`; content is in `src/data/portfolio.ts`.
 
-**🛠️ Tech Arsenal**
+## Clean installation and checks
 
-* Front-end: HTML5, CSS3 (TailwindCSS), JavaScript "Wizardry"
-* Back-end: (Currently Leveling Up)
-* Cybersecurity:
-    * Pentest: Metasploit, Burp Suite, Wireshark, Nmap
-    * Cryptography: "Decoding" the World
-    * Network Security: "Mastering" Cyberspace
-* Programming: Python, C/C++, Bash (Scripting "Firepower")
-* DevOps: Git/GitHub (Version Control "Command Center"), Vercel, Cloudflare
-* OS: Linux (WSL2) – The Hacker's "Operating System"
+Use Node **24.19.0** from `.node-version` and npm **11.19.0** from `packageManager`. Python 3.9+ is needed only for the local preview and its containment test. Do not supply production credentials or an environment file.
 
-**⚔️ Battle Log**
+Run from a clean checkout:
 
-* [chauanhdung.id.vn](https://chauanhdung.id.vn): 1000+ Lines of Self-Coded CV, "Hacking" the Recruitment Scene.
-* Network Security Lab: Personal Pentest "Playground," Simulating Every Attack Scenario.
-* VNNIC National Internet Infrastructure Study: Researching National Internet Security, "Unlocking" the Digital Future.
-* CTF Challenges: "Conquering" TryHackMe, OverTheWire, PicoCTF – "Forging" Hacker Skills.
-* MS17-010 Exploitation Lab: "Mastering" TryHackMe Blue Room, "Proving" Metasploit Prowess.
-* English for Cybersecurity: "Leveling Up" Communication, "Conquering" the Global Cybersecurity Arena.
-* Laundry 4.0: "Hacking" the Traditional Laundry Industry, Creating an Industry 4.0 Revolution.
+```sh
+npm ci --no-audit --no-fund
+npm run typecheck
+npm run lint
+npm run test:unit
+python3 -B -W error::ResourceWarning -m unittest discover -s tests/python -v
+npm run build
+npm run verify:export
+```
 
-**💼 Career Path**
+`npm run build` already performs the static export because `next.config.ts` sets `output: "export"`. The expected output is **`out/`**, with directory-index HTML for the sixteen public page routes, `404.html`, sitemap, robots, JS/CSS, self-hosted fonts, legal notices and App Router navigation payloads. No separate `next export` command or running Next server is required.
 
-* Samsung Innovation Campus: AI Program Student (2025) – "Augmenting" AI for Cybersecurity
-* VNNIC Internet School: Security Research Fellow (2025) – "Protecting" National Internet Infrastructure
-* Duy Tan University: BSc in Cybersecurity (2025 - Present) – "Solid Foundation"
-* Self-Study & Certifications: Continuously "Evolving" on Online Learning Platforms
+`verify:export` is a bounded local check of routes, metadata, links, assets and content/privacy exclusions. It is not an independent production artifact-policy or release-approval system. It writes ignored local QA output, which must not be committed or served as part of the site.
 
-**🤝 Alliance**
+## Local development and static preview
 
-* GitHub: [TykerAI](https://github.com/TykerAI)
-* LinkedIn: [anh-dũng-châu](https://www.linkedin.com/in/anh-dũng-châu-533b98364/)
-* TryHackMe: [anhdung1309](https://tryhackme.com/p/anhdung1309)
+```sh
+npm run dev -- --port 4174
+```
 
-**📣 Call to Action**
+For the built static site, stop development and run:
 
-* "Don't just dream of the future, hack it yourself!"
+```sh
+npm run preview
+```
 
-**😎 Stay tuned! My journey has just begun!**
+Preview binds only `http://127.0.0.1:4173` and serves `out/`, never the repository root. Do not run development and a production build concurrently against the same `.next/` directory.
+
+Optional browser tests are source tests, not recorded evidence. With preview running and Chromium installed locally:
+
+```sh
+npx playwright install chromium
+npm run test:integration
+```
+
+These commands do not deploy the website. Test reports, screenshots, caches and recordings generated locally are ignored and excluded from the source-review inventory.
+
+## GitHub Pages compatibility assumptions
+
+The architecture supports static directory-index hosting at a custom-domain root with `trailingSlash: true` and root-relative assets. The production-origin metadata and existing public project/contact URLs are preserved as application content; their presence does **not** configure a domain or connect this review repository to hosting.
+
+Serving this build under a GitHub project subpath would require a separately reviewed configuration and rebuild. Valid `_next/`, `index.txt` and `__next.*.txt` navigation resources must be retained. Unknown paths should return the static `404.html` with HTTP 404, not a catch-all SPA response. Real Pages MIME types, HTTPS, redirects, deep refresh and proxy/cache behavior have not been verified for this isolated repository. There is no deployment workflow here; do not enable hosting as part of code review.
+
+## Review scope and packaging
+
+This Round 2 accessibility-remediation candidate is based on immutable review commit `a2f175dbe0f55268fdd734afb460a860f77b5a6c` (whose parent is `da419d73a1cbc58e3e3929f4b4e29001fe8ee87a`). It fixes mixed pointer/keyboard modal focus containment, narrows the modal semantic boundary to the existing header close control and mobile drawer, and advertises the controls relationship only while its target is mounted. Permanent EN/VI regression tests cover the exact pointer-down/drag/release then Shift+Tab reproduction. The visible wordmark, CSS, typography, layout, animation definitions, personal claims, dependencies and static-export configuration are unchanged. This local-only branch is not authorized for publication or deployment.
+
+The original source-review packaging remains: public inventory, generated-file ignores, sanitized third-party notice provenance, and omission of internal QA recordings and private/obsolete data. The public inventory is refreshed for this candidate; it is not a deployment approval. The modal uses native `inert` for background interaction plus synchronized accessibility state, and both existing close controls remain available within the modal scope.
+
+Known limits include the need for real screen-reader/device validation, WebKit host-library availability, residual cold-font layout shifts, experimental global-not-found support, the mail-client dependency and remaining content/release decisions. Chromium/Firefox regression tests are source assertions, not a conformance certificate. Lint and installation warnings must be read rather than treated as a zero-warning guarantee.
+
+See `SOURCE-INVENTORY.json` for the exact intended source-review paths and hashes. It excludes itself to avoid a circular hash. Licensing and attribution are in `THIRD-PARTY-NOTICES.md` and `public/legal/`.
