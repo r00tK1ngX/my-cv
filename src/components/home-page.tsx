@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Flag } from "lucide-react";
 import type { Locale } from "@/lib/routes";
 import { profile } from "@/data/portfolio";
 import { Icon } from "./icon";
@@ -221,68 +222,64 @@ export function HomePage({ locale }: { locale: Locale }) {
                 <i />
               </div>
             </div>
-            <span className="float-tag cyan">
-              <svg
-                className="node-link"
-                viewBox="0 0 64 32"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path d="M2 2 52 24" />
-                <circle className="node-anchor" cx="52" cy="24" r="2" />
-              </svg>
-              <span className="node-capsule">
-                <Icon name="cpu" size={13} className="node-icon" />
-                PWN / BINARY
-                <i className="node-status" aria-hidden="true" />
+            <span className="hud-marker cyan">
+              <span className="hud-marker-plate">
+                <span className="hud-marker-core">
+                  <i className="hud-marker-rail" aria-hidden="true" />
+                  <Icon name="cpu" size={12} className="hud-marker-icon" />
+                  <i className="hud-marker-sep" aria-hidden="true" />
+                  <span className="hud-marker-label">PWN / BINARY</span>
+                  <i className="hud-marker-pulse" aria-hidden="true" />
+                </span>
               </span>
             </span>
-            <span className="float-tag pink">
-              <svg
-                className="node-link"
-                viewBox="0 0 40 32"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path d="M32 30 4 6" />
-                <circle className="node-anchor" cx="4" cy="6" r="2" />
-              </svg>
-              <span className="node-capsule">
-                <Icon name="shield" size={13} className="node-icon" />
-                RED TEAM
-                <i className="node-status" aria-hidden="true" />
+            <span className="hud-marker green">
+              <span className="hud-marker-plate">
+                <span className="hud-marker-core">
+                  <i className="hud-marker-rail" aria-hidden="true" />
+                  <Icon name="terminal" size={12} className="hud-marker-icon" />
+                  <i className="hud-marker-sep" aria-hidden="true" />
+                  <span className="hud-marker-label">LINUX</span>
+                  <i className="hud-marker-pulse" aria-hidden="true" />
+                </span>
               </span>
             </span>
-            <span className="float-tag green">
-              <svg
-                className="node-link"
-                viewBox="0 0 20 32"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path d="M1 16h5" />
-                <circle className="node-anchor" cx="9" cy="16" r="2" />
-              </svg>
-              <span className="node-capsule">
-                <Icon name="terminal" size={13} className="node-icon" />
-                LINUX
-                <i className="node-status" aria-hidden="true" />
+            <span className="hud-marker amber">
+              <span className="hud-marker-plate">
+                <span className="hud-marker-core">
+                  <i className="hud-marker-rail" aria-hidden="true" />
+                  <Icon name="network" size={12} className="hud-marker-icon" />
+                  <i className="hud-marker-sep" aria-hidden="true" />
+                  <span className="hud-marker-label">AI &amp; SECURITY</span>
+                  <i className="hud-marker-pulse" aria-hidden="true" />
+                </span>
               </span>
             </span>
-            <span className="float-tag amber">
-              <svg
-                className="node-link"
-                viewBox="0 0 64 32"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path d="M2 2 52 24" />
-                <circle className="node-anchor" cx="52" cy="24" r="2" />
-              </svg>
-              <span className="node-capsule">
-                <Icon name="network" size={13} className="node-icon" />
-                AI & SECURITY
-                <i className="node-status" aria-hidden="true" />
+            <span className="hud-marker pink">
+              <span className="hud-marker-plate">
+                <span className="hud-marker-core">
+                  <i className="hud-marker-rail" aria-hidden="true" />
+                  <Icon name="shield" size={12} className="hud-marker-icon" />
+                  <i className="hud-marker-sep" aria-hidden="true" />
+                  <span className="hud-marker-label">RED TEAM</span>
+                  <i className="hud-marker-pulse" aria-hidden="true" />
+                </span>
+              </span>
+            </span>
+            <span className="hud-marker violet">
+              <span className="hud-marker-plate">
+                <span className="hud-marker-core">
+                  <i className="hud-marker-rail" aria-hidden="true" />
+                  <Flag
+                    size={12}
+                    strokeWidth={1.6}
+                    aria-hidden="true"
+                    className="hud-marker-icon"
+                  />
+                  <i className="hud-marker-sep" aria-hidden="true" />
+                  <span className="hud-marker-label">CTF PLAYER</span>
+                  <i className="hud-marker-pulse" aria-hidden="true" />
+                </span>
               </span>
             </span>
           </div>

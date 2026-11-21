@@ -32,7 +32,7 @@ for (const locale of ["en", "vi"] as const) {
           const portrait = image.getBoundingClientRect(), style = getComputedStyle(image);
           const copy = document.querySelector(".hero-copy")!.getBoundingClientRect();
           const center = { x: core.x + core.width / 2, y: core.y + core.height / 2 };
-          const labels = [...visual.querySelectorAll(".node-capsule")].map(element => {
+          const labels = [...visual.querySelectorAll(".hud-marker-plate")].map(element => {
             const r = element.getBoundingClientRect();
             const dx = Math.max(r.x - center.x, 0, center.x - r.right);
             const dy = Math.max(r.y - center.y, 0, center.y - r.bottom);
@@ -54,7 +54,7 @@ for (const locale of ["en", "vi"] as const) {
         expect(geometry.portrait.naturalWidth).toBe(512);
         expect(geometry.portrait.fit).toBe("cover"); expect(geometry.portrait.position).toBe("50% 50%");
         expect(geometry.copySeparated).toBe(true); expect(geometry.scrollWidth).toBeLessThanOrEqual(width);
-        expect(geometry.labels.map(l => l.text)).toEqual(["PWN / BINARY", "RED TEAM", "LINUX", "AI & SECURITY"]);
+        expect(geometry.labels.map(l => l.text)).toEqual(["PWN / BINARY", "LINUX", "AI & SECURITY", "RED TEAM", "CTF PLAYER"]);
         for (const label of geometry.labels) {
           expect(label.x).toBeGreaterThanOrEqual(0); expect(label.right).toBeLessThanOrEqual(width);
           expect(label.gap, `${width}px phase ${phase}: ${label.text}`).toBeGreaterThanOrEqual(3);

@@ -21,31 +21,49 @@ test("home hero has approved identity and reference section anchors", async () =
 });
 
 for (const locale of ["en", "vi"] as const) {
-  test(`Home ${locale} keeps four orbital capsules with distinct icons and quiet connections`, async () => {
+  test(`Home ${locale} renders five tactical HUD markers with distinct icons`, async () => {
     const { HomePage } = await import("../../src/components/home-page");
     const html = renderToStaticMarkup(<HomePage locale={locale} />);
-    const tags = [...html.matchAll(/<span class="float-tag ([^"]+)">([\s\S]*?)<\/span><\/span>/g)];
-    assert.deepEqual(tags.map(tag => tag[1]), ["cyan", "pink", "green", "amber"]);
-    assert.deepEqual(tags.map(tag => tag[2].replace(/<[^>]+>/g, "")), [
-      "PWN / BINARY", "RED TEAM", "LINUX", "AI &amp; SECURITY",
-    ]);
-    assert.equal(new Set(tags.map(tag => tag[2].match(/class="lucide ([^"]+) node-icon"/)?.[1])).size, 4);
-    for (const tag of tags) {
-      assert.match(tag[2], /class="node-capsule"/);
-      assert.match(tag[2], /class="node-status" aria-hidden="true"/);
-      assert.match(tag[2], /class="node-link"[^>]*aria-hidden="true"[^>]*focusable="false"/);
-      assert.match(tag[2], /class="node-anchor"/);
-      assert.doesNotMatch(tag[0], /<a\b|<button\b|tabindex=|role=|onclick=/i);
+    const markers = [
+      ...html.matchAll(
+        /<span class="hud-marker ([^"]+)">([\s\S]*?)<\/span><\/span><\/span>/g,
+      ),
+    ];
+    assert.deepEqual(
+      markers.map(marker => marker[1]),
+      ["cyan", "green", "amber", "pink", "violet"],
+    );
+    assert.deepEqual(
+      markers.map(marker => marker[2].replace(/<[^>]+>/g, "")),
+      ["PWN / BINARY", "LINUX", "AI &amp; SECURITY", "RED TEAM", "CTF PLAYER"],
+    );
+    assert.equal(
+      new Set(
+        markers.map(
+          marker => marker[2].match(/class="lucide ([^"]+) hud-marker-icon"/)?.[1],
+        ),
+      ).size,
+      5,
+    );
+    for (const marker of markers) {
+      assert.match(marker[2], /class="hud-marker-plate"/);
+      assert.match(marker[2], /class="hud-marker-core"/);
+      assert.match(marker[2], /class="hud-marker-rail" aria-hidden="true"/);
+      assert.match(marker[2], /class="hud-marker-sep" aria-hidden="true"/);
+      assert.match(marker[2], /class="hud-marker-pulse" aria-hidden="true"/);
+      assert.doesNotMatch(marker[0], /<a\b|<button\b|tabindex=|role=|onclick=/i);
     }
   });
 }
 
-test("orbital capsules remove sweep and bracket styling without a scripted animation loop", () => {
+test("tactical HUD markers use chamfered geometry and CSS-only motion", () => {
   const css = readFileSync("src/styles/globals.css", "utf8");
-  const tags = css.split("\n.float-tag {\n")[1].split("\n.scroll-cue {\n")[0];
-  assert.doesNotMatch(tags, /hologram-sweep|\.float-tag::before|\.float-tag::after/);
-  assert.match(tags, /border-radius: 999px/);
-  assert.match(tags, /orbital-node-float/);
-  assert.match(tags, /prefers-reduced-motion: no-preference/);
-  assert.doesNotMatch(readFileSync("src/components/home-page.tsx", "utf8"), /requestAnimationFrame|setInterval/);
+  const markers = css.split("\n.hud-marker {\n")[1].split("\n.scroll-cue {\n")[0];
+  assert.match(markers, /clip-path: polygon/);
+  assert.match(markers, /hud-marker-float/);
+  assert.match(markers, /prefers-reduced-motion: no-preference/);
+  assert.doesNotMatch(
+    readFileSync("src/components/home-page.tsx", "utf8"),
+    /requestAnimationFrame|setInterval/,
+  );
 });
