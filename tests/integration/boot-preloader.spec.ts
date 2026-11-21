@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 for (const locale of ["en", "vi"] as const) {
-  test(`${locale}: first load plays boot sequence, reveals site, and skips on refresh/navigation`, async ({ page }) => {
+  test(`${locale}: first load plays synchronized boot sequence (OFFLINE -> ONLINE at 100%), reveals site, and skips on refresh/navigation`, async ({ page }) => {
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("console", (m) => {
@@ -15,9 +15,30 @@ for (const locale of ["en", "vi"] as const) {
     const preloader = page.locator(".boot-preloader");
     await expect(preloader).toBeVisible();
     await expect(preloader.locator(".boot-host")).toHaveText("r00tK1ngX@portfolio");
-    await expect(preloader.locator(".boot-emblem-img")).toHaveAttribute("src", "/icons/icon-192x192.png");
-    await expect(preloader).toContainText(locale === "en" ? "Initializing portfolio environment..." : "Khởi tạo môi trường portfolio...");
-    await expect(preloader).toContainText(locale === "en" ? "SYSTEM READY" : "HỆ THỐNG SẴN SÀNG", { timeout: 5000 });
+    await expect(preloader.locator(".boot-shield")).toHaveAttribute("src", "/icons/icon-192x192.png");
+    await expect(preloader.locator(".boot-skip")).toHaveCount(0);
+    await expect(preloader).not.toContainText(/\[ SKIP \]|\[ BỎ QUA \]/);
+
+    // Sample status synchronization: OFFLINE before 100%, ONLINE only at 100%
+    const offlineLabel = locale === "en" ? "OFFLINE" : "NGOẠI TUYẾN";
+    const onlineLabel = locale === "en" ? "ONLINE" : "TRỰC TUYẾN";
+
+    const earlyState = await page.evaluate(() => {
+      const pct = parseInt(document.querySelector(".boot-status-pct")?.textContent ?? "0", 10);
+      const label = document.querySelector(".boot-status-label")?.textContent ?? "";
+      const isOnline = document.querySelector(".boot-status-live")?.classList.contains("is-online") ?? false;
+      return { pct, label, isOnline };
+    });
+    if (earlyState.pct < 100) {
+      expect(earlyState.label).toBe(offlineLabel);
+      expect(earlyState.isOnline).toBe(false);
+    }
+
+    await expect(preloader.locator(".boot-status-label")).toHaveText(onlineLabel, { timeout: 5000 });
+    await expect(preloader.locator(".boot-status-pct")).toHaveText("100%");
+    await expect(preloader.locator(".boot-log.is-ready.is-visible")).toContainText(
+      locale === "en" ? "System initialization complete." : "Khởi tạo hệ thống hoàn tất.",
+    );
 
     // Dissolves cleanly after completion
     await expect(preloader).toHaveCount(0, { timeout: 5000 });
@@ -33,12 +54,13 @@ for (const locale of ["en", "vi"] as const) {
     expect(errors).toEqual([]);
   });
 
-  test(`${locale}: skip button and Escape immediately dismiss preloader`, async ({ page }) => {
+  test(`${locale}: Escape key dismisses preloader without visible skip button`, async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "no-preference" });
     await page.goto(locale === "en" ? "/about/" : "/vi/projects/");
     const preloader = page.locator(".boot-preloader");
     await expect(preloader).toBeVisible();
-    await preloader.locator(".boot-skip").click();
+    await expect(preloader.locator(".boot-skip")).toHaveCount(0);
+    await page.keyboard.press("Escape");
     await expect(preloader).toHaveCount(0, { timeout: 2000 });
   });
 
@@ -57,6 +79,7 @@ test("BootPreloader fits cleanly without horizontal overflow across desktop, tab
     const p = await context.newPage();
     await p.goto("/");
     await expect(p.locator(".boot-preloader")).toBeVisible();
+    await expect(p.locator(".boot-log.is-visible").first()).toBeVisible({ timeout: 2000 });
     const overflow = await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(overflow, `overflow at ${width}px`).toBe(false);
     await p.keyboard.press("Escape");
