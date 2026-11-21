@@ -23,6 +23,16 @@ const legalFiles = new Set([
   "oxanium-OFL.txt", "rajdhani-OFL.txt", "react-icons-license.txt", "reference-MIT.txt",
 ]);
 const avatarFile = "images/chau-anh-dung-avatar.webp";
+const brandFiles = new Set([
+  "favicon.ico",
+  "brand/brand-logo-source.png",
+  "icons/apple-touch-icon.png",
+  "icons/icon-16x16.png",
+  "icons/icon-32x32.png",
+  "icons/icon-48x48.png",
+  "icons/icon-192x192.png",
+  "icons/icon-512x512.png",
+]);
 function walk(directory, callback) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     const absolute = path.join(directory, entry.name);
@@ -38,12 +48,18 @@ function walk(directory, callback) {
 walk(path.join(root, "public"), (absolute) => {
   const relative = path.relative(path.join(root, "public"), absolute).split(path.sep).join("/");
   assert.ok(
-    (relative.startsWith("legal/") && legalFiles.has(relative.slice(6))) || relative === avatarFile,
+    (relative.startsWith("legal/") && legalFiles.has(relative.slice(6))) ||
+      relative === avatarFile ||
+      brandFiles.has(relative),
     "Unexpected public input: " + relative,
   );
   publicFiles.set(relative, hash(fs.readFileSync(absolute)));
 });
-assert.equal(publicFiles.size, legalFiles.size + 1, "Missing legal or avatar input");
+assert.equal(
+  publicFiles.size,
+  legalFiles.size + 1 + brandFiles.size,
+  "Missing legal, avatar, or brand input",
+);
 const files = [];
 walk(out, (absolute, stat) => {
   const name = path.relative(out, absolute).split(path.sep).join("/");
@@ -53,7 +69,12 @@ walk(out, (absolute, stat) => {
   if (allowedHtml.has(name)) kind = "page";
   else if (["sitemap.xml", "robots.txt"].includes(name)) kind = "metadata";
   else if (publicFiles.has(name)) {
-    kind = name === avatarFile ? "public-avatar" : "public-legal";
+    kind =
+      name === avatarFile
+        ? "public-avatar"
+        : brandFiles.has(name)
+          ? "public-brand"
+          : "public-legal";
     assert.equal(hash(fs.readFileSync(absolute)), publicFiles.get(name), "Public bytes changed");
   } else if (/^_next\/static\/[A-Za-z0-9_./%()-]+\.(?:js|css|woff2?|ttf|otf)$/.test(name)) kind = "runtime";
   else if (/\.txt$/.test(name)) {
@@ -71,7 +92,7 @@ for (const route of routes) {
   assert.ok(files.some((file) => file.path === route + "index.html"), "Missing route: /" + route);
   assert.ok(files.some((file) => file.path === route + "index.txt"), "Missing navigation payload: /" + route);
 }
-for (const kind of ["page", "metadata", "public-legal", "public-avatar", "runtime", "navigation"]) {
+for (const kind of ["page", "metadata", "public-legal", "public-avatar", "public-brand", "runtime", "navigation"]) {
   assert.ok(files.some((file) => file.kind === kind), "Missing output class: " + kind);
 }
 assert.ok(files.some((file) => file.path.endsWith(".js")), "Missing JavaScript");
