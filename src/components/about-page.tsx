@@ -50,17 +50,125 @@ export function AboutPage({ locale }: { locale: Locale }) {
         />
         <div className="about-grid">
           <div className="about-avatar" aria-hidden="true">
-            <i />
-            <i />
-            <Image
-              className="about-portrait"
-              src="/images/chau-anh-dung-avatar.webp"
-              width={512}
-              height={512}
-              alt=""
-              loading="eager"
-              unoptimized
-            />
+            <span className="identity-core">
+              <svg
+                className="identity-hud"
+                viewBox="0 0 288 288"
+                focusable="false"
+                fill="none"
+              >
+                <circle className="identity-recess" cx="144" cy="144" r="99" />
+                <circle className="identity-guide" cx="144" cy="144" r="88" />
+                <circle className="identity-guide" cx="144" cy="144" r="120" />
+                <circle
+                  className="identity-rim"
+                  cx="144"
+                  cy="144"
+                  r="140"
+                  pathLength="360"
+                  strokeDasharray="86 22 22 50"
+                />
+                <g className="identity-ticks">
+                  {Array.from({ length: 24 }, (_, index) => (
+                    <path
+                      key={index}
+                      d={index % 3 === 0 ? "M144 29v7" : "M144 32v4"}
+                      transform={`rotate(${index * 15} 144 144)`}
+                    />
+                  ))}
+                </g>
+                <g className="identity-brackets">
+                  <path d="M54 75V54h21" />
+                  <path d="M213 54h21v21" />
+                  <path d="M234 213v21h-21" />
+                  <path d="M75 234H54v-21" />
+                </g>
+                <g className="identity-nodes">
+                  <path d="M34 144h10m200 0h10" />
+                  <rect x="28" y="142" width="4" height="4" />
+                  <rect x="256" y="142" width="4" height="4" />
+                </g>
+              </svg>
+              <svg
+                className="identity-hud identity-inner"
+                viewBox="0 0 288 288"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="144"
+                  cy="144"
+                  r="100"
+                  pathLength="360"
+                  strokeDasharray="48 12 3 27"
+                />
+                <circle
+                  className="identity-accent"
+                  cx="144"
+                  cy="144"
+                  r="100"
+                  pathLength="360"
+                  strokeDasharray="36 324"
+                  strokeDashoffset="-12"
+                />
+              </svg>
+              <svg
+                className="identity-hud identity-orbit"
+                viewBox="0 0 288 288"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="144"
+                  cy="144"
+                  r="133"
+                  pathLength="360"
+                  strokeDasharray="64 12 6 42 34 44 18 140"
+                />
+                <g className="identity-marker" transform="rotate(32 144 144)">
+                  <circle
+                    cx="144"
+                    cy="11"
+                    r="5"
+                    className="identity-marker-halo"
+                  />
+                  <circle cx="144" cy="11" r="2" />
+                </g>
+                <g className="identity-marker" transform="rotate(212 144 144)">
+                  <circle
+                    cx="144"
+                    cy="11"
+                    r="4"
+                    className="identity-marker-halo"
+                  />
+                  <circle cx="144" cy="11" r="1.5" />
+                </g>
+              </svg>
+              <svg
+                className="identity-hud identity-scan"
+                viewBox="0 0 288 288"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="144"
+                  cy="144"
+                  r="88"
+                  pathLength="360"
+                  strokeDasharray="28 332"
+                  strokeDashoffset="-40"
+                />
+              </svg>
+              <Image
+                className="about-portrait"
+                src="/images/chau-anh-dung-avatar.webp"
+                width={512}
+                height={512}
+                alt=""
+                loading="eager"
+                unoptimized
+              />
+            </span>
           </div>
           <div className="bio reveal">
             <p>

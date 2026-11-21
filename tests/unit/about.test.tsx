@@ -21,12 +21,22 @@ test("About describes student baseline without unsupported professional roles", 
 });
 
 for (const locale of ["en", "vi"] as const) {
-  test(`About ${locale} reuses the approved portrait inside the unchanged orbital visual`, async () => {
+  test(`About ${locale} reuses the approved portrait inside a decorative identity HUD`, async () => {
     const { AboutPage } = await import("../../src/components/about-page");
     const html = renderToStaticMarkup(<AboutPage locale={locale} />);
     const visual = html.match(/<div class="about-avatar" aria-hidden="true">([\s\S]*?)<\/div>/)?.[1];
     assert.ok(visual, "Preserve the existing decorative About visual");
-    assert.match(visual, /^<i><\/i><i><\/i>/);
+    assert.match(visual, /<svg\b[^>]*class="identity-hud"[^>]*viewBox="0 0 288 288"[^>]*focusable="false"/);
+    assert.match(visual, /class="identity-core"/);
+    assert.match(visual, /class="identity-hud identity-inner"/);
+    assert.match(visual, /class="identity-hud identity-orbit"/);
+    assert.match(visual, /class="identity-hud identity-scan"/);
+    const brackets = visual.match(/<g class="identity-brackets">([\s\S]*?)<\/g>/)?.[1];
+    assert.equal((brackets?.match(/<path\b/g) ?? []).length, 4);
+    const ticks = visual.match(/<g class="identity-ticks">([\s\S]*?)<\/g>/)?.[1];
+    assert.equal((ticks?.match(/<path\b/g) ?? []).length, 24);
+    assert.equal((visual.match(/class="identity-marker"/g) ?? []).length, 2);
+    assert.doesNotMatch(visual, /<text\b|<animate\b|<script\b|<filter\b|tabindex=|<button\b|<a\b/);
     assert.match(visual, /<img\b[^>]*class="about-portrait"/);
     assert.match(visual, /src="\/images\/chau-anh-dung-avatar\.webp"/);
     assert.match(visual, /width="512"/);

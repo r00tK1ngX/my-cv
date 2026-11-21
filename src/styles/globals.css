@@ -1061,30 +1061,106 @@ img {
   justify-content: center;
   position: relative;
 }
-.about-avatar i {
-  position: absolute;
-  width: 288px;
-  height: 288px;
-  border: 1px solid #00f5ff33;
-  animation: morph 8s infinite;
+.about-avatar,
+.about-avatar * {
+  pointer-events: none;
 }
-.about-avatar i:nth-child(2) {
-  width: 224px;
-  height: 224px;
-  border-color: #00f5ff22;
-  animation-direction: reverse;
+.identity-core {
+  position: relative;
+  display: block;
+  width: min(288px, 100%);
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  isolation: isolate;
+  background: radial-gradient(circle, #22d3ee0a 30%, transparent 69%);
+}
+.identity-hud {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  stroke: #22d3ee;
+  stroke-width: 1;
+}
+.identity-recess {
+  stroke-width: 18;
+  stroke-opacity: 0.035;
+}
+.identity-guide {
+  stroke-opacity: 0.13;
+}
+.identity-rim {
+  stroke-opacity: 0.18;
+}
+.identity-ticks {
+  stroke-opacity: 0.38;
+}
+.identity-inner {
+  stroke-width: 1.5;
+  stroke-opacity: 0.45;
+}
+.identity-accent {
+  stroke: #67e8f9;
+  stroke-width: 2;
+  stroke-opacity: 0.8;
+}
+.identity-orbit {
+  stroke-opacity: 0.32;
+}
+.identity-marker {
+  fill: #67e8f9;
+  stroke: none;
+}
+.identity-marker-halo {
+  fill-opacity: 0.12;
+}
+.identity-scan {
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-opacity: 0.65;
+}
+.identity-brackets {
+  stroke-opacity: 0.55;
+}
+.identity-nodes {
+  stroke-opacity: 0.4;
+}
+.identity-nodes rect {
+  fill: #22d3ee33;
 }
 .about-portrait {
   display: block;
-  flex-shrink: 0;
-  width: 160px;
-  height: 160px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 55.555556%;
+  height: 55.555556%;
   object-fit: cover;
   object-position: 50% 50%;
   border: 1px solid #22d3eebb;
   border-radius: 50%;
   background: #040810;
   box-shadow: 0 0 16px #00f5ff26;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .identity-inner,
+  .identity-orbit,
+  .identity-scan {
+    transform-origin: 50% 50%;
+    animation: identity-rotate 36s linear infinite;
+  }
+  .identity-orbit {
+    animation-duration: 64s;
+    animation-direction: reverse;
+  }
+  .identity-scan {
+    animation-duration: 18s;
+  }
+}
+@keyframes identity-rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 .bio {
   display: flex;
