@@ -90,9 +90,9 @@
 .cyber-cursor[data-state="button"] .cyber-cursor__glow { opacity: 1; }
 .cyber-cursor[data-state="image"] .cyber-cursor__ring::before {
   transform: scale(1.15);
-  border-style: dashed;
-  border-color: #a78bfa;
-  box-shadow: 0 0 12px #8b5cf64d;
+  border-style: solid;
+  border-color: #00f5ff66;
+  box-shadow: 0 0 6px #00f5ff14;
 }
 .cyber-cursor[data-state="pressed"] .cyber-cursor__ring::before { transform: scale(.66); }
 .cyber-cursor[data-active="false"] { opacity: 0; }

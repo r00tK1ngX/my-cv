@@ -48,3 +48,16 @@ test("cursor responds to semantic interactive, button, and reduced-motion states
   assert.match(cursorCss, /cyber-cursor__ripple/);
   assert.match(cursorCss, /@media\s*\(prefers-reduced-motion:\s*reduce\)[\s\S]*?\.cyber-cursor/);
 });
+
+test("image-hover outer ring remains thin solid cyan with a low-opacity cyan shadow", () => {
+  const imageRing = cursorCss.match(/\.cyber-cursor\[data-state="image"\] \.cyber-cursor__ring::before\s*\{([^}]+)\}/)?.[1];
+  assert.ok(imageRing, "Keep the existing image-hover state");
+  assert.match(imageRing, /border-style:\s*solid;/);
+  assert.match(imageRing, /border-color:\s*#00f5ff66;/);
+  assert.match(imageRing, /box-shadow:\s*0 0 6px #00f5ff14;/);
+  assert.match(imageRing, /transform:\s*scale\(1\.15\);/);
+  const rings = [...cursorCss.matchAll(/[^{}]*\.cyber-cursor__ring::before\s*\{([^}]+)\}/g)].map(match => match[1]);
+  assert.ok(rings.length > 0);
+  assert.ok(rings.every(rule => !/\b(?:dashed|dotted)\b/.test(rule)), "No dashed or dotted outer-ring states");
+  assert.match(cursorCss, /border:\s*1px solid #00f5ff99;/);
+});
