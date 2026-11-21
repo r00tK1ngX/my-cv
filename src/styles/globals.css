@@ -872,104 +872,174 @@ img {
   justify-content: center;
   min-width: 0;
 }
-.orbit {
+.home-identity-core {
+  position: relative;
+  width: min(420px, calc(100% - 28px));
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  isolation: isolate;
+  pointer-events: none;
+  background: radial-gradient(circle, #22d3ee0b 28%, transparent 70%);
+}
+.home-hud {
   position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  border: 1px dashed #00f5ff22;
-  animation: orbit 25s linear infinite;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #22d3ee;
+  stroke-width: 1;
 }
-.orbit:before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  background: #22d3ee;
-  box-shadow: 0 0 8px #00f5ffbb;
-  border-radius: 50%;
+.home-hud,
+.home-hud *,
+.scan-brackets,
+.scan-brackets *,
+.hero-visual > .float-tag {
+  pointer-events: none;
 }
-.orbit.second {
-  width: 420px;
-  height: 420px;
-  border-color: #ff006e22;
-  animation: orbit 35s linear infinite reverse;
+.home-core-recess {
+  stroke-width: 22;
+  stroke-opacity: 0.035;
 }
-.orbit.second:before {
-  background: #ec4899;
-  width: 6px;
-  height: 6px;
-  box-shadow: 0 0 6px #ff006eaa;
+.home-core-guide,
+.home-core-calibration {
+  stroke-opacity: 0.14;
 }
-.hero-blob {
-  position: absolute;
-  width: 256px;
-  height: 256px;
-  background: linear-gradient(135deg, #22d3ee19, #ff006e0d);
-  border: 1px solid #00f5ff33;
-  animation: morph 10s ease-in-out infinite;
+.home-core-rim {
+  stroke-opacity: 0.18;
+}
+.home-core-ticks {
+  stroke-opacity: 0.36;
+}
+.home-core-inner {
+  stroke-width: 1.5;
+  stroke-opacity: 0.46;
+}
+.home-core-accent {
+  stroke: #67e8f9;
+  stroke-width: 2;
+  stroke-opacity: 0.78;
+}
+.home-core-orbit {
+  stroke-opacity: 0.28;
+}
+.home-core-marker {
+  fill: #67e8f9;
+  stroke: none;
+}
+.home-core-marker-halo {
+  fill-opacity: 0.12;
+}
+.home-core-scan {
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-opacity: 0.6;
+}
+.home-core-nodes {
+  stroke-opacity: 0.38;
+}
+.home-core-nodes rect {
+  fill: #22d3ee26;
 }
 .hero-emblem {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 224px;
-  height: 224px;
-  position: relative;
-  animation: float 4s ease-in-out infinite;
-  filter: drop-shadow(0 0 28px #00f5ff55);
+  width: min(222px, 53.333333%);
+  aspect-ratio: 1;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: auto;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid #22d3ee;
+  border: 1px solid #22d3eebb;
   background: #040810;
-  box-shadow: 0 0 0 6px #00f5ff0a, 0 0 24px #00f5ff33;
+  box-shadow: 0 0 0 5px #00f5ff08, 0 0 22px #00f5ff26;
 }
 .hero-portrait {
   display: block;
   width: 100%;
   height: 100%;
+  pointer-events: auto;
   object-fit: cover;
   object-position: 50% 50%;
   border-radius: inherit;
 }
 .scan-brackets {
   position: absolute;
-  width: 288px;
-  height: 288px;
+  inset: 0;
+  margin: auto;
+  width: 68.571429%;
+  height: 68.571429%;
 }
 .scan-brackets i {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: #22d3ee;
+  border-color: #22d3ee77;
   border-style: solid;
   border-width: 0;
 }
 .scan-brackets i:nth-child(1) {
   top: 0;
   left: 0;
-  border-top-width: 2px;
-  border-left-width: 2px;
+  border-top-width: 1px;
+  border-left-width: 1px;
 }
 .scan-brackets i:nth-child(2) {
   top: 0;
   right: 0;
-  border-top-width: 2px;
-  border-right-width: 2px;
+  border-top-width: 1px;
+  border-right-width: 1px;
 }
 .scan-brackets i:nth-child(3) {
   bottom: 0;
   left: 0;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
 }
 .scan-brackets i:nth-child(4) {
   bottom: 0;
   right: 0;
-  border-bottom-width: 2px;
-  border-right-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .home-core-inner,
+  .home-core-orbit,
+  .home-core-scan {
+    transform-origin: 50% 50%;
+    animation: home-core-turn 40s linear infinite;
+  }
+  .home-core-orbit {
+    animation-duration: 72s;
+    animation-direction: reverse;
+  }
+  .home-core-scan {
+    animation-duration: 22s;
+  }
+}
+@keyframes home-core-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1279px) {
+  .hero-visual > .float-tag:nth-of-type(1),
+  .hero-visual > .float-tag:nth-of-type(4) {
+    top: 2%;
+  }
+  .hero-visual > .float-tag:nth-of-type(2),
+  .hero-visual > .float-tag:nth-of-type(3) {
+    top: auto;
+    bottom: 2%;
+  }
+}
+@media (max-width: 639px) {
+  .home-identity-core {
+    width: min(336px, calc(100% - 28px));
+  }
 }
 .float-tag {
   position: absolute;

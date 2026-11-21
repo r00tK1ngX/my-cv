@@ -19,7 +19,14 @@ for (const locale of ["en", "vi"] as const) {
     assert.match(emblem, /alt=""/);
     assert.doesNotMatch(emblem, /<svg\b|<b>CAD<\/b>|\/_next\/image/);
     assert.match(html, /class="hero-visual reveal" aria-hidden="true"/);
-    assert.equal((html.match(/class="orbit(?: second)?"/g) ?? []).length, 2);
+    assert.match(html, /class="home-identity-core"/);
+    assert.match(html, /class="home-hud home-core-inner"/);
+    assert.match(html, /class="home-hud home-core-orbit orbit"/);
+    assert.match(html, /class="home-hud home-core-scan"/);
+    assert.equal((html.match(/viewBox="0 0 420 420" focusable="false"/g) ?? []).length, 4);
+    const ticks = html.match(/<g class="home-core-ticks">([\s\S]*?)<\/g>/)?.[1];
+    assert.equal((ticks?.match(/<path\b/g) ?? []).length, 36);
+    assert.equal((html.match(/class="home-core-marker"/g) ?? []).length, 2);
     assert.match(html, /class="scan-brackets"><i><\/i><i><\/i><i><\/i><i><\/i>/);
     for (const label of ["PWN / BINARY", "RED TEAM", "LINUX", "AI &amp; SECURITY"]) {
       assert.ok(html.includes(label), "Keep approved production label " + label);

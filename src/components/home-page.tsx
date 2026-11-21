@@ -84,25 +84,142 @@ export function HomePage({ locale }: { locale: Locale }) {
             </div>
           </div>
           <div className="hero-visual reveal" aria-hidden="true">
-            <div className="orbit" />
-            <div className="orbit second" />
-            <div className="hero-blob" />
-            <div className="hero-emblem">
-              <Image
-                className="hero-portrait"
-                src="/images/chau-anh-dung-avatar.webp"
-                width={512}
-                height={512}
-                alt=""
-                loading="eager"
-                unoptimized
-              />
-            </div>
-            <div className="scan-brackets">
-              <i />
-              <i />
-              <i />
-              <i />
+            <div className="home-identity-core">
+              <svg
+                className="home-hud"
+                viewBox="0 0 420 420"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  className="home-core-recess"
+                  cx="210"
+                  cy="210"
+                  r="140"
+                />
+                <circle className="home-core-guide" cx="210" cy="210" r="122" />
+                <circle className="home-core-guide" cx="210" cy="210" r="176" />
+                <circle
+                  className="home-core-rim"
+                  cx="210"
+                  cy="210"
+                  r="202"
+                  pathLength="360"
+                  strokeDasharray="76 18 26 60"
+                />
+                <circle
+                  className="home-core-calibration"
+                  cx="210"
+                  cy="210"
+                  r="184"
+                  pathLength="360"
+                  strokeDasharray="18 12 3 57"
+                  strokeDashoffset="-18"
+                />
+                <g className="home-core-ticks">
+                  {Array.from({ length: 36 }, (_, index) => (
+                    <path
+                      key={index}
+                      d={index % 3 === 0 ? "M210 46v10" : "M210 50v6"}
+                      transform={`rotate(${index * 10} 210 210)`}
+                    />
+                  ))}
+                </g>
+                <g className="home-core-nodes">
+                  <path d="M30 210h12m336 0h12M210 30v10m0 340v10" />
+                  <rect x="24" y="208" width="4" height="4" />
+                  <rect x="392" y="208" width="4" height="4" />
+                  <rect x="208" y="24" width="4" height="4" />
+                  <rect x="208" y="392" width="4" height="4" />
+                </g>
+              </svg>
+              <svg
+                className="home-hud home-core-inner"
+                viewBox="0 0 420 420"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="210"
+                  cy="210"
+                  r="138"
+                  pathLength="360"
+                  strokeDasharray="52 8 2 28"
+                />
+                <circle
+                  className="home-core-accent"
+                  cx="210"
+                  cy="210"
+                  r="138"
+                  pathLength="360"
+                  strokeDasharray="32 328"
+                  strokeDashoffset="-14"
+                />
+              </svg>
+              <svg
+                className="home-hud home-core-orbit orbit"
+                viewBox="0 0 420 420"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="210"
+                  cy="210"
+                  r="196"
+                  pathLength="360"
+                  strokeDasharray="58 16 6 48 32 40 20 140"
+                />
+                <g className="home-core-marker" transform="rotate(32 210 210)">
+                  <circle
+                    cx="210"
+                    cy="14"
+                    r="6"
+                    className="home-core-marker-halo"
+                  />
+                  <circle cx="210" cy="14" r="2.5" />
+                </g>
+                <g className="home-core-marker" transform="rotate(212 210 210)">
+                  <circle
+                    cx="210"
+                    cy="14"
+                    r="5"
+                    className="home-core-marker-halo"
+                  />
+                  <circle cx="210" cy="14" r="2" />
+                </g>
+              </svg>
+              <svg
+                className="home-hud home-core-scan"
+                viewBox="0 0 420 420"
+                focusable="false"
+                fill="none"
+              >
+                <circle
+                  cx="210"
+                  cy="210"
+                  r="122"
+                  pathLength="360"
+                  strokeDasharray="26 334"
+                  strokeDashoffset="-40"
+                />
+              </svg>
+              <div className="hero-emblem">
+                <Image
+                  className="hero-portrait"
+                  src="/images/chau-anh-dung-avatar.webp"
+                  width={512}
+                  height={512}
+                  alt=""
+                  loading="eager"
+                  unoptimized
+                />
+              </div>
+              <div className="scan-brackets">
+                <i />
+                <i />
+                <i />
+                <i />
+              </div>
             </div>
             <span className="float-tag cyan">◆ PWN / BINARY</span>
             <span className="float-tag pink">◆ RED TEAM</span>
