@@ -12,6 +12,7 @@ import {
 } from "@/lib/routes";
 import { profile } from "@/data/portfolio";
 import { Icon } from "./icon";
+import { CyberCursor } from "./cyber-cursor";
 
 function availableFocusTarget(element: HTMLElement | null): element is HTMLElement {
   return !!element?.isConnected && !element.closest("[inert]") &&
@@ -166,6 +167,7 @@ export function SiteShell({
   const nav = pageKeys.filter((p) => p !== "home");
   return (
     <>
+      <CyberCursor />
       <a className="skip-link" href="#main-content" inert={open} aria-hidden={open || undefined}>
         {vi ? "Bỏ qua đến nội dung" : "Skip to content"}
       </a>

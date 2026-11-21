@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/cyber-cursor.css";
 import type { ReactNode } from "react";
 import type { Viewport } from "next";
 export const viewport: Viewport = { themeColor: "#040810" };
