@@ -1,9 +1,11 @@
 import "@/styles/globals.css";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { siteIcons } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Page not found · Châu Anh Dũng",
   robots: { index: false, follow: false },
+  icons: siteIcons,
 };
 export default function GlobalNotFound() {
   return (
