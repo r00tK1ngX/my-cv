@@ -222,28 +222,68 @@ export function HomePage({ locale }: { locale: Locale }) {
               </div>
             </div>
             <span className="float-tag cyan">
-              <i className="tag-indicator" aria-hidden="true">
-                ◆
-              </i>{" "}
-              PWN / BINARY
+              <svg
+                className="node-link"
+                viewBox="0 0 64 32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M2 2 52 24" />
+                <circle className="node-anchor" cx="52" cy="24" r="2" />
+              </svg>
+              <span className="node-capsule">
+                <Icon name="cpu" size={13} className="node-icon" />
+                PWN / BINARY
+                <i className="node-status" aria-hidden="true" />
+              </span>
             </span>
             <span className="float-tag pink">
-              <i className="tag-indicator" aria-hidden="true">
-                ◆
-              </i>{" "}
-              RED TEAM
+              <svg
+                className="node-link"
+                viewBox="0 0 40 32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M32 30 4 6" />
+                <circle className="node-anchor" cx="4" cy="6" r="2" />
+              </svg>
+              <span className="node-capsule">
+                <Icon name="shield" size={13} className="node-icon" />
+                RED TEAM
+                <i className="node-status" aria-hidden="true" />
+              </span>
             </span>
             <span className="float-tag green">
-              <i className="tag-indicator" aria-hidden="true">
-                ◆
-              </i>{" "}
-              LINUX
+              <svg
+                className="node-link"
+                viewBox="0 0 20 32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M1 16h5" />
+                <circle className="node-anchor" cx="9" cy="16" r="2" />
+              </svg>
+              <span className="node-capsule">
+                <Icon name="terminal" size={13} className="node-icon" />
+                LINUX
+                <i className="node-status" aria-hidden="true" />
+              </span>
             </span>
             <span className="float-tag amber">
-              <i className="tag-indicator" aria-hidden="true">
-                ◆
-              </i>{" "}
-              AI & SECURITY
+              <svg
+                className="node-link"
+                viewBox="0 0 64 32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M2 2 52 24" />
+                <circle className="node-anchor" cx="52" cy="24" r="2" />
+              </svg>
+              <span className="node-capsule">
+                <Icon name="network" size={13} className="node-icon" />
+                AI & SECURITY
+                <i className="node-status" aria-hidden="true" />
+              </span>
             </span>
           </div>
         </div>

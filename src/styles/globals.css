@@ -1043,120 +1043,159 @@ img {
 }
 .float-tag {
   position: absolute;
-  isolation: isolate;
-  overflow: hidden;
-  font: 500 9px var(--heading);
-  letter-spacing: 0.5px;
   color: var(--item-color, #22d3ee);
-  background: linear-gradient(135deg, #142333b8, #040810dc);
-  backdrop-filter: blur(4px);
-  border: 1px solid color-mix(in srgb, currentColor 48%, transparent);
-  border-radius: 3px;
-  padding: 6px 11px;
+  --node-phase: 0s;
+}
+.node-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+  border-radius: 999px;
+  background:
+    linear-gradient(115deg, color-mix(in srgb, currentColor 6%, transparent), transparent 65%),
+    linear-gradient(180deg, #101b29e8, #060d18e0);
+  backdrop-filter: blur(3px);
+  font: 500 10px/1.4 var(--heading);
+  letter-spacing: 0.6px;
   white-space: nowrap;
   box-shadow:
-    inset 0 1px 0 #ffffff0a,
-    inset 0 0 8px color-mix(in srgb, currentColor 5%, transparent),
-    0 0 10px color-mix(in srgb, currentColor 8%, transparent);
+    inset 0 1px 0 #ffffff0b,
+    0 5px 14px #00000026,
+    0 0 14px color-mix(in srgb, currentColor 4%, transparent);
   transition:
-    border-color 300ms ease,
-    box-shadow 300ms ease,
-    translate 300ms ease;
+    border-color 400ms ease,
+    box-shadow 400ms ease;
 }
-.float-tag::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
+.node-capsule,
+.node-capsule *,
+.node-link,
+.node-link * {
   pointer-events: none;
-  opacity: 0.6;
-  background:
-    linear-gradient(currentColor, currentColor) top left / 5px 1px,
-    linear-gradient(currentColor, currentColor) top left / 1px 5px,
-    linear-gradient(currentColor, currentColor) bottom right / 5px 1px,
-    linear-gradient(currentColor, currentColor) bottom right / 1px 5px;
-  background-repeat: no-repeat;
 }
-.float-tag::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0;
-  background: linear-gradient(105deg, transparent 48%, currentColor 50%, transparent 52%);
-  transform: translateX(-110%);
+.node-icon {
+  flex: none;
+  opacity: 0.85;
 }
-.tag-indicator {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 2px;
-  vertical-align: 1px;
-  font-size: 0;
-  border-radius: 1px;
+.node-status {
+  flex: none;
+  width: 3px;
+  height: 3px;
+  margin-left: 1px;
+  border-radius: 50%;
   background: currentColor;
-  box-shadow: 0 0 6px color-mix(in srgb, currentColor 55%, transparent);
-  pointer-events: none;
+  box-shadow: 0 0 5px color-mix(in srgb, currentColor 45%, transparent);
+  opacity: 0.75;
+}
+.node-link {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  width: 40px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.75;
+  stroke-opacity: 0.24;
+}
+.node-anchor {
+  fill: currentColor;
+  fill-opacity: 0.6;
+  stroke-opacity: 0.3;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .float-tag {
-    animation: hologram-float 8s ease-in-out infinite;
-  }
-  .float-tag::after {
-    animation: hologram-sweep 12s linear infinite;
-    animation-delay: inherit;
+  .node-capsule {
+    animation: orbital-node-float 10s ease-in-out var(--node-phase) infinite;
   }
 }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  /* Keep tags pointer-transparent; the existing visual region owns feedback. */
-  .hero-visual:hover > .float-tag {
-    border-color: color-mix(in srgb, currentColor 72%, transparent);
+  .hero-visual:hover .node-capsule {
+    border-color: color-mix(in srgb, currentColor 42%, transparent);
     box-shadow:
       inset 0 1px 0 #ffffff10,
-      inset 0 0 8px color-mix(in srgb, currentColor 7%, transparent),
-      0 0 12px color-mix(in srgb, currentColor 14%, transparent);
-    translate: 0 -1px;
+      0 5px 14px #00000026,
+      0 0 16px color-mix(in srgb, currentColor 8%, transparent);
   }
 }
-@keyframes hologram-float {
+@keyframes orbital-node-float {
   50% {
-    transform: translateY(-4px);
-  }
-}
-@keyframes hologram-sweep {
-  0%,
-  65% {
-    opacity: 0;
-    transform: translateX(-110%);
-  }
-  72%,
-  90% {
-    opacity: 0.14;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(110%);
+    transform: translateY(-2px);
   }
 }
 .float-tag:nth-of-type(1) {
   top: 10%;
   left: 2%;
-  margin-top: -10px;
 }
 .float-tag:nth-of-type(2) {
   bottom: 12%;
   right: 0;
-  animation-delay: -2s;
+  --node-phase: -2.5s;
 }
 .float-tag:nth-of-type(3) {
   top: 46%;
   left: -4%;
-  animation-delay: -4s;
+  --node-phase: -5s;
 }
 .float-tag:nth-of-type(4) {
   top: 13%;
   right: 0;
-  animation-delay: -6s;
+  --node-phase: -7.5s;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .node-link {
+    display: block;
+  }
+  .float-tag:nth-of-type(1) {
+    margin-left: -22px;
+    margin-top: -29px;
+  }
+  .float-tag:nth-of-type(1) .node-link {
+    width: 64px;
+    left: 50%;
+    top: calc(100% - 4px);
+  }
+  .float-tag:nth-of-type(2) {
+    margin-right: -22px;
+  }
+  .float-tag:nth-of-type(2) .node-link {
+    left: 0;
+    top: -26px;
+  }
+  .float-tag:nth-of-type(3) {
+    margin-left: 0;
+  }
+  .float-tag:nth-of-type(3) .node-link {
+    width: 20px;
+    left: calc(100% - 6px);
+    top: calc(50% - 16px);
+  }
+  .float-tag:nth-of-type(4) {
+    margin-right: -22px;
+    margin-top: -20px;
+  }
+  .float-tag:nth-of-type(4) .node-link {
+    width: 64px;
+    right: 50%;
+    top: calc(100% - 4px);
+    transform: scaleX(-1);
+  }
+}
+@media (max-width: 1279px) {
+  .float-tag:nth-of-type(1),
+  .float-tag:nth-of-type(4) {
+    margin-top: -10px;
+  }
+}
+@media (max-width: 639px) {
+  .float-tag:nth-of-type(1),
+  .float-tag:nth-of-type(4) {
+    margin-top: -20px;
+  }
+  .float-tag:nth-of-type(2),
+  .float-tag:nth-of-type(3) {
+    margin-bottom: -12px;
+  }
 }
 .scroll-cue {
   position: absolute;
