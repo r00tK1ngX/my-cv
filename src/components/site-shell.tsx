@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { mountMotion } from "@/lib/motion";
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import {
@@ -196,6 +197,17 @@ export function SiteShell({
               `${profile.handle} / portfolio — Châu Anh Dũng — ${vi ? "Trang chủ" : "Home"}`
             }
           >
+            <span className="brand-emblem" aria-hidden="true">
+              <Image
+                src="/icons/icon-192x192.png"
+                width={34}
+                height={34}
+                alt=""
+                className="brand-emblem-img"
+                loading="eager"
+                unoptimized
+              />
+            </span>
             <span>[</span>
             <b>{profile.handle}</b>
             <span>@</span>

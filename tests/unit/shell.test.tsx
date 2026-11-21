@@ -15,6 +15,8 @@ test("shared shell supplies current identity, navigation and language equivalent
     </SiteShell>,
   );
   assert.match(html, /r00tK1ngX/);
+  assert.match(html, /class="brand-emblem"/);
+  assert.match(html, /src="\/icons\/icon-192x192\.png"/);
   assert.match(html, /href="\/vi\/research\/"/);
   assert.match(html, /aria-expanded="false"/);
   assert.match(html, /Skip to content/);

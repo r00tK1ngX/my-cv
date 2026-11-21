@@ -186,22 +186,63 @@ img {
   gap: 16px;
 }
 .wordmark {
-  display: flex;
+  display: inline-flex;
   gap: 3px;
   align-items: center;
   white-space: nowrap;
   font: 700 18px var(--heading);
+}
+.brand-emblem {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  margin-right: 7px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.14);
+  transition:
+    border-color 260ms ease,
+    box-shadow 260ms ease,
+    transform 260ms ease;
+}
+.brand-emblem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(103, 232, 249, 0.16) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  opacity: 0;
+}
+.brand-emblem-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .wordmark span {
   color: #22d3ee;
 }
 .wordmark b {
   color: white;
+  transition: color 220ms ease;
 }
 .wordmark i {
   font-style: normal;
-  color: #475569;
+  color: #64748b;
   margin-left: 4px;
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.22);
 }
 .wordmark em {
   font-style: normal;
@@ -210,6 +251,38 @@ img {
 }
 .wordmark:hover b {
   color: var(--cyan);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .brand-emblem::after {
+    animation: brand-emblem-scan 12s ease-in-out infinite;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wordmark em {
+    animation: none;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .wordmark:hover .brand-emblem {
+    border-color: rgba(34, 211, 238, 0.62);
+    box-shadow: 0 0 16px rgba(34, 211, 238, 0.28);
+    transform: scale(1.03);
+  }
+}
+@keyframes brand-emblem-scan {
+  0%,
+  78%,
+  100% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  86% {
+    opacity: 1;
+  }
+  94% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
 }
 .desktop-nav {
   list-style: none;
@@ -2023,8 +2096,13 @@ img {
     gap: 12px;
   }
   .wordmark {
-    font-size: 15px;
+    font-size: 14px;
     gap: 2px;
+  }
+  .brand-emblem {
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
   }
   .wordmark i {
     display: none;
