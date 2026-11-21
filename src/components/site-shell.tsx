@@ -296,15 +296,6 @@ export function SiteShell({
             className="mobile-drawer"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="drawer-heading">
-              <span>◈ {vi ? "Điều hướng" : "Navigation"}</span>
-              <button
-                aria-label={vi ? "Đóng menu" : "Close menu"}
-                onClick={() => closeMenu()}
-              >
-                <Icon name="close" />
-              </button>
-            </div>
             <nav aria-label={vi ? "Điều hướng di động" : "Mobile navigation"}>
               {nav.map((key) => (
                 <Link

@@ -66,7 +66,7 @@ for (const locale of ["en", "vi"] as const) {
       await page.keyboard.press("Enter");
       const dialog = page.getByRole("dialog", { name: menuName });
       await expect(dialog).toBeVisible();
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       for (const key of ["Shift+Tab", "Tab", "End", "Tab", "Shift+Tab"]) {
         await page.keyboard.press(key);
         expect(await dialog.evaluate((element) => element.contains(document.activeElement))).toBe(true);
@@ -82,7 +82,7 @@ for (const locale of ["en", "vi"] as const) {
       await expect(page.getByRole("dialog")).toHaveCount(0);
       await expect(toggle).toBeFocused();
       await toggle.click();
-      await page.locator(".drawer-heading button").click();
+      await toggle.click();
       await expect(page.getByRole("dialog")).toHaveCount(0);
       await expect(toggle).toBeFocused();
       await page.locator(".language-switch").click();

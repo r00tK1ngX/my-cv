@@ -28,3 +28,13 @@ test("shared shell supplies current identity, navigation and language equivalent
   );
   assert.match(vi, /href="\/about\/"/);
 });
+
+test("mobile drawer removes redundant inner drawer-heading and duplicate close button", async () => {
+  const { readFileSync } = await import("node:fs");
+  const source = readFileSync("src/components/site-shell.tsx", "utf8");
+  const css = readFileSync("src/styles/globals.css", "utf8");
+  assert.doesNotMatch(source, /drawer-heading/);
+  assert.doesNotMatch(source, /◈/);
+  assert.doesNotMatch(css, /\.drawer-heading/);
+  assert.match(source, /className="menu-toggle"/);
+});

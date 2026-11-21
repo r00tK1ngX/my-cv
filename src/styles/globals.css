@@ -447,28 +447,13 @@ img {
   border-bottom: 1px solid var(--line);
   max-height: calc(100dvh - 65px);
   overflow-y: auto;
-  padding: 12px 24px 24px;
+  padding: 8px 24px 24px;
   animation: drawer 300ms ease-in-out;
-}
-.drawer-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font: 600 10px var(--heading);
-  letter-spacing: 2px;
-  color: #22d3ee;
-  padding: 8px 0;
-}
-.drawer-heading button {
-  display: flex;
-  background: transparent;
-  border: 1px solid var(--line);
-  padding: 8px;
 }
 .mobile-drawer nav {
   display: flex;
   flex-direction: column;
-  margin: 8px -24px 16px;
+  margin: 0 -24px 16px;
 }
 .mobile-drawer nav a {
   display: flex;

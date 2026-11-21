@@ -32,13 +32,12 @@ for (const locale of ["en", "vi"] as const) {
         await expect(page.getByRole("dialog")).toBeVisible();
         await expect(toggle).toHaveAttribute("aria-controls", "mobile-navigation");
         await expect(page.locator("#mobile-navigation")).toHaveCount(1);
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Shift+Tab");
         await expect(page.locator(".mobile-drawer > .button")).toBeFocused();
         await page.keyboard.press("Tab");
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
-        if (cycle === 1) await toggle.click();
-        else if (cycle === 2) await page.locator(".drawer-heading button").click();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
+        if (cycle === 1 || cycle === 2) await toggle.click();
         else if (cycle === 3) await page.mouse.click(200, 810);
         else await page.keyboard.press("Escape");
         await expect(page.getByRole("dialog")).toHaveCount(0);
@@ -68,7 +67,7 @@ for (const locale of ["en", "vi"] as const) {
       await page.emulateMedia({ reducedMotion });
       await page.goto(locale === "vi" ? "/vi/about/" : "/about/");
       await page.locator(".menu-toggle").click();
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       await page.setViewportSize({ width: 1180, height: 900 });
       await expect(page.getByRole("dialog")).toHaveCount(0);
       await expect(page.locator(".menu-toggle")).toBeHidden();
@@ -102,7 +101,7 @@ for (const locale of ["en", "vi"] as const) {
       expect(bounds).not.toBeNull();
       expect(bounds!.y).toBe(0);
       expect(bounds!.height).toBe(844);
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       await page.keyboard.press("Escape");
       await expect(page.locator(".menu-toggle")).toBeFocused();
     });
@@ -113,14 +112,14 @@ for (const locale of ["en", "vi"] as const) {
       const toggle = page.locator(".menu-toggle");
       for (const delay of [20, 140, 260]) {
         await toggle.click();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Escape");
         await page.waitForTimeout(delay);
         await toggle.click();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.waitForTimeout(360);
         await expect(page.getByRole("dialog")).toBeVisible();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Escape");
         await expect(toggle).toBeFocused();
       }
@@ -131,7 +130,7 @@ for (const locale of ["en", "vi"] as const) {
       await expect(page.locator("#mobile-navigation")).toHaveCount(0);
       await page.setViewportSize({ width: 1179, height: 900 });
       await toggle.click();
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       await page.emulateMedia({ reducedMotion: "reduce" });
       await page.keyboard.press("Escape");
       await expect(toggle).toBeFocused();
@@ -150,7 +149,7 @@ for (const locale of ["en", "vi"] as const) {
         const target = page.locator(selector).first();
         expect(await target.evaluate(element => !!element.closest("[inert]"))).toBe(true);
         await target.evaluate((element: HTMLElement) => element.focus());
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       }
       for (const box of boxes) {
         expect(box).not.toBeNull();
@@ -203,7 +202,7 @@ for (const locale of ["en", "vi"] as const) {
         expect(actual.inDrawer).toBe(true);
         expect(actual.documentFocused).toBe(true);
         if (key === "Shift+Tab") await expect(page.locator(".mobile-drawer > .button")).toBeFocused();
-        else await expect(page.locator(".drawer-heading button")).toBeFocused();
+        else await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       });
     }
   }

@@ -28,7 +28,7 @@ for (const locale of ["en", "vi"] as const) {
       await expect(toggle).toHaveAttribute("aria-controls", "mobile-navigation");
       await expect(page.locator("#mobile-navigation")).toHaveCount(1);
       await expect(page.getByRole("dialog")).toHaveCount(1);
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       await page.evaluate(() => {
         const w = window as unknown as { exitRecords: unknown[]; exitObserver: MutationObserver };
         w.exitRecords = [];
@@ -64,18 +64,18 @@ for (const locale of ["en", "vi"] as const) {
       const toggle = page.locator(".menu-toggle");
       for (const delay of [0, 20, 140, 260, 330]) {
         await toggle.evaluate((e: HTMLButtonElement) => e.click());
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
-        await page.locator(".drawer-heading button").click();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
+        await toggle.click();
         if (delay) await page.waitForTimeout(delay);
         await toggle.click();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.waitForTimeout(360);
         await expect(page.getByRole("dialog")).toHaveCount(1);
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Shift+Tab");
         await expect(page.locator(".mobile-drawer > .button")).toBeFocused();
         await page.keyboard.press("Tab");
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Escape");
         await expect(toggle).toBeFocused();
       }
@@ -95,9 +95,9 @@ for (const locale of ["en", "vi"] as const) {
       await page.emulateMedia({ reducedMotion });
       await page.goto(locale === "vi" ? "/vi/about/" : "/about/");
       await page.locator(".menu-toggle").click();
-      await expect(page.locator(".drawer-heading button")).toBeFocused();
+      await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
       await page.locator(".menu-toggle").evaluate((e: HTMLElement) => { e.style.display = "none"; });
-      await page.locator(".drawer-heading button").click();
+      await page.keyboard.press("Escape");
       await expect(page.getByRole("dialog")).toHaveCount(0);
       await expect(page.locator(".wordmark")).toBeFocused();
       expect(await actualFocus(page)).toMatchObject({ tag: "A", classes: "wordmark", visible: true, inert: false, dialogCount: 0 });
@@ -119,13 +119,13 @@ for (const locale of ["en", "vi"] as const) {
       const toggle = page.locator(".menu-toggle");
       for (const reopen of [false, true]) {
         await toggle.click();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.evaluate(() => { (window as unknown as { holdRestore: boolean }).holdRestore = true; });
         await page.keyboard.press("Escape");
         await expect.poll(() => page.evaluate(() => (window as unknown as { restoreFrames: unknown[] }).restoreFrames.length)).toBeGreaterThan(0);
         if (reopen) {
           await toggle.evaluate((e: HTMLButtonElement) => e.click());
-          await expect(page.locator(".drawer-heading button")).toBeFocused();
+          await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         } else await page.locator(".language-switch").focus();
         await page.evaluate(() => {
           const w = window as unknown as { holdRestore: boolean; restoreFrames: FrameRequestCallback[] };
@@ -134,7 +134,7 @@ for (const locale of ["en", "vi"] as const) {
         });
         if (reopen) {
           await expect(page.getByRole("dialog")).toHaveCount(1);
-          await expect(page.locator(".drawer-heading button")).toBeFocused();
+          await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
           await page.keyboard.press("Escape");
           await expect(toggle).toBeFocused();
         } else {
@@ -151,7 +151,7 @@ for (const locale of ["en", "vi"] as const) {
       const toggle = page.locator(".menu-toggle");
       for (const waitForExit of [false, true]) {
         await toggle.click();
-        await expect(page.locator(".drawer-heading button")).toBeFocused();
+        await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
         await page.keyboard.press("Escape");
         await expect(page.getByRole("dialog")).toHaveCount(0);
         await expect(toggle).toBeFocused();
@@ -194,8 +194,8 @@ for (const locale of ["en", "vi"] as const) {
               await toggle.evaluate((e: HTMLButtonElement) => e.click());
             }
             await expect(page.getByRole("dialog")).toHaveCount(1);
-            await expect(page.locator(".drawer-heading button")).toBeFocused();
-            if (dismissal === "drawer-close") await page.locator(".drawer-heading button").click();
+            await expect(page.locator(".mobile-drawer nav a").first()).toBeFocused();
+            if (dismissal === "drawer-close") await toggle.click();
             else await page.mouse.click(200, 810);
             await expect(page.getByRole("dialog")).toHaveCount(0);
             await expect(toggle).toBeFocused();
