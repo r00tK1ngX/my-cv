@@ -221,10 +221,30 @@ export function HomePage({ locale }: { locale: Locale }) {
                 <i />
               </div>
             </div>
-            <span className="float-tag cyan">◆ PWN / BINARY</span>
-            <span className="float-tag pink">◆ RED TEAM</span>
-            <span className="float-tag green">◆ LINUX</span>
-            <span className="float-tag amber">◆ AI & SECURITY</span>
+            <span className="float-tag cyan">
+              <i className="tag-indicator" aria-hidden="true">
+                ◆
+              </i>{" "}
+              PWN / BINARY
+            </span>
+            <span className="float-tag pink">
+              <i className="tag-indicator" aria-hidden="true">
+                ◆
+              </i>{" "}
+              RED TEAM
+            </span>
+            <span className="float-tag green">
+              <i className="tag-indicator" aria-hidden="true">
+                ◆
+              </i>{" "}
+              LINUX
+            </span>
+            <span className="float-tag amber">
+              <i className="tag-indicator" aria-hidden="true">
+                ◆
+              </i>{" "}
+              AI & SECURITY
+            </span>
           </div>
         </div>
         <a className="scroll-cue" href="#experience">

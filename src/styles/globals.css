@@ -1043,33 +1043,120 @@ img {
 }
 .float-tag {
   position: absolute;
+  isolation: isolate;
+  overflow: hidden;
   font: 500 9px var(--heading);
   letter-spacing: 0.5px;
   color: var(--item-color, #22d3ee);
-  background: #040810ed;
-  border: 1px solid currentColor;
-  padding: 5px 10px;
+  background: linear-gradient(135deg, #142333b8, #040810dc);
+  backdrop-filter: blur(4px);
+  border: 1px solid color-mix(in srgb, currentColor 48%, transparent);
+  border-radius: 3px;
+  padding: 6px 11px;
   white-space: nowrap;
-  animation: float-tag 3s ease-in-out infinite;
+  box-shadow:
+    inset 0 1px 0 #ffffff0a,
+    inset 0 0 8px color-mix(in srgb, currentColor 5%, transparent),
+    0 0 10px color-mix(in srgb, currentColor 8%, transparent);
+  transition:
+    border-color 300ms ease,
+    box-shadow 300ms ease,
+    translate 300ms ease;
+}
+.float-tag::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  pointer-events: none;
+  opacity: 0.6;
+  background:
+    linear-gradient(currentColor, currentColor) top left / 5px 1px,
+    linear-gradient(currentColor, currentColor) top left / 1px 5px,
+    linear-gradient(currentColor, currentColor) bottom right / 5px 1px,
+    linear-gradient(currentColor, currentColor) bottom right / 1px 5px;
+  background-repeat: no-repeat;
+}
+.float-tag::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(105deg, transparent 48%, currentColor 50%, transparent 52%);
+  transform: translateX(-110%);
+}
+.tag-indicator {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 2px;
+  vertical-align: 1px;
+  font-size: 0;
+  border-radius: 1px;
+  background: currentColor;
+  box-shadow: 0 0 6px color-mix(in srgb, currentColor 55%, transparent);
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .float-tag {
+    animation: hologram-float 8s ease-in-out infinite;
+  }
+  .float-tag::after {
+    animation: hologram-sweep 12s linear infinite;
+    animation-delay: inherit;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  /* Keep tags pointer-transparent; the existing visual region owns feedback. */
+  .hero-visual:hover > .float-tag {
+    border-color: color-mix(in srgb, currentColor 72%, transparent);
+    box-shadow:
+      inset 0 1px 0 #ffffff10,
+      inset 0 0 8px color-mix(in srgb, currentColor 7%, transparent),
+      0 0 12px color-mix(in srgb, currentColor 14%, transparent);
+    translate: 0 -1px;
+  }
+}
+@keyframes hologram-float {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes hologram-sweep {
+  0%,
+  65% {
+    opacity: 0;
+    transform: translateX(-110%);
+  }
+  72%,
+  90% {
+    opacity: 0.14;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
 }
 .float-tag:nth-of-type(1) {
   top: 10%;
   left: 2%;
+  margin-top: -10px;
 }
 .float-tag:nth-of-type(2) {
   bottom: 12%;
   right: 0;
-  animation-delay: 1.5s;
+  animation-delay: -2s;
 }
 .float-tag:nth-of-type(3) {
   top: 46%;
   left: -4%;
-  animation-delay: 0.8s;
+  animation-delay: -4s;
 }
 .float-tag:nth-of-type(4) {
   top: 13%;
   right: 0;
-  animation-delay: 2s;
+  animation-delay: -6s;
 }
 .scroll-cue {
   position: absolute;
