@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Locale } from "@/lib/routes";
 import { profile } from "@/data/portfolio";
 import { Icon } from "./icon";
@@ -87,8 +88,15 @@ export function HomePage({ locale }: { locale: Locale }) {
             <div className="orbit second" />
             <div className="hero-blob" />
             <div className="hero-emblem">
-              <Icon name="shield" size={176} />
-              <b>CAD</b>
+              <Image
+                className="hero-portrait"
+                src="/images/chau-anh-dung-avatar.webp"
+                width={512}
+                height={512}
+                alt=""
+                loading="eager"
+                unoptimized
+              />
             </div>
             <div className="scan-brackets">
               <i />

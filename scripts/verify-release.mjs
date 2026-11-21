@@ -22,6 +22,7 @@ const legalFiles = new Set([
   "brand-icons-attribution.txt", "jetbrains-mono-OFL.txt", "lucide-license.txt",
   "oxanium-OFL.txt", "rajdhani-OFL.txt", "react-icons-license.txt", "reference-MIT.txt",
 ]);
+const avatarFile = "images/chau-anh-dung-avatar.webp";
 function walk(directory, callback) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     const absolute = path.join(directory, entry.name);
@@ -36,10 +37,13 @@ function walk(directory, callback) {
 }
 walk(path.join(root, "public"), (absolute) => {
   const relative = path.relative(path.join(root, "public"), absolute).split(path.sep).join("/");
-  assert.ok(relative.startsWith("legal/") && legalFiles.has(relative.slice(6)), "Unexpected public input: " + relative);
+  assert.ok(
+    (relative.startsWith("legal/") && legalFiles.has(relative.slice(6))) || relative === avatarFile,
+    "Unexpected public input: " + relative,
+  );
   publicFiles.set(relative, hash(fs.readFileSync(absolute)));
 });
-assert.equal(publicFiles.size, legalFiles.size, "Missing legal input");
+assert.equal(publicFiles.size, legalFiles.size + 1, "Missing legal or avatar input");
 const files = [];
 walk(out, (absolute, stat) => {
   const name = path.relative(out, absolute).split(path.sep).join("/");
@@ -49,7 +53,7 @@ walk(out, (absolute, stat) => {
   if (allowedHtml.has(name)) kind = "page";
   else if (["sitemap.xml", "robots.txt"].includes(name)) kind = "metadata";
   else if (publicFiles.has(name)) {
-    kind = "public-legal";
+    kind = name === avatarFile ? "public-avatar" : "public-legal";
     assert.equal(hash(fs.readFileSync(absolute)), publicFiles.get(name), "Public bytes changed");
   } else if (/^_next\/static\/[A-Za-z0-9_./%()-]+\.(?:js|css|woff2?|ttf|otf)$/.test(name)) kind = "runtime";
   else if (/\.txt$/.test(name)) {
@@ -67,7 +71,7 @@ for (const route of routes) {
   assert.ok(files.some((file) => file.path === route + "index.html"), "Missing route: /" + route);
   assert.ok(files.some((file) => file.path === route + "index.txt"), "Missing navigation payload: /" + route);
 }
-for (const kind of ["page", "metadata", "public-legal", "runtime", "navigation"]) {
+for (const kind of ["page", "metadata", "public-legal", "public-avatar", "runtime", "navigation"]) {
   assert.ok(files.some((file) => file.kind === kind), "Missing output class: " + kind);
 }
 assert.ok(files.some((file) => file.path.endsWith(".js")), "Missing JavaScript");
