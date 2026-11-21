@@ -1,0 +1,312 @@
+.boot-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #040810;
+  color: #e2e8f0;
+  overflow: hidden;
+  opacity: 1;
+  transition:
+    opacity 320ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boot-preloader.is-exiting {
+  opacity: 0;
+  transform: scale(1.015);
+  pointer-events: none;
+}
+.boot-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.045) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+  pointer-events: none;
+}
+.boot-ambient {
+  position: absolute;
+  width: min(540px, 90vw);
+  height: min(540px, 90vw);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(34, 211, 238, 0.12) 0%,
+    rgba(37, 99, 235, 0.05) 45%,
+    transparent 72%
+  );
+  pointer-events: none;
+}
+.boot-shell {
+  position: relative;
+  z-index: 1;
+  width: min(560px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: boot-shell-in 360ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+@keyframes boot-shell-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.boot-identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.boot-emblem-ring {
+  position: relative;
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 1px solid rgba(34, 211, 238, 0.36);
+  box-shadow:
+    0 0 24px rgba(34, 211, 238, 0.2),
+    inset 0 0 12px rgba(34, 211, 238, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boot-emblem-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.boot-title-group {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.boot-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.boot-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.75);
+}
+.boot-host {
+  font: 700 18px/1.2 var(--heading);
+  letter-spacing: 0.6px;
+  color: #f8fafc;
+}
+.boot-subtitle {
+  margin: 0;
+  font: 600 10px/1.4 var(--mono);
+  letter-spacing: 2px;
+  color: #22d3ee;
+}
+.boot-terminal {
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 17, 32, 0.94),
+    rgba(4, 9, 18, 0.96)
+  );
+  clip-path: polygon(
+    12px 0,
+    100% 0,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    0 100%,
+    0 12px
+  );
+  padding: 14px 18px 16px;
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.boot-terminal-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.14);
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 1.4px;
+}
+.boot-bar-label {
+  color: #64748b;
+}
+.boot-bar-state {
+  color: #22d3ee;
+}
+.boot-log-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 168px;
+}
+.boot-log-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font: 400 12px/1.45 var(--mono);
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    color 180ms ease;
+}
+.boot-log-line.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boot-ok {
+  flex: none;
+  color: #4ade80;
+  font-weight: 600;
+}
+.boot-msg {
+  color: #cbd5e1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.boot-log-line.is-active .boot-msg {
+  color: #67e8f9;
+}
+.boot-progress-wrap {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(34, 211, 238, 0.12);
+}
+.boot-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 1.4px;
+  color: #94a3b8;
+}
+.boot-progress-pct {
+  color: #22d3ee;
+}
+.boot-progress-track {
+  height: 4px;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(34, 211, 238, 0.16);
+  overflow: hidden;
+}
+.boot-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #22d3ee 70%, #67e8f9);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.65);
+  transition: width 160ms ease-out;
+}
+.boot-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 28px;
+}
+.boot-ready-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font: 600 10.5px/1.4 var(--mono);
+  letter-spacing: 1.2px;
+}
+.boot-ready-init {
+  color: #94a3b8;
+}
+.boot-ready-tag {
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  background: rgba(74, 222, 128, 0.08);
+  padding: 2px 7px;
+}
+.boot-ready-welcome {
+  color: #e2e8f0;
+}
+.boot-skip {
+  flex: none;
+  background: transparent;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  color: #94a3b8;
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 1.2px;
+  padding: 7px 11px;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+.boot-skip:hover,
+.boot-skip:focus-visible {
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.65);
+  background: rgba(34, 211, 238, 0.08);
+  outline: none;
+}
+
+@media (max-width: 639px) {
+  .boot-preloader {
+    padding: 14px;
+  }
+  .boot-emblem-ring {
+    width: 56px;
+    height: 56px;
+  }
+  .boot-host {
+    font-size: 15px;
+  }
+  .boot-subtitle {
+    font-size: 9px;
+    letter-spacing: 1.4px;
+  }
+  .boot-terminal {
+    padding: 12px 14px 14px;
+  }
+  .boot-log-list {
+    min-height: 152px;
+    gap: 5px;
+  }
+  .boot-log-line {
+    font-size: 11px;
+    gap: 8px;
+  }
+  .boot-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot-preloader,
+  .boot-shell,
+  .boot-log-line,
+  .boot-progress-fill {
+    animation: none;
+    transition: none;
+  }
+}

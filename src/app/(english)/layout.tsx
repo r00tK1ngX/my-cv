@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/cyber-cursor.css";
+import "@/styles/boot-preloader.css";
 import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
 import { siteIcons } from "@/lib/metadata";
