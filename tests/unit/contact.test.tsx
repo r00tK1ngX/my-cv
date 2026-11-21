@@ -16,13 +16,13 @@ test("contact composes an encoded mailto without server delivery claims", async 
     subject: "Hello & security",
     message: "Hi\nTest?",
   });
-  assert.ok(uri.startsWith("mailto:chauanhdung@gmail.com?"));
+  assert.ok(uri.startsWith("mailto:chauanhdung@dtu.edu.vn?"));
   const query = new URLSearchParams(uri.split("?")[1]);
   assert.equal(query.get("subject"), "Hello & security");
   assert.match(query.get("body")!, /Dũng & Test/);
   const html = renderToStaticMarkup(<ContactPage locale="en" />);
   assert.match(html, /Open email app/);
-  assert.match(html, /mailto:chauanhdung@gmail.com/);
+  assert.match(html, /mailto:chauanhdung@dtu\.edu\.vn/);
   assert.doesNotMatch(
     html,
     /Message Sent|Message delivered|resend|type="tel"/i,

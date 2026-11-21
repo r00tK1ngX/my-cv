@@ -22,7 +22,7 @@ const descriptions: Record<Locale, Record<PageKey, string>> = {
     research:
       "Public security research entries from Châu Anh Dũng. Explore categories and the current public collection.",
     contact:
-      "Contact Châu Anh Dũng about cybersecurity internships, learning and projects at chauanhdung@gmail.com.",
+      "Contact Châu Anh Dũng about cybersecurity internships, learning and projects at chauanhdung@dtu.edu.vn.",
   },
   vi: {
     home: "Châu Anh Dũng — Sinh viên An ninh mạng tại Đà Nẵng. Định hướng PWN, bảo mật tấn công, AI và tự động hóa bảo mật. Tìm kiếm cơ hội thực tập.",
@@ -38,7 +38,7 @@ const descriptions: Record<Locale, Record<PageKey, string>> = {
     research:
       "Không gian nghiên cứu bảo mật công khai của Châu Anh Dũng, với các danh mục và nội dung hiện có.",
     contact:
-      "Liên hệ Châu Anh Dũng về thực tập an ninh mạng, học tập và dự án qua chauanhdung@gmail.com.",
+      "Liên hệ Châu Anh Dũng về thực tập an ninh mạng, học tập và dự án qua chauanhdung@dtu.edu.vn.",
   },
 };
 export const siteIcons: Metadata["icons"] = {

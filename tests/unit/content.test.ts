@@ -9,7 +9,7 @@ test("public profile follows current Owner baseline and has no invented records"
   const { profile, projects, research, posts, skills } =
     await import("../../src/data/portfolio");
   assert.equal(profile.name, "Châu Anh Dũng");
-  assert.equal(profile.email, "chauanhdung@gmail.com");
+  assert.equal(profile.email, "chauanhdung@dtu.edu.vn");
   assert.equal(profile.position.en, "Cybersecurity Student");
   assert.equal(profile.education.period, "2024 – Present");
   assert.equal(projects.length, 3);

@@ -146,7 +146,7 @@ test("contact native validation, encoded mailto and no network delivery", async 
     page.getByRole("link", { name: "Open draft again" }),
   ).toHaveAttribute(
     "href",
-    /^mailto:chauanhdung@gmail.com\?subject=Internship%20%26%20learning&body=/,
+    /^mailto:chauanhdung@dtu\.edu\.vn\?subject=Internship%20%26%20learning&body=/,
   );
   expect(delivered).toBe(false);
   await expect(

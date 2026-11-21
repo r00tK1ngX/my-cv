@@ -10,7 +10,7 @@ export const profile = {
     en: "Seeking internship opportunities in cybersecurity and developing practical skills in offensive security, software security and security research.",
     vi: "Tìm kiếm cơ hội thực tập an ninh mạng, phát triển kỹ năng thực hành về bảo mật tấn công, bảo mật phần mềm và nghiên cứu bảo mật.",
   },
-  email: "chauanhdung@gmail.com",
+  email: "chauanhdung@dtu.edu.vn",
   github: "https://github.com/r00tK1ngX",
   linkedIn: "https://www.linkedin.com/in/anh-d%C5%A9ng-ch%C3%A2u-533b98364/",
   website: "https://chauanhdung.id.vn/",

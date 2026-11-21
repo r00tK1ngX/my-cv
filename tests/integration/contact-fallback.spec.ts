@@ -7,9 +7,9 @@ test("static contact does not submit message data as a query when JavaScript is 
   await page.goto("/contact/");
   await expect(
     page
-      .getByRole("link", { name: "chauanhdung@gmail.com", exact: true })
+      .getByRole("link", { name: "chauanhdung@dtu.edu.vn", exact: true })
       .first(),
-  ).toHaveAttribute("href", "mailto:chauanhdung@gmail.com");
+  ).toHaveAttribute("href", "mailto:chauanhdung@dtu.edu.vn");
   await expect(
     page.getByRole("button", { name: "Open email app" }),
   ).toBeDisabled();
