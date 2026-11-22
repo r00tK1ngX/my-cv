@@ -11,8 +11,8 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   justify-content: center;
   padding: 20px;
   background: #03070e;
-  color: #e2e8f0;
-  font-family: "JetBrains Mono", monospace;
+  color: #f1f5f9;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
   overflow-x: hidden;
   overflow-y: auto;
   opacity: 1;
@@ -55,54 +55,72 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  border-bottom: 1px solid rgba(34, 211, 238, 0.18);
-  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.22);
+  padding-bottom: 15px;
 }
 
 .boot-top-left {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
   min-width: 0;
 }
 
 .boot-shield {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   flex: none;
   border-radius: 50%;
-  border: 1px solid rgba(34, 211, 238, 0.35);
+  border: 1px solid rgba(34, 211, 238, 0.42);
   padding: 2px;
-  box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.22);
   object-fit: contain;
 }
 
 .boot-host {
-  font: 700 18px/1.2 "JetBrains Mono", monospace;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: clamp(17px, 2.1vw, 21px);
+  font-weight: 700;
+  line-height: 1.2;
   color: #f8fafc;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 18px rgba(34, 211, 238, 0.28);
   word-break: break-word;
 }
 
 .boot-sub {
-  font: 600 11px/1.3 "Rajdhani", sans-serif;
-  color: #22d3ee;
-  letter-spacing: 2px;
-  margin-top: 3px;
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #67e8f9;
+  letter-spacing: 0.14em;
+  margin-top: 4px;
+  text-shadow: 0 0 12px rgba(103, 232, 249, 0.24);
+}
+
+html[lang="vi"] .boot-sub {
+  letter-spacing: 0.08em;
 }
 
 .boot-kver {
-  font: 600 11px/1.2 "Rajdhani", sans-serif;
-  color: #64748b;
-  letter-spacing: 1.8px;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
   text-align: right;
   white-space: nowrap;
   flex: none;
-  transition: color 220ms ease;
+  transition:
+    color 220ms ease,
+    text-shadow 220ms ease;
 }
 
 .boot-kver.is-ready {
   color: #4ade80;
+  text-shadow: 0 0 12px rgba(74, 222, 128, 0.28);
 }
 
 /* Terminal Boot Logs */
@@ -112,15 +130,17 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   padding: 8px 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
 }
 
 .boot-log {
   display: grid;
-  grid-template-columns: 62px 84px 1fr;
+  grid-template-columns: 64px 88px 1fr;
   gap: 10px;
-  font-size: 12.5px;
-  line-height: 1.5;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
   align-items: baseline;
   opacity: 0;
   transform: translateY(4px);
@@ -135,8 +155,9 @@ html:not([data-boot-pending="1"]) .boot-preloader {
 }
 
 .boot-ts {
-  color: #475569;
-  font-size: 11px;
+  color: #64748b;
+  font-size: 11.5px;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -145,28 +166,33 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   color: #4ade80;
   font-weight: 600;
   white-space: nowrap;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.25);
 }
 
 .boot-log.is-ready .boot-tag {
-  color: #22d3ee;
+  color: #67e8f9;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(103, 232, 249, 0.35);
 }
 
 .boot-msg {
-  color: #cbd5e1;
+  color: #e2e8f0;
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
 .boot-log.is-ready .boot-msg {
-  color: #f8fafc;
+  color: #ffffff;
   font-weight: 600;
+  text-shadow: 0 0 14px rgba(103, 232, 249, 0.22);
 }
 
 .boot-cur {
   display: inline-block;
   width: 7px;
-  height: 13px;
-  background: #22d3ee;
+  height: 14px;
+  background: #67e8f9;
+  box-shadow: 0 0 8px rgba(103, 232, 249, 0.65);
   vertical-align: -2px;
   margin-left: 6px;
   animation: boot-blink 1s step-end infinite;
@@ -184,7 +210,7 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   height: 4px;
   width: 100%;
   background: rgba(15, 23, 42, 0.92);
-  border: 1px solid rgba(34, 211, 238, 0.16);
+  border: 1px solid rgba(34, 211, 238, 0.2);
   border-radius: 2px;
   overflow: hidden;
 }
@@ -199,7 +225,7 @@ html:not([data-boot-pending="1"]) .boot-preloader {
     #22d3ee 85%,
     #67e8f9 100%
   );
-  box-shadow: 0 0 10px rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
   will-change: width;
 }
 
@@ -210,12 +236,12 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   right: 0;
   width: 18px;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.72));
-  opacity: 0.85;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.78));
+  opacity: 0.9;
 }
 
 .boot-pbar.is-complete .boot-pfill {
-  box-shadow: 0 0 14px rgba(34, 211, 238, 0.65);
+  box-shadow: 0 0 14px rgba(103, 232, 249, 0.7);
 }
 
 .boot-pbar.is-complete .boot-pfill::after {
@@ -230,12 +256,15 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   align-items: center;
   gap: 16px;
   padding-top: 4px;
-  font: 600 11px/1.3 "Rajdhani", sans-serif;
-  letter-spacing: 1.6px;
-  color: #94a3b8;
 }
 
 .boot-welcome {
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: #cbd5e1;
   min-width: 0;
 }
 
@@ -245,9 +274,6 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   gap: 9px;
   flex: none;
   white-space: nowrap;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 11px;
-  letter-spacing: 1.2px;
 }
 
 .boot-status-indicator {
@@ -255,7 +281,7 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   height: 7px;
   border-radius: 50%;
   background: #ef4444;
-  box-shadow: 0 0 8px rgba(239, 68, 68, 0.55);
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
   transition:
     background-color 240ms ease,
     box-shadow 240ms ease,
@@ -263,14 +289,21 @@ html:not([data-boot-pending="1"]) .boot-preloader {
 }
 
 .boot-status-label {
+  font-family: var(--font-sans, "Be Vietnam Pro", sans-serif);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
   color: #f87171;
-  font-weight: 600;
   transition: color 240ms ease;
 }
 
 .boot-status-pct {
-  color: #cbd5e1;
-  font-weight: 600;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1;
+  color: #f8fafc;
   font-variant-numeric: tabular-nums;
   min-width: 4ch;
   text-align: right;
@@ -279,13 +312,14 @@ html:not([data-boot-pending="1"]) .boot-preloader {
 
 .boot-status-live.is-online .boot-status-indicator {
   background: #4ade80;
-  box-shadow: 0 0 10px rgba(74, 222, 128, 0.72);
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.78);
   transform: scale(1.12);
 }
 
 .boot-status-live.is-online .boot-status-label,
 .boot-status-live.is-online .boot-status-pct {
   color: #4ade80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.25);
 }
 
 @media (max-width: 639px) {
@@ -303,12 +337,12 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   }
 
   .boot-host {
-    font-size: 15.5px;
+    font-size: 16px;
   }
 
   .boot-sub {
-    font-size: 10px;
-    letter-spacing: 1.5px;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
   }
 
   .boot-kver {
@@ -316,9 +350,10 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   }
 
   .boot-log {
-    grid-template-columns: 74px 1fr;
+    grid-template-columns: 78px 1fr;
     gap: 8px;
-    font-size: 11.5px;
+    font-size: 12px;
+    line-height: 1.5;
   }
 
   .boot-ts {
@@ -329,12 +364,16 @@ html:not([data-boot-pending="1"]) .boot-preloader {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    font-size: 10.5px;
-    letter-spacing: 1.3px;
   }
 
-  .boot-status-live {
+  .boot-welcome {
     font-size: 11px;
+    letter-spacing: 0.05em;
+  }
+
+  .boot-status-label,
+  .boot-status-pct {
+    font-size: 11.5px;
   }
 }
 
@@ -344,12 +383,12 @@ html:not([data-boot-pending="1"]) .boot-preloader {
   }
 
   .boot-host {
-    font-size: 14px;
+    font-size: 14.5px;
   }
 
   .boot-log {
-    grid-template-columns: 70px 1fr;
-    font-size: 11px;
+    grid-template-columns: 74px 1fr;
+    font-size: 11.5px;
   }
 }
 
