@@ -33,6 +33,6 @@ test("BootPreloader contains Concept 01 EN/VI boot messages, OFFLINE/ONLINE stat
   assert.match(src, /TRỰC TUYẾN/);
   assert.doesNotMatch(src, /boot-skip|\[ SKIP \]|\[ BỎ QUA \]/);
   assert.match(src, /prefers-reduced-motion: reduce/);
-  assert.match(src, /sessionStorage/);
+  assert.match(src, /__r00tBootDone/);
   assert.match(css, /prefers-reduced-motion: reduce/);
 });

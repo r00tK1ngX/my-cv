@@ -3,7 +3,11 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { Locale } from "@/lib/routes";
 
-const STORAGE_KEY = "r00t_boot_done";
+declare global {
+  interface Window {
+    __r00tBootDone?: boolean;
+  }
+}
 
 interface BootStep {
   readonly ts: string;
@@ -195,11 +199,7 @@ export function BootPreloader({ locale }: { locale: Locale }) {
     if (finishedRef.current) return;
     finishedRef.current = true;
     clearScheduled();
-    try {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-    } catch {
-      // Ignore restricted storage contexts.
-    }
+    window.__r00tBootDone = true;
     setPhase((prev) => (prev === "done" ? "done" : "exiting"));
     const exitId = window.setTimeout(() => {
       delete document.documentElement.dataset.bootPending;
@@ -212,21 +212,10 @@ export function BootPreloader({ locale }: { locale: Locale }) {
     finishedRef.current = false;
     let shouldBypass = false;
 
-    try {
-      if (sessionStorage.getItem(STORAGE_KEY) === "1") shouldBypass = true;
-    } catch {
-      // Proceed when sessionStorage is unavailable.
-    }
-
-    if (
-      !shouldBypass &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      try {
-        sessionStorage.setItem(STORAGE_KEY, "1");
-      } catch {
-        // Ignore restricted storage contexts.
-      }
+    if (window.__r00tBootDone === true) {
+      shouldBypass = true;
+    } else if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.__r00tBootDone = true;
       shouldBypass = true;
     }
 

@@ -42,7 +42,7 @@ const descriptions: Record<Locale, Record<PageKey, string>> = {
   },
 };
 export const bootInitScript =
-  'try{if(!sessionStorage.getItem("r00t_boot_done")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.dataset.bootPending="1"}}catch{}';
+  'try{var ls=sessionStorage.getItem("r00t_lang_switch");if(ls){sessionStorage.removeItem("r00t_lang_switch");window.__r00tBootDone=true}else if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.dataset.bootPending="1"}}catch{}';
 
 export const bootCriticalCss =
   'html[data-boot-pending="1"] body{background:#040810}html:not([data-boot-pending="1"]) .boot-preloader{display:none}';

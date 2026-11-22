@@ -49,6 +49,7 @@ export function SiteShell({
   const drawer = useRef<HTMLDivElement>(null);
   const modal = useRef<HTMLDivElement>(null);
   const lastFocused = useRef<EventTarget | null>(null);
+  const scrollTopOnNavRef = useRef(false);
   const restoreMenuFocus = useCallback((generation = focusGeneration.current) => {
     cancelAnimationFrame(focusFrame.current);
     const activeBefore = document.activeElement;
@@ -80,6 +81,10 @@ export function SiteShell({
     };
   }, []);
   useEffect(() => {
+    if (scrollTopOnNavRef.current) {
+      scrollTopOnNavRef.current = false;
+      window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+    }
     if (main.current) return mountMotion(main.current);
   }, [locale, page]);
   useEffect(() => {
@@ -192,12 +197,27 @@ export function SiteShell({
         >
           <Link
             href={routeFor(locale, "home")}
+            scroll={true}
             className="wordmark"
             inert={open}
             aria-hidden={open || undefined}
             aria-label={
               `${profile.handle} / portfolio — Châu Anh Dũng — ${vi ? "Trang chủ" : "Home"}`
             }
+            onClick={(event) => {
+              if (page === "home") {
+                event.preventDefault();
+                const reduced = window.matchMedia(
+                  "(prefers-reduced-motion: reduce)",
+                ).matches;
+                window.scrollTo({
+                  top: 0,
+                  behavior: reduced ? "auto" : "smooth",
+                });
+              } else {
+                scrollTopOnNavRef.current = true;
+              }
+            }}
           >
             <span className="brand-emblem" aria-hidden="true">
               <Image
@@ -253,6 +273,13 @@ export function SiteShell({
             lang={vi ? "en" : "vi"}
             hrefLang={vi ? "en" : "vi"}
             aria-label={vi ? "Switch to English" : "Chuyển sang Tiếng Việt"}
+            onClick={() => {
+              try {
+                sessionStorage.setItem("r00t_lang_switch", "1");
+              } catch {
+                // Ignore restricted storage contexts.
+              }
+            }}
           >
             {vi ? "EN" : "VI"}
           </a>

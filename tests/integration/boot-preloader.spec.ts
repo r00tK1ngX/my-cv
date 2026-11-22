@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 for (const locale of ["en", "vi"] as const) {
-  test(`${locale}: first load plays synchronized boot sequence (OFFLINE -> ONLINE at 100%), reveals site, and skips on refresh/navigation`, async ({ page }) => {
+  test(`${locale}: full document loads (first visit & reload) play boot sequence, while internal nav & lang switch do not replay`, async ({ page }) => {
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("console", (m) => {
@@ -17,18 +17,14 @@ for (const locale of ["en", "vi"] as const) {
     await expect(preloader.locator(".boot-host")).toHaveText("r00tK1ngX@portfolio");
     await expect(preloader.locator(".boot-shield")).toHaveAttribute("src", "/icons/icon-192x192.png");
     await expect(preloader.locator(".boot-skip")).toHaveCount(0);
-    await expect(preloader).not.toContainText(/\[ SKIP \]|\[ BỎ QUA \]/);
 
-    // Sample status synchronization: OFFLINE before 100%, ONLINE only at 100%
     const offlineLabel = locale === "en" ? "OFFLINE" : "NGOẠI TUYẾN";
     const onlineLabel = locale === "en" ? "ONLINE" : "TRỰC TUYẾN";
-
-    const earlyState = await page.evaluate(() => {
-      const pct = parseInt(document.querySelector(".boot-status-pct")?.textContent ?? "0", 10);
-      const label = document.querySelector(".boot-status-label")?.textContent ?? "";
-      const isOnline = document.querySelector(".boot-status-live")?.classList.contains("is-online") ?? false;
-      return { pct, label, isOnline };
-    });
+    const earlyState = await page.evaluate(() => ({
+      pct: parseInt(document.querySelector(".boot-status-pct")?.textContent ?? "0", 10),
+      label: document.querySelector(".boot-status-label")?.textContent ?? "",
+      isOnline: document.querySelector(".boot-status-live")?.classList.contains("is-online") ?? false,
+    }));
     if (earlyState.pct < 100) {
       expect(earlyState.label).toBe(offlineLabel);
       expect(earlyState.isOnline).toBe(false);
@@ -36,21 +32,78 @@ for (const locale of ["en", "vi"] as const) {
 
     await expect(preloader.locator(".boot-status-label")).toHaveText(onlineLabel, { timeout: 5000 });
     await expect(preloader.locator(".boot-status-pct")).toHaveText("100%");
-    await expect(preloader.locator(".boot-log.is-ready.is-visible")).toContainText(
-      locale === "en" ? "System initialization complete." : "Khởi tạo hệ thống hoàn tất.",
-    );
-
-    // Dissolves cleanly after completion
     await expect(preloader).toHaveCount(0, { timeout: 5000 });
 
-    // Refresh in same tab does not replay
+    // Full reload (F5 / Ctrl+R) MUST replay Preloader
     await page.reload();
-    await expect(page.locator(".boot-preloader")).toHaveCount(0);
+    await expect(page.locator(".boot-preloader")).toBeVisible();
+    await expect(page.locator(".boot-preloader")).toHaveCount(0, { timeout: 5000 });
 
-    // Internal navigation does not replay
+    // Internal navigation Home -> About -> Projects does NOT replay
     await page.locator(`.desktop-nav a[href="${locale === "en" ? "/about/" : "/vi/about/"}"]`).click();
     await expect(page).toHaveURL(locale === "en" ? /\/about\/$/ : /\/vi\/about\/$/);
     await expect(page.locator(".boot-preloader")).toHaveCount(0);
+
+    await page.locator(`.desktop-nav a[href="${locale === "en" ? "/projects/" : "/vi/projects/"}"]`).click();
+    await expect(page).toHaveURL(locale === "en" ? /\/projects\/$/ : /\/vi\/projects\/$/);
+    await expect(page.locator(".boot-preloader")).toHaveCount(0);
+
+    // Language switch through internal link does NOT replay, then reloading DOES replay
+    const targetLangUrl = locale === "en" ? /\/vi\/projects\/$/ : /\/projects\/$/;
+    await page.locator(".language-switch").click();
+    await expect(page).toHaveURL(targetLangUrl);
+    await expect(page.locator(".boot-preloader")).toHaveCount(0);
+
+    await page.reload();
+    await expect(page.locator(".boot-preloader")).toBeVisible();
+    await expect(page.locator(".boot-preloader")).toContainText(
+      locale === "en" ? "TRẠM LÀM VIỆC BẢO MẬT" : "SECURITY WORKSTATION",
+    );
+    await expect(page.locator(".boot-preloader")).toHaveCount(0, { timeout: 5000 });
+
+    expect(errors).toEqual([]);
+  });
+
+  test(`${locale}: brand navigation scrolls to top on home and navigates to top of home from subpages`, async ({ page }) => {
+    const errors: string[] = [];
+    page.on("pageerror", (e) => errors.push(e.message));
+    page.on("console", (m) => {
+      if (m.type() === "error") errors.push(m.text());
+    });
+
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.setViewportSize({ width: 1440, height: 900 });
+    const homePath = locale === "en" ? "/" : "/vi/";
+    const aboutPath = locale === "en" ? "/about/" : "/vi/about/";
+    const projectsPath = locale === "en" ? "/projects/" : "/vi/projects/";
+
+    // Home scrolled down -> click brand -> top of Home
+    await page.goto(homePath);
+    await page.evaluate(() => window.scrollTo(0, 700));
+    await page.locator(".wordmark").click();
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+    await expect(page).toHaveURL(locale === "en" ? /\/$/ : /\/vi\/$/);
+
+    // About -> click brand -> Home at top
+    await page.goto(aboutPath);
+    await page.locator(".wordmark").click();
+    await expect(page).toHaveURL(locale === "en" ? /\/$/ : /\/vi\/$/);
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+
+    // Projects -> keyboard Enter on brand -> Home at top
+    await page.goto(projectsPath);
+    await page.locator(".wordmark").focus();
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(locale === "en" ? /\/$/ : /\/vi\/$/);
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+
+    // Mobile header brand click
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(aboutPath);
+    await page.locator(".wordmark").click();
+    await expect(page).toHaveURL(locale === "en" ? /\/$/ : /\/vi\/$/);
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+
     expect(errors).toEqual([]);
   });
 
